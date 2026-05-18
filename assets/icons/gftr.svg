@@ -1,8 +1,33 @@
-<div class="library-icon">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 120 120"
+  fill="none"
+>
 
-  <img
-    src="../assets/icons/gftr.svg"
-    alt="GFTR Icon"
+  <!-- FRAME -->
+
+  <rect
+    x="12"
+    y="12"
+    width="96"
+    height="96"
+    rx="14"
+    stroke="#8f7441"
+    stroke-width="2"
+  />
+
+  <!-- TEXT -->
+
+  <text
+    x="50%"
+    y="54%"
+    text-anchor="middle"
+    fill="#8f7441"
+    font-size="24"
+    font-family="Cinzel, serif"
+    letter-spacing="2"
   >
+    GFTR
+  </text>
 
-</div>
+</svg>
