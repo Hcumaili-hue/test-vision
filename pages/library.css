@@ -1,1 +1,57 @@
+/* =========================
+LIBRARY PAGE
+========================= */
 
+/* LIBRARY SECTION */
+
+.library-section{
+
+  background:var(--dark);
+
+}
+
+/* LIBRARY HEADER */
+
+.library-header{
+
+  text-align:center;
+
+  margin-bottom:8rem;
+}
+
+/* LIBRARY GRID */
+
+.library-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(32rem,1fr));
+
+  gap:4rem;
+}
+
+/* LIBRARY CARD */
+
+.library-card{
+
+  height:100%;
+}
+
+/* LIBRARY CONTENT */
+
+.library-content{
+
+  display:flex;
+
+  flex-direction:column;
+
+  height:100%;
+}
+
+/* LIBRARY TEXT */
+
+.library-text{
+
+  flex:1;
+}
