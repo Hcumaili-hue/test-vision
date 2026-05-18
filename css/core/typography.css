@@ -1,1 +1,71 @@
+/* =========================
+TYPOGRAPHY SYSTEM
+========================= */
 
+html{
+
+  font-size:62.5%;
+}
+
+body{
+
+  font-family:'EB Garamond', serif;
+
+  font-size:2rem;
+
+  line-height:1.8;
+
+  color:var(--text-main);
+
+  background:var(--dark);
+}
+
+/* HEADINGS */
+
+h1,h2,h3,h4,h5,h6{
+
+  font-family:'Cinzel', serif;
+
+  font-weight:600;
+
+  line-height:1.3;
+
+  color:var(--gold-light);
+}
+
+/* TITLES */
+
+h1{
+
+  font-size:6.4rem;
+}
+
+h2{
+
+  font-size:5.2rem;
+}
+
+h3{
+
+  font-size:3.6rem;
+}
+
+/* PARAGRAPHS */
+
+p{
+
+  font-size:2.1rem;
+
+  color:var(--text-soft);
+}
+
+/* LINKS */
+
+a{
+
+  text-decoration:none;
+
+  color:inherit;
+
+  transition:.3s ease;
+}
