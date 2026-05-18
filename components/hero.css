@@ -1,0 +1,89 @@
+/* =========================
+HERO
+========================= */
+
+.hero{
+
+  width:100%;
+
+  min-height:100vh;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+  background:var(--dark);
+
+  padding:12rem 7%;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+
+  max-width:100rem;
+}
+
+/* MINI TITLE */
+
+.hero-mini{
+
+  display:inline-block;
+
+  margin-bottom:2.4rem;
+
+  color:var(--gold);
+
+  font-size:1.5rem;
+
+  letter-spacing:.3rem;
+
+  text-transform:uppercase;
+}
+
+/* MAIN TITLE */
+
+.hero h1{
+
+  font-size:7rem;
+
+  margin-bottom:3rem;
+
+  color:var(--gold-light);
+
+  line-height:1.15;
+}
+
+/* HERO TEXT */
+
+.hero p{
+
+  max-width:80rem;
+
+  margin:auto;
+
+  margin-bottom:4rem;
+
+  font-size:2.3rem;
+
+  color:var(--text-soft);
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:2rem;
+
+  flex-wrap:wrap;
+}
