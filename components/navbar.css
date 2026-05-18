@@ -1,1 +1,120 @@
+/* =========================
+NAVBAR
+========================= */
 
+.navbar{
+
+  width:100%;
+
+  padding:2.4rem 7%;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  background:var(--dark);
+
+  border-bottom:.1rem solid var(--gold-soft);
+
+  position:sticky;
+
+  top:0;
+
+  z-index:1000;
+}
+
+/* LOGO */
+
+.logo{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:1.6rem;
+}
+
+.logo-box{
+
+  width:5.4rem;
+
+  height:5.4rem;
+
+  border-radius:1.4rem;
+
+  background:var(--dark-hover);
+
+  border:.1rem solid var(--gold-soft);
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  color:var(--gold-light);
+
+  font-family:'Cinzel', serif;
+
+  font-size:2.4rem;
+}
+
+.logo-text h1{
+
+  font-size:2rem;
+
+  margin-bottom:.2rem;
+}
+
+.logo-text p{
+
+  font-size:1.3rem;
+
+  color:var(--text-soft);
+}
+
+/* NAVIGATION */
+
+nav{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:3rem;
+}
+
+nav a{
+
+  color:var(--gold-light);
+
+  font-size:1.7rem;
+
+  position:relative;
+}
+
+nav a::after{
+
+  content:"";
+
+  position:absolute;
+
+  left:0;
+
+  bottom:-.6rem;
+
+  width:0%;
+
+  height:.1rem;
+
+  background:var(--gold);
+
+  transition:.3s ease;
+}
+
+nav a:hover::after{
+
+  width:100%;
+}
