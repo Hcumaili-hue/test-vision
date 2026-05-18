@@ -239,7 +239,25 @@ filterButtons.forEach(btn => {
 
 });
 
+/* ========= ACADEMIC NETWORK ========= */
 
+const networkToggle =
+document.getElementById('networkToggle');
+
+const platformNetwork =
+document.getElementById('platformNetwork');
+
+if(networkToggle && platformNetwork){
+
+  networkToggle.addEventListener('click', () => {
+
+    platformNetwork.classList.toggle('active');
+
+    networkToggle.classList.toggle('opened');
+
+  });
+
+}
 /* ========= LOADING COMPLETE ========= */
 
 window.addEventListener('load', () => {
