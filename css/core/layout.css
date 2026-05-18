@@ -1,1 +1,50 @@
+/* =========================
+LAYOUT SYSTEM
+========================= */
 
+.container{
+
+  width:100%;
+
+  max-width:140rem;
+
+  margin:auto;
+
+  padding:0 4rem;
+}
+
+/* SECTIONS */
+
+section{
+
+  padding:12rem 0;
+}
+
+/* GRID SYSTEM */
+
+.grid{
+
+  display:grid;
+
+  gap:3rem;
+}
+
+/* FLEX SYSTEM */
+
+.flex{
+
+  display:flex;
+
+  align-items:center;
+}
+
+/* CENTER */
+
+.center{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+}
