@@ -1,1 +1,47 @@
+/* =========================
+FOOTER
+========================= */
 
+.footer{
+
+  padding:8rem 7%;
+
+  text-align:center;
+
+  background:var(--dark-soft);
+
+  border-top:.1rem solid var(--gold-soft);
+}
+
+/* FOOTER TITLE */
+
+.footer h2{
+
+  margin-bottom:1.6rem;
+
+  color:var(--gold-light);
+
+  font-size:4rem;
+}
+
+/* FOOTER TEXT */
+
+.footer p{
+
+  margin-bottom:2rem;
+
+  color:var(--text-soft);
+
+  font-size:2rem;
+}
+
+/* COPYRIGHT */
+
+.footer span{
+
+  color:var(--gold-soft);
+
+  font-size:1.4rem;
+
+  letter-spacing:.1rem;
+}
