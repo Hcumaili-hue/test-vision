@@ -1,1 +1,44 @@
+/* =========================
+HOME PAGE
+========================= */
 
+/* HERO SECTION */
+
+.hero{
+
+  min-height:100vh;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+
+  max-width:100rem;
+
+  margin:auto;
+}
+
+/* RESEARCHER SECTION */
+
+.researcher-section{
+
+  background:var(--dark-soft);
+}
+
+/* RESEARCHER CARD */
+
+.researcher-card{
+
+  max-width:80rem;
+
+  margin:auto;
+
+  text-align:center;
+}
+
+/* PLATFORM SECTION */
+
+.platforms{
+
+  background:var(--cream-soft);
+}
