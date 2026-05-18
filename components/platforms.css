@@ -1,1 +1,93 @@
+/* =========================
+PLATFORMS
+========================= */
 
+.platforms{
+
+  background:var(--cream-soft);
+}
+
+/* GRID */
+
+.platform-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(24rem,1fr));
+
+  gap:3rem;
+
+  margin-top:6rem;
+}
+
+/* PLATFORM CARD */
+
+.platform-card{
+
+  background:var(--dark-soft);
+
+  border:.1rem solid var(--gold-soft);
+
+  border-radius:2.4rem;
+
+  padding:4rem 3rem;
+
+  text-align:center;
+
+  transition:.35s ease;
+}
+
+.platform-card:hover{
+
+  transform:translateY(-.8rem);
+
+  border-color:var(--gold-light);
+}
+
+/* ICON */
+
+.platform-icon{
+
+  width:8rem;
+
+  height:8rem;
+
+  margin:auto;
+
+  margin-bottom:2.4rem;
+
+  border-radius:50%;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  background:var(--dark-hover);
+
+  border:.1rem solid var(--gold-soft);
+
+  color:var(--gold-light);
+
+  font-size:3rem;
+}
+
+/* TITLE */
+
+.platform-title{
+
+  color:var(--gold-light);
+
+  font-size:2.2rem;
+
+  font-family:'Cinzel', serif;
+
+  transition:.3s ease;
+}
+
+.platform-card:hover .platform-title{
+
+  color:var(--gold);
+}
