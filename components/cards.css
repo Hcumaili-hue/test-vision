@@ -1,1 +1,76 @@
+/* =========================
+CARD SYSTEM
+========================= */
 
+.card{
+
+  background:var(--dark-soft);
+
+  border:.1rem solid var(--gold-soft);
+
+  border-radius:2.4rem;
+
+  padding:4rem 3.2rem;
+
+  transition:.35s ease;
+
+  box-shadow:var(--shadow);
+}
+
+.card:hover{
+
+  transform:translateY(-.8rem);
+
+  border-color:var(--gold-light);
+}
+
+/* CARD ICON */
+
+.card-icon{
+
+  width:8rem;
+
+  height:8rem;
+
+  border-radius:2rem;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  margin-bottom:3rem;
+
+  background:var(--dark-hover);
+
+  border:.1rem solid var(--gold-soft);
+
+  color:var(--gold-light);
+
+  font-size:3rem;
+}
+
+/* CARD TITLE */
+
+.card-title{
+
+  margin-bottom:2rem;
+
+  font-size:3rem;
+
+  color:var(--gold-light);
+}
+
+/* CARD TEXT */
+
+.card-text{
+
+  margin-bottom:3rem;
+
+  font-size:2rem;
+
+  color:var(--text-soft);
+
+  line-height:1.9;
+}
