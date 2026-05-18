@@ -1,1 +1,166 @@
+/* =========================
+   SEARCH SYSTEM
+========================= */
 
+.search-box{
+
+  width:100%;
+
+  max-width:720px;
+
+  margin:60px auto;
+
+  position:relative;
+}
+
+.search-input{
+
+  width:100%;
+
+  padding:22px 70px 22px 28px;
+
+  background:#111111;
+
+  border:1px solid #2a2112;
+
+  border-radius:60px;
+
+  color:#f3ede2;
+
+  font-size:18px;
+
+  font-family:"Times New Roman",serif;
+
+  transition:.35s ease;
+}
+
+.search-input:focus{
+
+  outline:none;
+
+  border-color:#b89b6b;
+
+  box-shadow:0 0 20px rgba(184,155,107,.18);
+}
+
+.search-input::placeholder{
+
+  color:#8f7d63;
+}
+
+/* =========================
+   SEARCH BUTTON
+========================= */
+
+.search-button{
+
+  position:absolute;
+
+  top:50%;
+
+  right:10px;
+
+  transform:translateY(-50%);
+
+  width:52px;
+
+  height:52px;
+
+  border:none;
+
+  border-radius:50%;
+
+  background:#b89b6b;
+
+  color:#111111;
+
+  cursor:pointer;
+
+  font-size:18px;
+
+  transition:.3s ease;
+}
+
+.search-button:hover{
+
+  transform:translateY(-50%) scale(1.06);
+}
+
+/* =========================
+   SEARCH RESULTS
+========================= */
+
+.search-results{
+
+  margin-top:34px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:22px;
+}
+
+.search-result-card{
+
+  background:#111111;
+
+  border:1px solid #2a2112;
+
+  border-radius:24px;
+
+  padding:28px;
+
+  transition:.3s ease;
+}
+
+.search-result-card:hover{
+
+  border-color:#b89b6b;
+
+  transform:translateY(-4px);
+}
+
+.search-result-card h3{
+
+  color:#f3ede2;
+
+  font-size:24px;
+
+  margin-bottom:12px;
+}
+
+.search-result-card p{
+
+  color:#c8b79b;
+
+  line-height:1.9;
+}
+
+/* =========================
+   SEARCH TAGS
+========================= */
+
+.search-tags{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+
+  margin-top:18px;
+}
+
+.search-tags span{
+
+  padding:8px 16px;
+
+  border-radius:30px;
+
+  background:#1a1a1a;
+
+  color:#b89b6b;
+
+  font-size:14px;
+}
