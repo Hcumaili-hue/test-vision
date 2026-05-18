@@ -1,1 +1,63 @@
+/* =========================
+BUTTONS
+========================= */
 
+.main-btn,
+.outline-btn{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:1rem;
+
+  padding:1.6rem 3.2rem;
+
+  border-radius:1.4rem;
+
+  font-size:1.7rem;
+
+  font-family:'Cinzel', serif;
+
+  transition:.35s ease;
+
+  cursor:pointer;
+}
+
+/* MAIN BUTTON */
+
+.main-btn{
+
+  background:var(--gold);
+
+  color:var(--dark);
+}
+
+.main-btn:hover{
+
+  transform:translateY(-.4rem);
+
+  background:var(--gold-light);
+}
+
+/* OUTLINE BUTTON */
+
+.outline-btn{
+
+  border:.1rem solid var(--gold-soft);
+
+  color:var(--gold-light);
+
+  background:transparent;
+}
+
+.outline-btn:hover{
+
+  background:var(--dark-hover);
+
+  border-color:var(--gold-light);
+
+  transform:translateY(-.4rem);
+}
