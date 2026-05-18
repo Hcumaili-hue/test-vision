@@ -1,1 +1,152 @@
+/* =========================
+   FADE ANIMATIONS
+========================= */
 
+.fade-in{
+
+  opacity:0;
+
+  animation:fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn{
+
+  from{
+
+    opacity:0;
+  }
+
+  to{
+
+    opacity:1;
+  }
+}
+
+/* =========================
+   FADE UP
+========================= */
+
+.fade-up{
+
+  opacity:0;
+
+  transform:translateY(40px);
+
+  animation:fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp{
+
+  from{
+
+    opacity:0;
+
+    transform:translateY(40px);
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:translateY(0);
+  }
+}
+
+/* =========================
+   ZOOM IN
+========================= */
+
+.zoom-in{
+
+  opacity:0;
+
+  transform:scale(.92);
+
+  animation:zoomIn .8s ease forwards;
+}
+
+@keyframes zoomIn{
+
+  from{
+
+    opacity:0;
+
+    transform:scale(.92);
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:scale(1);
+  }
+}
+
+/* =========================
+   FLOAT EFFECT
+========================= */
+
+.float{
+
+  animation:floatEffect 4s ease-in-out infinite;
+}
+
+@keyframes floatEffect{
+
+  0%{
+
+    transform:translateY(0);
+  }
+
+  50%{
+
+    transform:translateY(-10px);
+  }
+
+  100%{
+
+    transform:translateY(0);
+  }
+}
+
+/* =========================
+   HOVER LIFT
+========================= */
+
+.hover-lift{
+
+  transition:.35s ease;
+}
+
+.hover-lift:hover{
+
+  transform:translateY(-8px);
+}
+
+/* =========================
+   GLOW EFFECT
+========================= */
+
+.glow-hover{
+
+  transition:.35s ease;
+}
+
+.glow-hover:hover{
+
+  box-shadow:0 0 30px rgba(184,155,107,.22);
+}
+
+/* =========================
+   ROTATE EFFECT
+========================= */
+
+.rotate-hover{
+
+  transition:.4s ease;
+}
+
+.rotate-hover:hover{
+
+  transform:rotate(2deg) scale(1.02);
+}
