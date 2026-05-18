@@ -1,1 +1,151 @@
+/* =========================
+   SIDEBAR LAYOUT
+========================= */
 
+.sidebar-layout{
+
+  display:grid;
+
+  grid-template-columns:320px 1fr;
+
+  gap:50px;
+
+  align-items:start;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+
+  position:sticky;
+
+  top:40px;
+
+  background:#111111;
+
+  border:1px solid #2a2112;
+
+  border-radius:28px;
+
+  padding:34px;
+}
+
+/* =========================
+   SIDEBAR TITLE
+========================= */
+
+.sidebar-title{
+
+  font-size:28px;
+
+  color:#f3ede2;
+
+  margin-bottom:26px;
+
+  font-family:"Times New Roman",serif;
+}
+
+/* =========================
+   SIDEBAR MENU
+========================= */
+
+.sidebar-menu{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:12px;
+}
+
+.sidebar-menu a{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  padding:16px 18px;
+
+  border-radius:16px;
+
+  color:#cdbda2;
+
+  text-decoration:none;
+
+  transition:.3s ease;
+
+  background:#161616;
+}
+
+.sidebar-menu a:hover{
+
+  background:#1d1d1d;
+
+  color:#b89b6b;
+
+  transform:translateX(6px);
+}
+
+/* =========================
+   ACTIVE LINK
+========================= */
+
+.sidebar-menu .active{
+
+  background:#b89b6b;
+
+  color:#111111;
+
+  font-weight:600;
+}
+
+/* =========================
+   SIDEBAR NOTES
+========================= */
+
+.sidebar-note{
+
+  margin-top:28px;
+
+  padding-top:24px;
+
+  border-top:1px solid #2a2112;
+
+  color:#9f8d71;
+
+  line-height:1.8;
+
+  font-size:15px;
+}
+
+/* =========================
+   CONTENT AREA
+========================= */
+
+.sidebar-content{
+
+  width:100%;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+  .sidebar-layout{
+
+    grid-template-columns:1fr;
+  }
+
+  .sidebar{
+
+    position:relative;
+
+    top:auto;
+  }
+}
