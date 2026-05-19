@@ -9,7 +9,7 @@ HOME PAGE WRAPPER
 
 .home-page{
 
-  background:var(--cream);
+  background:#f3ede2;
 }
 
 
@@ -28,39 +28,67 @@ INDEX SECTION SYSTEM
   position:relative;
 
   padding:12rem 7%;
+
+  overflow:hidden;
 }
 
 
 /* =========================
 SECTION BACKGROUNDS
+ACADEMIC PAGE SYSTEM
 ========================= */
 
-.researcher-section{
+/* Page 1 */
 
-  background:
-  linear-gradient(
-    to bottom,
-    #f5efe4,
-    #efe7d8
-  );
-}
-
-.publication-section{
-
-  background:#f8f4eb;
-}
-
-.research-domains-section{
+.research-gateway-section{
 
   background:#f3ede2;
 }
 
+
+/* Page 2 */
+
+.revelation-project-section{
+
+  background:#f5efe4;
+}
+
+
+/* Page 3 */
+
+.researcher-section{
+
+  background:#f7f2e8;
+}
+
+
+/* Page 4 */
+
+.publication-section{
+
+  background:#f4ede1;
+}
+
+
+/* Page 5 */
+
+.research-domains-section{
+
+  background:#f6f0e6;
+}
+
+
+/* Page 6 */
+
 .academic-network-section{
 
-  background:
-  linear-gradient(
-    to bottom,
-    #f8f4eb,
-    #efe5d5
-  );
+  background:#f2ebe0;
+}
+
+
+/* Page 7 */
+
+.library-gateway-section{
+
+  background:#f5efe5;
 }
