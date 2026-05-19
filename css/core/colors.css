@@ -19,11 +19,8 @@
   --text-main:#f3ead7;
   --text-soft:#cfc2a8;
 
-}
-{
-
-  background:var(--cream);
-
-  color:var(--text-dark);
+  /* LIGHT THEME TEXT */
+  --text-dark:#1b1b1b;
+  --text-soft-dark:#5f5a4f;
 
 }
