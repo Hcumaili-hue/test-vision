@@ -45,13 +45,10 @@ BRAND
 .footer-logo{
 
   width:7rem;
-
   height:7rem;
 
   display:flex;
-
   align-items:center;
-
   justify-content:center;
 
   border-radius:2rem;
@@ -71,28 +68,6 @@ BRAND
 
   margin-bottom:2rem;
 }
-
-
-.footer-brand h3{
-
-  font-size:2.6rem;
-
-  color:#f3ede2;
-
-  margin-bottom:1.2rem;
-}
-
-
-.footer-brand p{
-
-  font-size:1.7rem;
-
-  line-height:1.9;
-
-  color:#a89d8b;
-}
-
-
 /* =========================
 FOOTER LINKS
 ========================= */
