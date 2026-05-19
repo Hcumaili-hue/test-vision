@@ -1,281 +1,899 @@
-/* =========================
-TABLET
-========================= */
+<!-- =========================
+HEADER
+========================= -->
 
-@media(max-width:992px){
+<header class="site-header">
 
-  .hero-section{
+<div class="header-container">
 
-    min-height:auto;
+<!-- LOGO -->
 
-    padding:14rem 6% 8rem;
-  }
+<a href="index.html" class="logo-wrap">
 
-  .hero-section h1{
+<div class="logo-mark">
 
-    font-size:5.5rem;
-  }
+HC
 
-  .hero-heading{
+</div>
 
-    font-size:2.4rem;
-  }
+<div class="logo-text">
 
-  .hero-description{
+<span class="logo-title">
 
-    font-size:1.9rem;
+H. Cumaili Lab
 
-    line-height:1.9;
-  }
+</span>
 
-  .researcher-container,
-  .publication-container{
+<span class="logo-subtitle">
 
-    grid-template-columns:1fr;
+Comparative Abrahamic Research
 
-    text-align:center;
+</span>
 
-    gap:5rem;
-  }
+</div>
 
-  .footer-container{
+</a>
 
-    grid-template-columns:
-    repeat(2,1fr);
 
-    gap:4rem;
-  }
-}
+<!-- HEADER ACTIONS -->
 
+<div class="header-actions">
 
+<button class="header-search-btn">
 
-/* =========================
-MOBILE
-========================= */
+Search
 
-@media(max-width:768px){
+</button>
 
-  html{
 
-    font-size:55%;
-  }
+<button class="header-network-btn">
 
+Academic Network
 
-  /* NAVBAR */
+</button>
 
-  .site-header{
 
-    padding:1.4rem 4%;
-  }
+<button class="header-menu-btn">
 
-  .header-container{
+Menu
 
-    gap:1rem;
+</button>
 
-    flex-wrap:wrap;
-  }
+</div>
 
-  .logo-title{
+</div>
 
-    font-size:1.6rem;
-  }
+</header>
 
-  .logo-subtitle{
 
-    display:none;
-  }
 
-  .header-search-btn,
-  .header-network-btn,
-  .header-menu-btn{
+<!-- =========================
+HERO
+========================= -->
 
-    min-height:4.2rem;
+<section class="hero-section">
 
-    padding:0 1.4rem;
+<div class="hero-container">
 
-    font-size:1.2rem;
-  }
+<!-- MINI LABEL -->
 
+<span class="hero-label">
 
-  /* HERO */
+Independent Abrahamic Research Initiative
 
-  .hero-section{
+</span>
 
-    min-height:auto;
 
-    padding:16rem 5% 9rem;
-  }
+<!-- TITLE -->
 
-  .hero-section::before{
+<h1>
 
-    font-size:18rem;
-  }
+H. Cumaili Lab
 
-  .hero-label{
+</h1>
 
-    font-size:1.1rem;
-  }
 
-  .hero-section h1{
+<!-- HERO LINE -->
 
-    font-size:4.5rem;
+<h2 class="hero-heading">
 
-    line-height:1.15;
-  }
+Revelation • Language • Meaning
 
-  .hero-heading{
+</h2>
 
-    font-size:2.1rem;
-  }
 
-  .hero-description{
+<!-- HERO TEXT -->
 
-    font-size:1.7rem;
+<p class="hero-description">
 
-    line-height:1.9;
-  }
+Independent research in
+Biblical Hermeneutics,
+Hebrew Semantics,
+Comparative Abrahamic Studies,
+prophetic continuity,
+and the philosophy of divine revelation.
 
-  .hero-buttons{
+</p>
 
-    flex-direction:column;
 
-    width:100%;
-  }
+<!-- BUTTONS -->
 
-  .primary-btn,
-  .secondary-btn{
+<div class="hero-buttons">
 
-    width:100%;
-  }
+<a
+href="#research-gateway"
+class="primary-btn"
+>
 
+Explore Research
 
-  /* GLOBAL SECTIONS */
+</a>
 
-  .research-gateway-section,
-  .revelation-project-section,
-  .researcher-section,
-  .publication-section,
-  .research-domains-section,
-  .academic-network-section,
-  .library-gateway-section{
 
-    padding:8rem 5%;
-  }
+<a
+href="pages/library.html"
+class="secondary-btn"
+>
 
+Research Journey Library
 
-  /* RESEARCH GATEWAY */
+</a>
 
-  .gateway-title{
+</div>
 
-    font-size:4rem;
-  }
+</div>
 
-  .gateway-subtitle{
+</section>
+<main class="home-page">
+<!-- =========================
+RESEARCH GATEWAY
+========================= -->
 
-    font-size:2rem;
-  }
+<section
+class="research-gateway-section"
+id="research-gateway"
+>
 
-  .gateway-text{
+<div class="research-gateway-card">
 
-    font-size:1.7rem;
-  }
+<!-- MINI LABEL -->
 
+<span class="gateway-label">
 
-  /* RESEARCHER */
+Research Gateway
 
-  .researcher-container{
+</span>
 
-    grid-template-columns:1fr;
 
-    text-align:center;
-  }
+<!-- MAIN TITLE -->
 
-  .researcher-image img{
+<h2 class="gateway-title">
 
-    width:20rem;
+God First,<br>
+Then Religion
 
-    height:20rem;
+</h2>
 
-    object-fit:cover;
-  }
 
-  .researcher-content h2{
+<!-- SUBTITLE -->
 
-    font-size:3.8rem;
-  }
+<h3 class="gateway-subtitle">
 
-  .researcher-content p{
+The Revelation Project
 
-    font-size:1.7rem;
-  }
+</h3>
 
 
-  /* BOOK */
+<!-- DESCRIPTION -->
 
-  .publication-container{
+<p class="gateway-text">
 
-    grid-template-columns:1fr;
+A comparative journey through revelation,
+prophetic continuity,
+sacred language,
+theology,
+and textual development
+across the Abrahamic traditions.
 
-    text-align:center;
-  }
+</p>
 
-  .publication-book img{
 
-    max-width:26rem;
-  }
+<!-- BUTTON -->
 
-  .publication-content h2{
+<a
+href="pages/library.html"
+class="primary-btn"
+>
 
-    font-size:3.6rem;
-  }
+Enter Research Journey Library
 
+</a>
 
-  /* DOMAINS */
+</div>
 
-  .domains-list{
+</section>
+<!-- =========================
+THE REVELATION PROJECT
+========================= -->
 
-    justify-content:center;
-  }
+<section class="revelation-project-section">
 
-  .domain-item{
+<div class="revelation-container">
 
-    width:100%;
-  }
+<!-- MINI LABEL -->
 
+<span class="section-mini">
 
-  /* NETWORK */
+Research Initiative
 
-  .network-trigger{
+</span>
 
-    width:9rem;
 
-    height:9rem;
+<!-- TITLE -->
 
-    font-size:3rem;
-  }
+<h2>
 
-  .network-panel{
+The Revelation Project
 
-    gap:1rem;
-  }
+</h2>
 
-  .network-link{
 
-    width:100%;
-  }
+<!-- TEXT -->
 
+<p>
 
-  /* FOOTER */
+A long-term scholarly initiative
+dedicated to the study of revelation,
+prophetic continuity,
+sacred language,
+textual development,
+and theological interpretation
+across the Abrahamic traditions.
 
-  .footer-container{
+</p>
 
-    grid-template-columns:1fr;
 
-    text-align:center;
-  }
+<p>
 
-  .footer-logo{
+Through comparative analysis,
+hermeneutics,
+semantic investigation,
+manuscript traditions,
+and philosophical inquiry,
+the project seeks to explore
+the continuity of divine revelation
+and the historical movement
+of sacred meaning.
 
-    margin:auto auto 2rem;
-  }
-}
+</p>
+
+</div>
+
+</section>
+<!-- =========================
+RESEARCHER IDENTITY
+========================= -->
+
+<section class="researcher-section">
+
+<div class="researcher-container">
+
+<!-- PROFILE -->
+
+<div class="researcher-image">
+
+<img
+src="assets/images/profile.png"
+alt="H. Cumaili"
+>
+
+</div>
+
+
+<!-- CONTENT -->
+
+<div class="researcher-content">
+
+<span class="section-mini">
+
+Independent Researcher
+
+</span>
+
+
+<h2>
+
+H. Cumaili
+
+</h2>
+
+
+<p>
+
+Independent researcher specializing in
+Biblical Hermeneutics,
+Hebrew Semantics,
+Comparative Abrahamic Studies,
+Prophetic Continuity,
+and the philosophy of divine revelation.
+
+</p>
+
+
+<p>
+
+His work focuses on revelation,
+sacred language,
+theological continuity,
+textual criticism,
+manuscript traditions,
+and comparative Abrahamic interpretation
+across scriptural history.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================
+FEATURED PUBLICATION
+========================= -->
+
+<section class="publication-section">
+
+<div class="publication-container">
+
+<!-- BOOK COVER -->
+
+<div class="publication-book">
+
+<img
+src="assets/images/book.jpg"
+alt="God or Religion Book Cover"
+>
+
+</div>
+
+
+<!-- CONTENT -->
+
+<div class="publication-content">
+
+<span class="section-mini">
+
+Featured Publication
+
+</span>
+
+
+<h2>
+
+God or Religion?
+
+</h2>
+
+
+<h3 class="publication-subtitle">
+
+Hemdat Kol HaGoyim
+and the Instability of Meaning
+
+</h3>
+
+
+<p>
+
+A scholarly study exploring
+revelation,
+semantic instability,
+prophetic continuity,
+sacred language,
+and theological interpretation
+through comparative Abrahamic inquiry.
+
+</p>
+
+
+<a
+href="https://www.amazon.com/dp/B0GWH6NF5C"
+target="_blank"
+rel="noopener noreferrer"
+class="primary-btn"
+>
+
+View Publication
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================
+RESEARCH DOMAINS
+========================= -->
+
+<section class="research-domains-section">
+
+<div class="domains-container">
+
+<!-- TITLE -->
+
+<span class="section-mini">
+
+Research Domains
+
+</span>
+
+<h2>
+
+Areas of Scholarly Inquiry
+
+</h2>
+
+
+<p class="domains-description">
+
+A structured research framework
+exploring revelation,
+sacred language,
+theology,
+textual continuity,
+and Abrahamic interpretation.
+
+</p>
+
+
+<!-- DOMAINS -->
+
+<div class="domains-list">
+
+<div class="domain-item">
+
+Biblical Hermeneutics
+
+</div>
+
+
+<div class="domain-item">
+
+Hebrew Semantics
+
+</div>
+
+
+<div class="domain-item">
+
+Comparative Abrahamic Studies
+
+</div>
+
+
+<div class="domain-item">
+
+Prophetic Continuity
+
+</div>
+
+
+<div class="domain-item">
+
+Philosophy of Revelation
+
+</div>
+
+
+<div class="domain-item">
+
+Textual Criticism
+
+</div>
+
+
+<div class="domain-item">
+
+Sacred Language & Interpretation
+
+</div>
+
+
+<div class="domain-item">
+
+Manuscripts & Transmission
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================
+ACADEMIC NETWORK
+========================= -->
+
+<section
+class="academic-network-section"
+id="academic-network"
+>
+
+<div class="network-container">
+
+<!-- HEADER -->
+
+<span class="section-mini">
+
+Scholarly Presence
+
+</span>
+
+<h2>
+
+Academic Network
+
+</h2>
+
+<p class="network-description">
+
+Explore scholarly platforms,
+publications,
+research archives,
+institutional profiles,
+and academic presence
+connected to H. Cumaili Lab.
+
+</p>
+
+
+<!-- NETWORK TRIGGER -->
+
+<div class="network-center">
+
+<button
+class="network-trigger"
+id="networkTrigger"
+>
+
+HC
+
+</button>
+
+</div>
+
+
+<!-- NETWORK PANEL -->
+
+<div
+class="network-panel"
+id="networkPanel"
+>
+
+<a
+href="https://orcid.org/0009-0005-8938-119X"
+target="_blank"
+class="network-link"
+>
+
+ORCID
+
+</a>
+
+
+<a
+href="https://scholar.google.com/citations?user=1JX9BRIAAAAJ&hl=ar"
+target="_blank"
+class="network-link"
+>
+
+Google Scholar
+
+</a>
+
+
+<a
+href="https://zenodo.org/records/20130053"
+target="_blank"
+class="network-link"
+>
+
+Zenodo
+
+</a>
+
+
+<a
+href="https://osf.io/5t7u2/"
+target="_blank"
+class="network-link"
+>
+
+OSF
+
+</a>
+
+
+<a
+href="https://philpeople.org/profiles/h-cumaili"
+target="_blank"
+class="network-link"
+>
+
+PhilPeople
+
+</a>
+
+
+<a
+href="https://ssrn.com/author=11365068"
+target="_blank"
+class="network-link"
+>
+
+SSRN
+
+</a>
+
+
+<a
+href="https://independentresearcher.academia.edu/HCumaili"
+target="_blank"
+class="network-link"
+>
+
+Academia
+
+</a>
+
+
+<a
+href="https://medium.com/@H.cumaili"
+target="_blank"
+class="network-link"
+>
+
+Medium
+
+</a>
+
+
+<a
+href="https://hcumaili.wordpress.com/"
+target="_blank"
+class="network-link"
+>
+
+WordPress
+
+</a>
+
+
+<a
+href="https://www.linkedin.com/in/h-cumaili-620b12206/"
+target="_blank"
+class="network-link"
+>
+
+LinkedIn
+
+</a>
+
+
+<a
+href="mailto:contact@h-cumaili.com"
+target="_blank"
+class="network-link"
+>
+
+Email
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================
+RESEARCH JOURNEY LIBRARY
+========================= -->
+
+<section class="library-gateway-section">
+
+<div class="library-gateway-card">
+
+<!-- MINI LABEL -->
+
+<span class="section-mini">
+
+Research Archive
+
+</span>
+
+
+<!-- TITLE -->
+
+<h2>
+
+Research Journey Library
+
+</h2>
+
+
+<!-- TEXT -->
+
+<p>
+
+Enter an expanding research archive
+exploring revelation,
+sacred language,
+textual tensions,
+manuscript traditions,
+comparative Abrahamic studies,
+theology,
+and the historical movement
+of scriptural meaning.
+
+</p>
+
+
+<p>
+
+Explore thematic collections,
+textual investigations,
+prophetic continuity,
+semantic analysis,
+comparative studies,
+and evolving research pathways.
+
+</p>
+
+
+<!-- CTA -->
+
+<a
+href="pages/library.html"
+class="primary-btn"
+>
+
+Enter Research Journey Library
+
+</a>
+
+</div>
+
+</section>
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer class="site-footer">
+
+<div class="footer-container">
+
+<!-- LOGO -->
+
+<div class="footer-brand">
+
+<div class="footer-logo">
+
+HC
+
+</div>
+
+<h3>
+
+H. Cumaili Lab
+
+</h3>
+
+<p>
+
+Independent Abrahamic Research Initiative
+
+</p>
+
+</div>
+
+
+<!-- QUICK ACCESS -->
+
+<div class="footer-links">
+
+<h4>
+
+Research Access
+
+</h4>
+
+<a href="pages/library.html">
+
+Research Journey Library
+
+</a>
+
+<a href="#research-gateway">
+
+Research Gateway
+
+</a>
+
+<a href="#academic-network">
+
+Academic Network
+
+</a>
+
+</div>
+
+
+<!-- RESEARCH -->
+
+<div class="footer-links">
+
+<h4>
+
+Research Areas
+
+</h4>
+
+<span>
+
+Biblical Hermeneutics
+
+</span>
+
+<span>
+
+Hebrew Semantics
+
+</span>
+
+<span>
+
+Prophetic Continuity
+
+</span>
+
+<span>
+
+Comparative Abrahamic Studies
+
+</span>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<div class="footer-links">
+
+<h4>
+
+Contact
+
+</h4>
+
+<a href="mailto:contact@h-cumaili.com">
+
+contact@h-cumaili.com
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- COPYRIGHT -->
+
+<div class="footer-bottom">
+
+© 2026 H. Cumaili Lab —
+Independent Research Initiative
+
+</div>
+
+</footer>
