@@ -20,6 +20,20 @@ section{
   padding:12rem 0;
 }
 
+
+/* OPTIONAL SECTION SIZE */
+
+.section-small{
+
+  padding:8rem 0;
+}
+
+.section-large{
+
+  padding:16rem 0;
+}
+
+
 /* GRID SYSTEM */
 
 .grid{
@@ -29,6 +43,7 @@ section{
   gap:3rem;
 }
 
+
 /* FLEX SYSTEM */
 
 .flex{
@@ -37,6 +52,7 @@ section{
 
   align-items:center;
 }
+
 
 /* CENTER */
 
