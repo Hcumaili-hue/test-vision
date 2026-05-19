@@ -170,3 +170,51 @@ ARTICLE IMAGE
 
   margin:4rem auto;
 }
+/* =========================
+HOME PAGE IMAGES
+========================= */
+
+/* PROFILE IMAGE */
+
+.researcher-image{
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+}
+
+.researcher-image img{
+
+  width:9rem;
+
+  height:9rem;
+
+  object-fit:cover;
+
+  object-position:center top;
+
+  border-radius:1.6rem;
+}
+
+
+/* BOOK IMAGE */
+
+.publication-book{
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+}
+
+.publication-book img{
+
+  width:7rem;
+
+  height:auto;
+
+  object-fit:contain;
+}
