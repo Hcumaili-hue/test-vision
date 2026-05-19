@@ -4,17 +4,19 @@ MOBILE
 
 @media(max-width:768px){
 
-  /* NAVBAR */
+  /* =========================
+  NAVBAR
+  ========================= */
 
   .site-header{
-
-    padding:1.2rem 4%;
 
     position:sticky;
 
     top:0;
 
     z-index:999;
+
+    padding:1.4rem 4%;
   }
 
   .header-container{
@@ -51,13 +53,15 @@ MOBILE
 
     min-height:4.6rem;
 
-    padding:0 1.5rem;
+    padding:0 1.4rem;
 
     font-size:1.2rem;
   }
 
 
-  /* HERO */
+  /* =========================
+  HERO
+  ========================= */
 
   .hero{
 
@@ -73,14 +77,14 @@ MOBILE
 
   .hero h1{
 
-    font-size:5rem;
+    font-size:4.8rem;
 
-    line-height:1.05;
+    line-height:1.08;
   }
 
   .hero-subtitle{
 
-    font-size:2.1rem;
+    font-size:2rem;
   }
 
   .hero-text{
@@ -106,32 +110,132 @@ MOBILE
   }
 
 
-  /* RESEARCHER */
+  /* =========================
+  GLOBAL SECTION SPACING
+  ========================= */
+
+  .research-gateway-section,
+  .revelation-project-section,
+  .researcher-section,
+  .publication-section,
+  .research-domains-section,
+  .academic-network-section,
+  .library-gateway-section{
+
+    padding:5rem 5%;
+  }
+
+
+  /* =========================
+  RESEARCHER CARD
+  ========================= */
 
   .researcher-card{
 
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
     text-align:center;
+
+    gap:2rem;
   }
 
-  .researcher-card img{
+  /* إطار إجباري للصورة */
+
+  .researcher-image{
 
     width:100%;
 
     max-width:30rem;
 
-    border-radius:2rem;
+    height:38rem;
+
+    overflow:hidden;
+
+    border-radius:2.4rem;
   }
 
-
-  /* BOOK */
-
-  .publication-card img{
+  .researcher-image img{
 
     width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+  }
+
+  .researcher-card h2{
+
+    font-size:3rem;
+  }
+
+  .researcher-card p{
+
+    font-size:1.6rem;
+
+    line-height:1.9;
   }
 
 
-  /* FOOTER */
+  /* =========================
+  BOOK CARD
+  ========================= */
+
+  .publication-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:2rem;
+  }
+
+  /* إطار إجباري للكتاب */
+
+  .publication-image{
+
+    width:100%;
+
+    max-width:34rem;
+
+    height:26rem;
+
+    overflow:hidden;
+
+    border-radius:2.4rem;
+  }
+
+  .publication-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    display:block;
+  }
+
+  .publication-card p{
+
+    font-size:1.6rem;
+
+    line-height:1.9;
+  }
+
+
+  /* =========================
+  FOOTER
+  ========================= */
 
   .footer-container{
 
@@ -142,60 +246,6 @@ MOBILE
     gap:4rem;
 
     text-align:center;
-  }
-
-}
-/* =========================
-IMAGE FIX
-========================= */
-
-@media(max-width:768px){
-
-  img{
-
-    max-width:100%;
-
-    height:auto;
-
-    display:block;
-  }
-
-  .researcher-card img{
-
-    width:100%;
-
-    max-width:28rem;
-
-    margin:auto;
-
-    object-fit:cover;
-
-    border-radius:2rem;
-  }
-
-  .publication-card img{
-
-    width:100%;
-
-    max-width:100%;
-
-    margin:auto;
-
-    border-radius:2rem;
-
-    object-fit:contain;
-  }
-
-}
-@media(max-width:768px){
-
-  .researcher-section,
-  .publication-section,
-  .research-domains-section,
-  .academic-network-section,
-  .library-gateway-section{
-
-    padding:5rem 5%;
   }
 
 }
