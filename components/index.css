@@ -1,1 +1,191 @@
+/* =========================================
+HOME PAGE
+H. Cumaili Lab
+========================================= */
 
+
+/* =========================
+RESEARCH GATEWAY
+========================= */
+
+.research-gateway-section{
+
+  padding:8rem 7%;
+}
+
+.research-gateway-card{
+
+  max-width:70rem;
+
+  margin:auto;
+
+  text-align:center;
+}
+
+
+/* =========================
+REVELATION PROJECT
+========================= */
+
+.revelation-project-section{
+
+  padding:8rem 7%;
+}
+
+.revelation-container{
+
+  max-width:70rem;
+
+  margin:auto;
+
+  text-align:center;
+}
+
+
+/* =========================
+RESEARCHER SECTION
+========================= */
+
+.researcher-section{
+
+  padding:8rem 7%;
+}
+
+.researcher-container{
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  gap:2rem;
+
+  text-align:center;
+}
+
+
+/* PROFILE IMAGE */
+
+.researcher-image{
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+}
+
+.researcher-image img{
+
+  width:9rem;
+
+  height:9rem;
+
+  object-fit:cover;
+
+  object-position:center top;
+
+  border-radius:1.8rem;
+}
+
+
+/* =========================
+PUBLICATION SECTION
+========================= */
+
+.publication-section{
+
+  padding:8rem 7%;
+}
+
+.publication-container{
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  gap:2rem;
+
+  text-align:center;
+}
+
+
+/* BOOK IMAGE */
+
+.publication-book{
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+}
+
+.publication-book img{
+
+  width:7rem;
+
+  height:auto;
+
+  object-fit:contain;
+}
+
+
+/* =========================
+RESEARCH DOMAINS
+========================= */
+
+.research-domains-section{
+
+  padding:8rem 7%;
+
+  text-align:center;
+}
+
+.domains-container{
+
+  max-width:80rem;
+
+  margin:auto;
+}
+
+
+/* =========================
+ACADEMIC NETWORK
+========================= */
+
+.academic-network-section{
+
+  padding:8rem 7%;
+
+  text-align:center;
+}
+
+.network-container{
+
+  max-width:70rem;
+
+  margin:auto;
+}
+
+
+/* =========================
+LIBRARY GATEWAY
+========================= */
+
+.library-gateway-section{
+
+  padding:8rem 7%;
+}
+
+.library-gateway-card{
+
+  max-width:70rem;
+
+  margin:auto;
+
+  text-align:center;
+}
