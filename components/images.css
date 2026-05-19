@@ -39,20 +39,21 @@ PROFILE IMAGE
 
 .profile-image img{
 
-  width:24rem;
+  width:6cm;
 
-  height:24rem;
+  height:6cm;
 
   object-fit:cover;
+
+  object-position:center top;
 
   border-radius:50%;
 
   border:.3rem solid var(--gold-soft);
 
   box-shadow:
-  0 1rem 3rem rgba(0,0,0,.12);
+  0 .8rem 2rem rgba(0,0,0,.12);
 }
-
 
 /* =========================
 BOOK ICON SYSTEM
