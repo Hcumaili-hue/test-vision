@@ -1,1 +1,120 @@
+/* =========================
+MENU OVERLAY
+========================= */
 
+.menu-overlay{
+
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100vh;
+
+  background:#f3ede2;
+
+  z-index:9999;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:2rem;
+
+  opacity:0;
+
+  visibility:hidden;
+
+  transform:translateY(-20px);
+
+  transition:.35s ease;
+}
+
+
+/* OPEN STATE */
+
+.menu-overlay.active{
+
+  opacity:1;
+
+  visibility:visible;
+
+  transform:translateY(0);
+}
+
+
+/* CLOSE BUTTON */
+
+.menu-close{
+
+  position:absolute;
+
+  top:3rem;
+  right:3rem;
+
+  width:5rem;
+  height:5rem;
+
+  border:none;
+
+  border-radius:1.8rem;
+
+  background:#111111;
+
+  color:#f3ede2;
+
+  font-size:2rem;
+
+  cursor:pointer;
+}
+
+
+/* MENU LINKS */
+
+.menu-links{
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  gap:2rem;
+}
+
+.menu-links a{
+
+  text-decoration:none;
+
+  font-size:3rem;
+
+  font-weight:600;
+
+  color:#111111;
+
+  transition:.25s ease;
+}
+
+.menu-links a:hover{
+
+  color:#9f8054;
+}
+
+
+/* MENU SUBTEXT */
+
+.menu-caption{
+
+  font-size:1.4rem;
+
+  letter-spacing:.2rem;
+
+  text-transform:uppercase;
+
+  color:#8d8374;
+}
