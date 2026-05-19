@@ -1,12 +1,12 @@
 /* =========================
-HERO
+HERO SECTION
 ========================= */
 
-.hero{
+.hero-section{
 
-  width:100%;
+  position:relative;
 
-  min-height:100vh;
+  min-height:92vh;
 
   display:flex;
 
@@ -14,92 +14,175 @@ HERO
 
   justify-content:center;
 
-  text-align:center;
-
-  padding:12rem 7%;
+  overflow:hidden;
 
   background:
   linear-gradient(
-    rgba(245,241,232,.78),
-    rgba(236,228,214,.84)
-  ),
-  url("../assets/images/banner1.png");
+    to bottom,
+    #f8f3ea,
+    #f3ede2
+  );
 
-  background-size:cover;
-
-  background-position:center;
-
-  background-repeat:no-repeat;
+  padding:14rem 7% 10rem;
 }
 
 
-/* HERO CONTENT */
+/* =========================
+ACADEMIC BACKGROUND
+========================= */
 
-.hero-content{
+.hero-section::before{
 
-  max-width:100rem;
+  content:"HC";
+
+  position:absolute;
+
+  top:50%;
+
+  left:50%;
+
+  transform:
+  translate(-50%,-50%);
+
+  font-size:38rem;
+
+  font-family:'Cinzel', serif;
+
+  font-weight:700;
+
+  color:rgba(0,0,0,.03);
+
+  pointer-events:none;
+
+  user-select:none;
+
+  z-index:0;
 }
 
 
-/* MINI TITLE */
+/* =========================
+HERO CONTAINER
+========================= */
 
-.hero-mini{
+.hero-container{
 
-  display:inline-block;
+  position:relative;
 
-  margin-bottom:2.4rem;
+  z-index:2;
 
-  color:var(--gold-soft);
-
-  font-size:1.5rem;
-
-  letter-spacing:.3rem;
-
-  text-transform:uppercase;
-}
-
-
-/* MAIN TITLE */
-
-.hero h1{
-
-  font-size:7rem;
-
-  margin-bottom:3rem;
-
-  line-height:1.15;
-
-  color:var(--gold-soft);
-}
-
-
-/* HERO TEXT */
-
-.hero p{
-
-  max-width:80rem;
+  width:min(95rem,100%);
 
   margin:auto;
 
-  margin-bottom:4rem;
-
-  font-size:2.3rem;
-
-  color:var(--text-dark);
+  text-align:center;
 }
 
 
-/* BUTTONS */
+/* =========================
+MINI LABEL
+========================= */
+
+.hero-label{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:1rem 2rem;
+
+  border-radius:99rem;
+
+  background:
+  rgba(17,17,17,.05);
+
+  border:
+  .1rem solid rgba(17,17,17,.08);
+
+  color:#75684d;
+
+  font-size:1.35rem;
+
+  letter-spacing:.16rem;
+
+  text-transform:uppercase;
+
+  margin-bottom:3rem;
+}
+
+
+/* =========================
+TITLE
+========================= */
+
+.hero-section h1{
+
+  font-size:8rem;
+
+  line-height:1.05;
+
+  color:#111111;
+
+  margin-bottom:2rem;
+
+  font-family:'Cinzel', serif;
+
+  font-weight:600;
+}
+
+
+/* =========================
+SECONDARY TITLE
+========================= */
+
+.hero-heading{
+
+  font-size:3rem;
+
+  line-height:1.4;
+
+  color:#b08952;
+
+  font-weight:500;
+
+  margin-bottom:3rem;
+}
+
+
+/* =========================
+DESCRIPTION
+========================= */
+
+.hero-description{
+
+  width:min(78rem,100%);
+
+  margin:auto;
+
+  font-size:2.1rem;
+
+  line-height:2;
+
+  color:#60584d;
+
+  margin-bottom:5rem;
+}
+
+
+/* =========================
+BUTTONS
+========================= */
 
 .hero-buttons{
 
   display:flex;
 
-  align-items:center;
-
   justify-content:center;
 
-  gap:2rem;
+  align-items:center;
 
   flex-wrap:wrap;
+
+  gap:2rem;
 }
