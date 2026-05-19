@@ -187,3 +187,15 @@ IMAGE FIX
   }
 
 }
+@media(max-width:768px){
+
+  .researcher-section,
+  .publication-section,
+  .research-domains-section,
+  .academic-network-section,
+  .library-gateway-section{
+
+    padding:5rem 5%;
+  }
+
+}
