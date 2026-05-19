@@ -45,3 +45,36 @@ HOME PAGE
   background:var(--cream);
 }
 
+/* =========================
+SECTION BACKGROUNDS
+========================= */
+
+.researcher-section{
+
+  background:
+  linear-gradient(
+    to bottom,
+    #f5efe4,
+    #efe7d8
+  );
+}
+
+.publication-section{
+
+  background:#f8f4eb;
+}
+
+.research-domains-section{
+
+  background:#f3ede2;
+}
+
+.academic-network-section{
+
+  background:
+  linear-gradient(
+    to bottom,
+    #f8f4eb,
+    #efe5d5
+  );
+}
