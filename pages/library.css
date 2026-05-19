@@ -4,12 +4,7 @@ LIBRARY PAGE
 
 .library-page{
 
-  background:
-  linear-gradient(
-    to bottom,
-    #070707,
-    #0d0d0d
-  );
+  background:var(--cream);
 
   min-height:100vh;
 
@@ -40,7 +35,7 @@ LIBRARY HERO
 
   margin-bottom:3rem;
 
-  color:var(--gold-light);
+  color:var(--gold);
 }
 
 .library-hero p{
@@ -53,7 +48,7 @@ LIBRARY HERO
 
   line-height:2;
 
-  color:var(--text-soft);
+  color:#74654b;
 }
 
 
@@ -83,11 +78,12 @@ LIBRARY CARD
   background:
   linear-gradient(
     145deg,
-    #111111,
-    #171717
+    var(--dark),
+    var(--dark-soft)
   );
 
-  border:.1rem solid #2a2112;
+  border:.1rem solid
+  rgba(198,168,106,.25);
 
   border-radius:3rem;
 
@@ -95,7 +91,7 @@ LIBRARY CARD
 
   overflow:hidden;
 
-  transition:.4s ease;
+  transition:.45s ease;
 
   min-height:36rem;
 
@@ -104,10 +100,13 @@ LIBRARY CARD
   display:flex;
 
   flex-direction:column;
+
+  box-shadow:
+  0 1rem 3rem rgba(0,0,0,.18);
 }
 
 
-/* GOLD TOP LINE */
+/* GOLD LINE */
 
 .library-card::before{
 
@@ -121,13 +120,13 @@ LIBRARY CARD
 
   width:100%;
 
-  height:.25rem;
+  height:.2rem;
 
   background:
   linear-gradient(
     90deg,
     transparent,
-    #b89b6b,
+    var(--gold),
     transparent
   );
 
@@ -135,22 +134,34 @@ LIBRARY CARD
 }
 
 
-/* HOVER */
+/* =========================
+HOVER EFFECT
+========================= */
 
 .library-card:hover{
 
-  transform:translateY(-1rem);
+  transform:
+  translateY(-.8rem);
 
-  border-color:#b89b6b;
+  border-color:
+  rgba(210,210,210,.45);
 
   box-shadow:
-  0 0 4rem rgba(184,155,107,.12);
+  0 2rem 4rem rgba(120,0,0,.18);
+
+  background:
+  linear-gradient(
+    145deg,
+    #171717,
+    #101010
+  );
 }
 
 
 /* =========================
 LIBRARY ICON
 ========================= */
+
 .library-icon{
 
   width:8rem;
@@ -167,9 +178,24 @@ LIBRARY ICON
 
   border-radius:2rem;
 
-  background:#141414;
+  background:#101010;
 
-  border:.1rem solid #2e2414;
+  border:.1rem solid
+  rgba(198,168,106,.25);
+
+  transition:.35s ease;
+}
+
+
+/* ICON HOVER */
+
+.library-card:hover
+.library-icon{
+
+  border-color:
+  rgba(215,215,215,.35);
+
+  background:#181818;
 }
 
 
@@ -180,7 +206,27 @@ LIBRARY ICON
   height:4.8rem;
 
   object-fit:contain;
+
+  transition:.35s ease;
+
+  filter:
+  brightness(0)
+  saturate(100%)
+  invert(78%)
+  sepia(27%)
+  saturate(469%)
+  hue-rotate(356deg)
+  brightness(98%)
+  contrast(91%);
 }
+
+.library-card:hover
+.library-icon img{
+
+  transform:scale(1.08);
+}
+
+
 /* =========================
 NUMBER
 ========================= */
@@ -201,15 +247,27 @@ NUMBER
 
   margin-bottom:2.5rem;
 
-  background:#161616;
+  background:#121212;
 
-  border:.1rem solid #3a2d18;
+  border:.1rem solid
+  rgba(198,168,106,.25);
 
-  color:#b89b6b;
+  color:var(--gold);
 
   font-size:1.8rem;
 
   font-family:'Cinzel', serif;
+
+  transition:.35s ease;
+}
+
+.library-card:hover
+.library-number{
+
+  border-color:
+  rgba(220,220,220,.3);
+
+  color:#d6d6d6;
 }
 
 
@@ -225,7 +283,14 @@ TITLE
 
   margin-bottom:2rem;
 
-  color:#f3ede2;
+  color:var(--gold-light);
+
+  transition:.35s ease;
+}
+
+.library-card:hover h2{
+
+  color:#ececec;
 }
 
 
@@ -239,7 +304,14 @@ TEXT
 
   line-height:1.9;
 
-  color:#bba98d;
+  color:#bca98a;
+
+  transition:.35s ease;
+}
+
+.library-card:hover p{
+
+  color:#d2d2d2;
 }
 
 
@@ -253,7 +325,7 @@ MINI LABEL
 
   margin-bottom:2rem;
 
-  color:#8f7a56;
+  color:#927850;
 
   letter-spacing:.25rem;
 
