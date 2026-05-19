@@ -42,6 +42,8 @@ BRAND
 }
 
 
+/* HC LOGO */
+
 .footer-logo{
 
   width:7rem;
@@ -80,12 +82,42 @@ BRAND
 
 .footer-logo:hover{
 
+  transform:translateY(-.2rem);
+
   background:#7d1f1f;
 
   border-color:#d6b676;
 
   color:#d6b676;
 }
+
+
+/* BRAND TITLE */
+
+.footer-brand h3{
+
+  font-size:2.6rem;
+
+  color:#c6a86a;
+
+  margin-bottom:1.2rem;
+
+  font-family:'Cinzel', serif;
+}
+
+
+/* BRAND DESCRIPTION */
+
+.footer-brand p{
+
+  font-size:1.7rem;
+
+  line-height:1.9;
+
+  color:#a89d8b;
+}
+
+
 /* =========================
 FOOTER LINKS
 ========================= */
@@ -100,15 +132,19 @@ FOOTER LINKS
 }
 
 
+/* TITLES */
+
 .footer-links h4{
 
   font-size:1.8rem;
 
-  color:#b89b6b;
+  color:#c6a86a;
 
   margin-bottom:1.5rem;
 }
 
+
+/* LINKS */
 
 .footer-links a,
 .footer-links span{
@@ -122,10 +158,9 @@ FOOTER LINKS
   transition:.3s ease;
 }
 
-
 .footer-links a:hover{
 
-  color:#b89b6b;
+  color:#c6a86a;
 
   transform:
   translateX(.4rem);
