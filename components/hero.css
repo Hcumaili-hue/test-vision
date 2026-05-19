@@ -103,19 +103,17 @@ HERO BANNER
   rgba(0,0,0,.08);
 }
 
-
 .hero-banner img{
 
   width:100%;
 
-  height:32rem;
+  height:auto;
 
   display:block;
 
-  object-fit:cover;
-
-  object-position:center;
+  object-fit:contain;
 }
+
 
 /* =====================================
 ACADEMIC LABEL
