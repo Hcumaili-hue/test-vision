@@ -1,72 +1,159 @@
-/* =========================================
-H. Cumaili Lab
-BUTTON SYSTEM
-========================================= */
+/* =========================
+NAVBAR
+========================= */
+
+.site-header{
+
+  position:sticky;
+
+  top:0;
+
+  z-index:999;
+
+  width:100%;
+
+  background:
+  rgba(243,237,226,.92);
+
+  backdrop-filter:blur(18px);
+
+  border-bottom:
+  .1rem solid rgba(0,0,0,.06);
+}
 
 
 /* =========================
-PRIMARY + SECONDARY BUTTONS
+HEADER CONTAINER
 ========================= */
 
-.primary-btn,
-.secondary-btn{
+.header-container{
 
-  min-height:5.8rem;
+  width:min(140rem,92%);
 
-  padding:0 3rem;
+  margin:auto;
 
-  border:none;
+  min-height:9rem;
 
-  cursor:pointer;
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:3rem;
+}
+
+
+/* =========================
+LOGO AREA
+========================= */
+
+.logo-wrap{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:1.8rem;
+
+  text-decoration:none;
+}
+
+
+/* =========================
+HC LOGO
+========================= */
+
+.logo-mark{
+
+  width:6rem;
+
+  height:6rem;
 
   border-radius:1.8rem;
 
-  display:inline-flex;
+  display:flex;
 
   align-items:center;
 
   justify-content:center;
 
-  text-decoration:none;
-
-  font-size:1.6rem;
-
-  font-weight:600;
-
   background:#111111;
 
   color:var(--gold-light);
 
-  border:
-  .1rem solid
-  rgba(198,168,106,.24);
+  border:.1rem solid
+  rgba(198,168,106,.28);
 
-  box-shadow:
-  0 1rem 3rem
-  rgba(0,0,0,.08);
+  font-size:2rem;
+
+  font-weight:700;
+
+  font-family:'Cinzel', serif;
 
   transition:.35s ease;
 }
 
 
-/* BUTTON HOVER */
+.logo-wrap:hover .logo-mark{
 
-.primary-btn:hover,
-.secondary-btn:hover{
+  transform:translateY(-.2rem);
 
-  transform:
-  translateY(-.25rem);
-
-  background:#7d1f1f;
-
-  color:var(--gold-light);
-
-  border-color:
-  rgba(125,31,31,.30);
+  border-color:#b89b6b;
 
   box-shadow:
-  0 1.2rem 2.4rem
-  rgba(125,31,31,.22);
+  0 .8rem 2rem
+  rgba(184,155,107,.18);
+}
+
+
+/* =========================
+LOGO TEXT
+========================= */
+
+.logo-text{
+
+  display:flex;
+
+  flex-direction:column;
+}
+
+
+.logo-title{
+
+  font-size:2rem;
+
+  font-weight:600;
+
+  color:#151515;
+
+  line-height:1.1;
+
+  letter-spacing:.03rem;
+}
+
+
+.logo-subtitle{
+
+  font-size:1.25rem;
+
+  color:#746b5d;
+
+  letter-spacing:.08rem;
+}
+
+
+/* =========================
+HEADER ACTIONS
+========================= */
+
+.header-actions{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:1.4rem;
 }
 
 
@@ -80,8 +167,6 @@ HEADER BUTTONS
 
   height:5rem;
 
-  padding:0 2rem;
-
   border:none;
 
   outline:none;
@@ -90,103 +175,120 @@ HEADER BUTTONS
 
   border-radius:1.6rem;
 
-  display:inline-flex;
-
-  align-items:center;
-
-  justify-content:center;
+  padding:0 2rem;
 
   font-size:1.45rem;
 
   font-weight:500;
 
-  background:#111111;
-
-  color:var(--gold-light);
-
-  border:
-  .1rem solid
-  rgba(198,168,106,.24);
-
   transition:.35s ease;
 }
 
 
-/* HEADER BUTTON HOVER */
+/* SEARCH */
 
-.header-search-btn:hover,
-.header-network-btn:hover,
-.header-menu-btn:hover{
+.header-search-btn{
 
-  transform:
-  translateY(-.2rem);
+  background:#ece5d8;
 
-  background:#7d1f1f;
+  color:#1a1a1a;
+}
+
+
+.header-search-btn:hover{
+
+  transform:translateY(-.2rem);
+
+  background:#e2d8c6;
+}
+
+
+/* NETWORK */
+
+.header-network-btn{
+
+  background:#111111;
 
   color:var(--gold-light);
 
-  border-color:
-  rgba(125,31,31,.30);
-
-  box-shadow:
-  0 .8rem 2rem
-  rgba(125,31,31,.20);
+  border:.1rem solid
+  rgba(198,168,106,.24);
 }
+
+
+.header-network-btn:hover{
+
+  transform:translateY(-.2rem);
+
+  border-color:#b89b6b;
+}
+
+
+/* MENU */
+
+.header-menu-btn{
+
+  background:#111111;
+
+  color:#f3ede2;
+}
+
+
+.header-menu-btn:hover{
+
+  transform:translateY(-.2rem);
+
+  background:#1f1f1f;
+}
+
 
 
 /* =========================
-ACADEMIC NETWORK BUTTONS
+RESPONSIVE
 ========================= */
 
-.network-link{
+@media(max-width:900px){
 
-  min-height:5rem;
+  .header-network-btn{
 
-  padding:0 2rem;
+    display:none;
+  }
 
-  border-radius:1.6rem;
+  .logo-subtitle{
 
-  display:inline-flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  gap:.8rem;
-
-  text-decoration:none;
-
-  font-size:1.45rem;
-
-  font-weight:600;
-
-  background:#111111;
-
-  color:var(--gold-light);
-
-  border:
-  .1rem solid
-  rgba(198,168,106,.24);
-
-  transition:.35s ease;
+    display:none;
+  }
 }
 
 
-/* NETWORK BUTTON HOVER */
+@media(max-width:768px){
 
-.network-link:hover{
+  .header-container{
 
-  transform:
-  translateY(-.2rem);
+    min-height:8rem;
+  }
 
-  background:#7d1f1f;
+  .logo-mark{
 
-  color:var(--gold-light);
+    width:5rem;
 
-  border-color:
-  rgba(125,31,31,.30);
+    height:5rem;
 
-  box-shadow:
-  0 .8rem 2rem
-  rgba(125,31,31,.20);
+    font-size:1.8rem;
+  }
+
+  .logo-title{
+
+    font-size:1.7rem;
+  }
+
+  .header-search-btn,
+  .header-menu-btn{
+
+    height:4.6rem;
+
+    padding:0 1.6rem;
+
+    font-size:1.35rem;
+  }
 }
