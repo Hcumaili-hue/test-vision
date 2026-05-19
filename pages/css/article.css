@@ -1,1 +1,108 @@
+/* =========================
+ARTICLE PAGE
+========================= */
 
+/* ARTICLE SECTION */
+
+.article-section{
+
+  background:var(--dark);
+}
+
+/* ARTICLE CONTAINER */
+
+.article-container{
+
+  max-width:90rem;
+
+  margin:auto;
+}
+
+/* ARTICLE TITLE */
+
+.article-title{
+
+  margin-bottom:3rem;
+
+  text-align:center;
+}
+
+/* ARTICLE SUBTITLE */
+
+.article-subtitle{
+
+  margin-bottom:6rem;
+
+  text-align:center;
+
+  color:var(--gold);
+
+  font-size:2.2rem;
+}
+
+/* ARTICLE TEXT */
+
+.article-content p{
+
+  margin-bottom:3rem;
+}
+
+/* ARTICLE HEADINGS */
+
+.article-content h2{
+
+  margin-top:8rem;
+
+  margin-bottom:3rem;
+}
+
+.article-content h3{
+
+  margin-top:6rem;
+
+  margin-bottom:2.4rem;
+}
+
+/* BLOCKQUOTE */
+
+blockquote{
+
+  margin:6rem 0;
+
+  padding:4rem;
+
+  border-left:.3rem solid var(--gold);
+
+  background:var(--dark-soft);
+
+  border-radius:2rem;
+}
+
+/* TABLES */
+
+table{
+
+  width:100%;
+
+  border-collapse:collapse;
+
+  margin:6rem 0;
+}
+
+th{
+
+  background:var(--dark-soft);
+
+  color:var(--gold-light);
+
+  padding:2rem;
+
+  text-align:left;
+}
+
+td{
+
+  padding:2rem;
+
+  border:.1rem solid var(--gold-soft);
+}
