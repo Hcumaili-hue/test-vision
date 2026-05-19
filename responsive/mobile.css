@@ -265,3 +265,49 @@ body{
 
   box-sizing:border-box;
 }
+/* =========================
+RIGHT SPACE FIX
+========================= */
+
+html,
+body{
+
+  width:100%;
+
+  max-width:100%;
+
+  overflow-x:hidden;
+}
+
+*{
+
+  box-sizing:border-box;
+}
+
+.site-header{
+
+  width:100%;
+
+  overflow:hidden;
+}
+
+.header-container{
+
+  width:100%;
+
+  max-width:100%;
+
+  overflow:hidden;
+
+  flex-wrap:nowrap;
+}
+
+.hero,
+.hero-content{
+
+  width:100%;
+
+  max-width:100%;
+
+  overflow:hidden;
+}
