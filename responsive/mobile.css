@@ -145,3 +145,45 @@ MOBILE
   }
 
 }
+/* =========================
+IMAGE FIX
+========================= */
+
+@media(max-width:768px){
+
+  img{
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+  }
+
+  .researcher-card img{
+
+    width:100%;
+
+    max-width:28rem;
+
+    margin:auto;
+
+    object-fit:cover;
+
+    border-radius:2rem;
+  }
+
+  .publication-card img{
+
+    width:100%;
+
+    max-width:100%;
+
+    margin:auto;
+
+    border-radius:2rem;
+
+    object-fit:contain;
+  }
+
+}
