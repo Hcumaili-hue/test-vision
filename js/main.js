@@ -265,4 +265,49 @@ window.addEventListener('load', () => {
   document.body.classList.add('loaded');
 
 });
+/* =========================
+MENU TOGGLE
+========================= */
 
+const menuBtn =
+document.querySelector(
+  ".header-menu-btn"
+);
+
+const menuOverlay =
+document.querySelector(
+  "#menuOverlay"
+);
+
+const menuClose =
+document.querySelector(
+  "#menuClose"
+);
+
+
+/* OPEN */
+
+menuBtn.addEventListener(
+  "click",
+  ()=>{
+
+    menuOverlay.classList.add(
+      "active"
+    );
+
+  }
+);
+
+
+/* CLOSE */
+
+menuClose.addEventListener(
+  "click",
+  ()=>{
+
+    menuOverlay.classList.remove(
+      "active"
+    );
+
+  }
+);
