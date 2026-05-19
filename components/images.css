@@ -35,6 +35,8 @@ PROFILE IMAGE
   justify-content:center;
 
   align-items:center;
+
+  margin-bottom:3rem;
 }
 
 .profile-image img{
@@ -49,11 +51,12 @@ PROFILE IMAGE
 
   border-radius:50%;
 
-  border:.3rem solid var(--gold-soft);
+  border:.25rem solid var(--gold-soft);
 
   box-shadow:
-  0 .8rem 2rem rgba(0,0,0,.12);
+  0 .8rem 2rem rgba(0,0,0,.08);
 }
+
 
 /* =========================
 BOOK ICON SYSTEM
@@ -66,13 +69,15 @@ BOOK ICON SYSTEM
   justify-content:center;
 
   align-items:center;
+
+  margin-top:4rem;
 }
 
 .book-link{
 
-  width:10rem;
+  width:9rem;
 
-  height:10rem;
+  height:9rem;
 
   border-radius:50%;
 
@@ -84,7 +89,7 @@ BOOK ICON SYSTEM
 
   justify-content:center;
 
-  background:var(--dark-soft);
+  background:var(--white);
 
   border:.2rem solid var(--gold-soft);
 
@@ -93,18 +98,16 @@ BOOK ICON SYSTEM
   cursor:pointer;
 
   box-shadow:
-  0 .8rem 2rem rgba(0,0,0,.12);
+  0 .8rem 2rem rgba(0,0,0,.08);
 }
 
 .book-link:hover{
 
   transform:
-  translateY(-.4rem)
+  translateY(-.3rem)
   scale(1.04);
 
   border-color:var(--gold);
-
-  background:var(--dark-hover);
 }
 
 .book-link img{
