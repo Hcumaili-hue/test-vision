@@ -311,3 +311,24 @@ menuClose.addEventListener(
 
   }
 );
+/* CLOSE MENU AFTER CLICKING LINK */
+
+const menuLinks =
+document.querySelectorAll(
+".menu-links a"
+);
+
+menuLinks.forEach((link)=>{
+
+  link.addEventListener(
+    "click",
+    ()=>{
+
+      menuOverlay.classList.remove(
+        "active"
+      );
+
+    }
+  );
+
+});
