@@ -80,10 +80,10 @@ HC LOGO
 
   background:#111111;
 
-  color:var(--gold-light);
+  color:#c6a86a;
 
-  border:.1rem solid
-  rgba(198,168,106,.28);
+  border:.14rem solid
+  rgba(198,168,106,.55);
 
   font-size:2rem;
 
@@ -92,18 +92,23 @@ HC LOGO
   font-family:'Cinzel', serif;
 
   transition:.35s ease;
+
+  box-shadow:
+  0 .6rem 1.8rem
+  rgba(0,0,0,.12);
 }
 
 
 .logo-wrap:hover .logo-mark{
 
-  transform:translateY(-.2rem);
+  transform:
+  translateY(-.2rem);
 
-  border-color:#b89b6b;
+  background:#7d1f1f;
 
-  box-shadow:
-  0 .8rem 2rem
-  rgba(184,155,107,.18);
+  color:#d6b676;
+
+  border-color:#d6b676;
 }
 
 
@@ -125,7 +130,7 @@ LOGO TEXT
 
   font-weight:600;
 
-  color:#151515;
+  color:#c6a86a;
 
   line-height:1.1;
 
@@ -179,68 +184,39 @@ HEADER BUTTONS
 
   font-size:1.45rem;
 
-  font-weight:500;
+  font-weight:600;
+
+  background:#111111;
+
+  color:#c6a86a;
+
+  border:.1rem solid
+  rgba(198,168,106,.24);
 
   transition:.35s ease;
 }
 
 
-/* SEARCH */
+/* HEADER HOVER */
 
-.header-search-btn{
-
-  background:#ece5d8;
-
-  color:#1a1a1a;
-}
-
-
-.header-search-btn:hover{
-
-  transform:translateY(-.2rem);
-
-  background:#e2d8c6;
-}
-
-
-/* NETWORK */
-
-.header-network-btn{
-
-  background:#111111;
-
-  color:var(--gold-light);
-
-  border:.1rem solid
-  rgba(198,168,106,.24);
-}
-
-
-.header-network-btn:hover{
-
-  transform:translateY(-.2rem);
-
-  border-color:#b89b6b;
-}
-
-
-/* MENU */
-
-.header-menu-btn{
-
-  background:#111111;
-
-  color:#f3ede2;
-}
-
-
+.header-search-btn:hover,
+.header-network-btn:hover,
 .header-menu-btn:hover{
 
-  transform:translateY(-.2rem);
+  transform:
+  translateY(-.2rem);
 
-  background:#1f1f1f;
+  background:#7d1f1f;
+
+  color:#d6b676;
+
+  border-color:
+  rgba(125,31,31,.30);
+
+  box-shadow:
+  0 .8rem 2rem
+  rgba(125,31,31,.20);
 }
-
 
 
 /* =========================
