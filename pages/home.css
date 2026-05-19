@@ -2,48 +2,34 @@
 HOME PAGE
 ========================= */
 
-/* HERO SECTION */
 
-.hero{
+/* =========================
+HOME PAGE WRAPPER
+========================= */
 
-  min-height:100vh;
-}
-
-/* HERO CONTENT */
-
-.hero-content{
-
-  max-width:100rem;
-
-  margin:auto;
-}
-
-/* RESEARCHER SECTION */
-
-.researcher-section{
-
-  background:var(--dark-soft);
-}
-
-/* RESEARCHER CARD */
-
-.researcher-card{
-
-  max-width:80rem;
-
-  margin:auto;
-
-  text-align:center;
-}
-
-/* PLATFORM SECTION */
-
-.platforms{
-
- .researcher-section{
+.home-page{
 
   background:var(--cream);
 }
+
+
+/* =========================
+INDEX SECTION SYSTEM
+========================= */
+
+.research-gateway-section,
+.revelation-project-section,
+.researcher-section,
+.publication-section,
+.research-domains-section,
+.academic-network-section,
+.library-gateway-section{
+
+  position:relative;
+
+  padding:12rem 7%;
+}
+
 
 /* =========================
 SECTION BACKGROUNDS
