@@ -16,10 +16,22 @@ HERO
 
   text-align:center;
 
-  background:var(--dark);
-
   padding:12rem 7%;
+
+  background:
+  linear-gradient(
+    rgba(245,241,232,.78),
+    rgba(236,228,214,.84)
+  ),
+  url("../assets/images/banner1.png");
+
+  background-size:cover;
+
+  background-position:center;
+
+  background-repeat:no-repeat;
 }
+
 
 /* HERO CONTENT */
 
@@ -27,6 +39,7 @@ HERO
 
   max-width:100rem;
 }
+
 
 /* MINI TITLE */
 
@@ -36,7 +49,7 @@ HERO
 
   margin-bottom:2.4rem;
 
-  color:var(--gold);
+  color:var(--gold-soft);
 
   font-size:1.5rem;
 
@@ -44,6 +57,7 @@ HERO
 
   text-transform:uppercase;
 }
+
 
 /* MAIN TITLE */
 
@@ -53,10 +67,11 @@ HERO
 
   margin-bottom:3rem;
 
-  color:var(--gold-light);
-
   line-height:1.15;
+
+  color:var(--gold-soft);
 }
+
 
 /* HERO TEXT */
 
@@ -70,8 +85,9 @@ HERO
 
   font-size:2.3rem;
 
-  color:var(--text-soft);
+  color:var(--text-dark);
 }
+
 
 /* BUTTONS */
 
