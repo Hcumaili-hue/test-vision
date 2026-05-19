@@ -171,6 +171,108 @@ ACADEMIC NETWORK
   margin:auto;
 }
 
+  padding:8rem 7%;
+
+  text-align:center;
+}
+
+.network-container{
+
+  max-width:70rem;
+
+  margin:auto;
+}
+
+
+/* TITLE */
+
+.network-description{
+
+  max-width:42rem;
+
+  margin:1.5rem auto 3rem;
+
+  line-height:1.8;
+}
+
+
+/* CENTER BUTTON */
+
+.network-center{
+
+  display:flex;
+
+  justify-content:center;
+
+  margin-bottom:2rem;
+}
+
+.network-trigger{
+
+  width:6rem;
+
+  height:6rem;
+
+  border:none;
+
+  border-radius:50%;
+
+  cursor:pointer;
+
+  font-size:1.5rem;
+
+  font-weight:700;
+
+  transition:.35s ease;
+}
+
+.network-trigger:hover{
+
+  transform:translateY(-.2rem);
+}
+
+
+/* NETWORK PANEL */
+
+.network-panel{
+
+  display:none;
+
+  flex-wrap:wrap;
+
+  justify-content:center;
+
+  gap:1rem;
+
+  margin-top:2rem;
+}
+
+
+/* ACTIVE STATE */
+
+.network-panel.active{
+
+  display:flex;
+}
+
+
+/* LINKS */
+
+.network-link{
+
+  text-decoration:none;
+
+  padding:1rem 1.4rem;
+
+  border-radius:1rem;
+
+  transition:.3s ease;
+}
+
+.network-link:hover{
+
+  transform:translateY(-.15rem);
+}
 
 /* =========================
 LIBRARY GATEWAY
@@ -188,4 +290,44 @@ LIBRARY GATEWAY
   margin:auto;
 
   text-align:center;
+}
+/* =========================
+HOME PAGE IMAGES
+========================= */
+
+.researcher-image{
+
+  display:flex;
+
+  justify-content:center;
+}
+
+.researcher-image img{
+
+  width:9rem;
+
+  height:9rem;
+
+  object-fit:cover;
+
+  object-position:center top;
+
+  border-radius:1.6rem;
+}
+
+
+.publication-book{
+
+  display:flex;
+
+  justify-content:center;
+}
+
+.publication-book img{
+
+  width:7rem;
+
+  height:auto;
+
+  object-fit:contain;
 }
