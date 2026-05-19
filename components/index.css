@@ -171,18 +171,6 @@ ACADEMIC NETWORK
   margin:auto;
 }
 
-  padding:8rem 7%;
-
-  text-align:center;
-}
-
-.network-container{
-
-  max-width:70rem;
-
-  margin:auto;
-}
-
 
 /* TITLE */
 
@@ -207,6 +195,9 @@ ACADEMIC NETWORK
   margin-bottom:2rem;
 }
 
+
+/* NETWORK TRIGGER */
+
 .network-trigger{
 
   width:6rem;
@@ -228,7 +219,8 @@ ACADEMIC NETWORK
 
 .network-trigger:hover{
 
-  transform:translateY(-.2rem);
+  transform:
+  translateY(-.2rem);
 }
 
 
@@ -271,9 +263,9 @@ ACADEMIC NETWORK
 
 .network-link:hover{
 
-  transform:translateY(-.15rem);
+  transform:
+  translateY(-.15rem);
 }
-
 /* =========================
 LIBRARY GATEWAY
 ========================= */
