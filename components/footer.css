@@ -2,46 +2,159 @@
 FOOTER
 ========================= */
 
-.footer{
+.site-footer{
 
-  padding:8rem 7%;
+  background:#111111;
 
-  text-align:center;
+  padding:10rem 7% 4rem;
 
-  background:var(--dark-soft);
-
-  border-top:.1rem solid var(--gold-soft);
+  border-top:
+  .1rem solid rgba(198,168,106,.14);
 }
 
-/* FOOTER TITLE */
 
-.footer h2{
+/* =========================
+FOOTER CONTAINER
+========================= */
 
-  margin-bottom:1.6rem;
+.footer-container{
+
+  width:min(140rem,100%);
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+  1.5fr 1fr 1fr 1fr;
+
+  gap:5rem;
+}
+
+
+/* =========================
+BRAND
+========================= */
+
+.footer-brand{
+
+  max-width:42rem;
+}
+
+
+.footer-logo{
+
+  width:7rem;
+
+  height:7rem;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  border-radius:2rem;
+
+  background:#171717;
+
+  border:
+  .1rem solid rgba(198,168,106,.20);
 
   color:var(--gold-light);
 
-  font-size:4rem;
-}
+  font-size:2.2rem;
 
-/* FOOTER TEXT */
+  font-family:'Cinzel', serif;
 
-.footer p{
+  font-weight:700;
 
   margin-bottom:2rem;
-
-  color:var(--text-soft);
-
-  font-size:2rem;
 }
 
-/* COPYRIGHT */
 
-.footer span{
+.footer-brand h3{
 
-  color:var(--gold-soft);
+  font-size:2.6rem;
 
-  font-size:1.4rem;
+  color:#f3ede2;
 
-  letter-spacing:.1rem;
+  margin-bottom:1.2rem;
+}
+
+
+.footer-brand p{
+
+  font-size:1.7rem;
+
+  line-height:1.9;
+
+  color:#a89d8b;
+}
+
+
+/* =========================
+FOOTER LINKS
+========================= */
+
+.footer-links{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:1.6rem;
+}
+
+
+.footer-links h4{
+
+  font-size:1.8rem;
+
+  color:#b89b6b;
+
+  margin-bottom:1.5rem;
+}
+
+
+.footer-links a,
+.footer-links span{
+
+  text-decoration:none;
+
+  color:#d7cfc1;
+
+  font-size:1.55rem;
+
+  transition:.3s ease;
+}
+
+
+.footer-links a:hover{
+
+  color:#b89b6b;
+
+  transform:
+  translateX(.4rem);
+}
+
+
+/* =========================
+FOOTER BOTTOM
+========================= */
+
+.footer-bottom{
+
+  margin-top:7rem;
+
+  padding-top:3rem;
+
+  text-align:center;
+
+  border-top:
+  .1rem solid rgba(255,255,255,.08);
+
+  color:#918574;
+
+  font-size:1.45rem;
 }
