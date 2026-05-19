@@ -200,8 +200,8 @@ SEARCH BUTTON
 ========================== */
 
 const searchBtn =
-document.querySelector(
-  ".search-btn"
+document.getElementById(
+  "searchTrigger"
 );
 
 const searchInput =
