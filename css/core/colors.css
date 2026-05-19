@@ -20,3 +20,10 @@
   --text-soft:#cfc2a8;
 
 }
+{
+
+  background:var(--cream);
+
+  color:var(--text-dark);
+
+}
