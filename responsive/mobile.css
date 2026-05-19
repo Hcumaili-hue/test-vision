@@ -1,72 +1,169 @@
 /* =========================
-TABLET
-========================= */
-
-@media(max-width:992px){
-
-  html{
-    font-size:58%;
-  }
-
-  .platform-grid{
-    grid-template-columns:
-    repeat(auto-fit,minmax(260px,1fr));
-  }
-
-}
-
-/* =========================
 MOBILE
 ========================= */
 
 @media(max-width:768px){
 
   html{
-    font-size:55%;
+
+    font-size:56%;
   }
 
-  section{
+
+  /* NAVBAR */
+
+  .site-header{
+
+    padding:1.4rem 4%;
+  }
+
+  .header-container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:1rem;
+
+    flex-wrap:nowrap;
+  }
+
+  .logo-subtitle{
+
+    display:none;
+  }
+
+  .logo-title{
+
+    font-size:1.5rem;
+  }
+
+  .header-search-btn,
+  .header-network-btn,
+  .header-menu-btn{
+
+    padding:1rem 1.4rem;
+
+    font-size:1.2rem;
+
+    border-radius:1.2rem;
+  }
+
+
+  /* HERO */
+
+  .hero{
+
+    min-height:auto;
+
+    padding:16rem 5% 10rem;
+  }
+
+  .hero-content{
+
+    text-align:center;
+  }
+
+  .hero h1{
+
+    font-size:4.6rem;
+
+    line-height:1.15;
+  }
+
+  .hero-subtitle{
+
+    font-size:2rem;
+  }
+
+  .hero-text{
+
+    font-size:1.7rem;
+
+    line-height:1.9;
+  }
+
+  .hero-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.6rem;
+  }
+
+  .primary-btn,
+  .secondary-btn{
+
+    width:100%;
+  }
+
+
+  /* SECTIONS */
+
+  .research-gateway-section,
+  .revelation-project-section,
+  .researcher-section,
+  .publication-section,
+  .research-domains-section,
+  .academic-network-section,
+  .library-gateway-section{
+
     padding:8rem 5%;
   }
 
-  .navbar{
-    padding:2rem 5%;
+
+  /* RESEARCHER */
+
+  .researcher-card{
+
+    text-align:center;
   }
 
-  .hero-title{
-    font-size:5rem;
+  .researcher-card img{
+
+    width:100%;
+
+    max-width:28rem;
+
+    border-radius:2.2rem;
   }
 
-  .article-content p{
-    font-size:1.9rem;
+  .researcher-card h2{
+
+    font-size:3.4rem;
   }
 
-  .platform-grid{
+  .researcher-card p{
+
+    font-size:1.7rem;
+
+    line-height:1.9;
+  }
+
+
+  /* BOOK */
+
+  .publication-card img{
+
+    width:100%;
+
+    border-radius:2rem;
+  }
+
+
+  /* FOOTER */
+
+  .footer-container{
+
+    display:grid;
+
     grid-template-columns:1fr;
+
+    gap:4rem;
+
+    text-align:center;
   }
-
-  .cards-grid{
-    grid-template-columns:1fr;
-  }
-
-}
-
-/* =========================
-SMALL MOBILE
-========================= */
-
-@media(max-width:480px){
-
-  html{
-    font-size:50%;
-  }
-
-  .hero-title{
-    font-size:4.2rem;
-  }
-
-  .section-title{
-    font-size:3.2rem;
-  }
-
 }
