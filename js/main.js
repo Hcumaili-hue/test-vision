@@ -195,7 +195,48 @@ if(
   );
 
 }
+/* ==========================
+SEARCH BUTTON
+========================== */
 
+const searchBtn =
+document.querySelector(
+  ".search-btn"
+);
+
+const searchInput =
+document.querySelector(
+  ".search-input"
+);
+
+if(
+  searchBtn &&
+  searchInput
+){
+
+  searchBtn
+  .addEventListener(
+
+    "click",
+
+    ()=>{
+
+      searchInput
+      .scrollIntoView({
+
+        behavior:"smooth",
+
+        block:"center"
+
+      });
+
+      searchInput.focus();
+
+    }
+
+  );
+
+}
 
 /* =========================
 BACK TO TOP
