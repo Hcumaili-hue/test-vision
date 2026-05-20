@@ -145,56 +145,6 @@ if(fadeElements.length){
 }
 
 
-/* =========================
-SEARCH SYSTEM
-========================= */
-
-const searchInput =
-document.querySelector(
-  ".search-input"
-);
-
-const searchableItems =
-document.querySelectorAll(
-  ".search-item"
-);
-
-if(
-  searchInput &&
-  searchableItems.length
-){
-
-  searchInput.addEventListener(
-    "keyup",
-    ()=>{
-
-      const value =
-      searchInput
-      .value
-      .toLowerCase();
-
-      searchableItems
-      .forEach(item=>{
-
-        const text =
-        item
-        .textContent
-        .toLowerCase();
-
-        item.style.display =
-
-        text.includes(value)
-
-        ? "block"
-
-        : "none";
-
-      });
-
-    }
-  );
-
-}
 /* ==========================
 SEARCH BUTTON
 ========================== */
@@ -202,11 +152,6 @@ SEARCH BUTTON
 const searchBtn =
 document.getElementById(
   "searchTrigger"
-);
-
-const searchInput =
-document.querySelector(
-  ".search-input"
 );
 
 if(
