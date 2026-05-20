@@ -154,6 +154,11 @@ document.getElementById(
   "searchTrigger"
 );
 
+const searchInput =
+document.getElementById(
+  "searchInput"
+);
+
 if(
   searchBtn &&
   searchInput
