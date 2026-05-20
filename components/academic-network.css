@@ -1,0 +1,127 @@
+/* =========================
+ACADEMIC NETWORK
+========================= */
+
+.academic-network-section{
+
+  padding:12rem 7%;
+
+  background:#f3ede2;
+}
+
+
+.network-container{
+
+  width:min(135rem,100%);
+
+  margin:auto;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+.network-label{
+
+  display:block;
+
+  font-size:1.45rem;
+
+  color:#7d7466;
+
+  letter-spacing:.08rem;
+
+  margin-bottom:1.2rem;
+}
+
+
+.network-title{
+
+  font-size:5rem;
+
+  color:#c6a86a;
+
+  margin-bottom:5rem;
+
+  line-height:1.1;
+
+  font-family:'Cinzel', serif;
+}
+
+
+/* =========================
+GRID
+========================= */
+
+.network-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(3,1fr);
+
+  gap:2.6rem;
+}
+
+
+/* =========================
+CARD
+========================= */
+
+.network-card{
+
+  min-height:24rem;
+
+  padding:3rem;
+
+  border-radius:3rem;
+
+  background:#111111;
+
+  text-decoration:none;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:2rem;
+
+  transition:.35s ease;
+
+  box-shadow:
+  0 .8rem 2rem
+  rgba(0,0,0,.12);
+}
+
+
+/* HOVER */
+
+.network-card:hover{
+
+  transform:
+  translateY(-.5rem);
+}
+
+
+/* =========================
+ICON
+========================= */
+
+.network-icon{
+
+  width:8rem;
+
+  height:8rem;
+
+  border-radius:50%;
+
+  display:flex;
+
+  align-items:center;
+
+  justify
