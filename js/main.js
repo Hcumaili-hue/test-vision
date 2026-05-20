@@ -346,29 +346,32 @@ if(
 
 
 /* =========================
-ACADEMIC NETWORK OVERLAY
+ACADEMIC NETWORK
 ========================= */
 
 const networkBtn =
-document.querySelector(
-  ".header-network-btn"
+document.getElementById(
+  "networkTrigger"
 );
 
 const networkOverlay =
-document.querySelector(
-  ".network-overlay"
+document.getElementById(
+  "networkOverlay"
 );
 
 const networkClose =
-document.querySelector(
-  ".network-close"
+document.getElementById(
+  "networkClose"
 );
 
-
 if(
+
   networkBtn &&
+
   networkOverlay &&
+
   networkClose
+
 ){
 
   /* OPEN */
@@ -453,7 +456,6 @@ if(
   );
 
 }
-
 /* =========================
 MENU OVERLAY
 ========================= */
