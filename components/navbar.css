@@ -167,9 +167,12 @@ HEADER BUTTONS
 ========================= */
 
 .header-search-btn,
+.header-network-btn,
 .header-menu-btn{
 
-  height:5rem;
+  min-height:5rem;
+
+  padding:0 2rem;
 
   border:none;
 
@@ -179,7 +182,13 @@ HEADER BUTTONS
 
   border-radius:1.6rem;
 
-  padding:0 2rem;
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-decoration:none;
 
   font-size:1.45rem;
 
@@ -187,36 +196,19 @@ HEADER BUTTONS
 
   background:#111111;
 
-  color:#c6a86a;
-
-  border:.1rem solid
-  rgba(198,168,106,.24);
+  color:#d4b26a;
 
   transition:.35s ease;
 }
 
 
-/* HEADER HOVER */
-
 .header-search-btn:hover,
+.header-network-btn:hover,
 .header-menu-btn:hover{
 
-  transform:
-  translateY(-.2rem);
+  transform:translateY(-.2rem);
 
-  background:#7d1f1f;
-
-  color:#d6b676;
-
-  border-color:
-  rgba(125,31,31,.30);
-
-  box-shadow:
-  0 .8rem 2rem
-  rgba(125,31,31,.20);
 }
-
-
 /* =========================
 RESPONSIVE
 ========================= */
