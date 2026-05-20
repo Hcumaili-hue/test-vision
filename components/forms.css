@@ -6,21 +6,32 @@
 
   width:100%;
 
-  max-width:860px;
+  max-width:86rem;
 
-  margin:80px auto;
+  margin:8rem auto;
 }
+
+
+/* =========================
+   FORM CONTAINER
+========================= */
 
 .form-container{
 
-  background:#111111;
+  background:var(--dark);
 
-  border:1px solid #2a2112;
+  border:.1rem solid
+  rgba(198,168,106,.18);
 
-  border-radius:32px;
+  border-radius:3.2rem;
 
-  padding:50px;
+  padding:5rem;
+
+  box-shadow:
+  0 1.6rem 4rem
+  rgba(0,0,0,.12);
 }
+
 
 /* =========================
    FORM TITLE
@@ -28,23 +39,26 @@
 
 .form-title{
 
-  font-size:40px;
+  font-size:4rem;
 
-  color:#f3ede2;
+  color:var(--text-main);
 
-  margin-bottom:18px;
+  margin-bottom:1.8rem;
 
-  font-family:"Times New Roman",serif;
+  font-family:'Cinzel',serif;
+
+  line-height:1.2;
 }
 
 .form-description{
 
-  color:#b8a68a;
+  color:var(--text-soft);
 
   line-height:1.9;
 
-  margin-bottom:42px;
+  margin-bottom:4.2rem;
 }
+
 
 /* =========================
    INPUT GROUP
@@ -52,19 +66,20 @@
 
 .form-group{
 
-  margin-bottom:28px;
+  margin-bottom:2.8rem;
 }
 
 .form-label{
 
   display:block;
 
-  margin-bottom:12px;
+  margin-bottom:1.2rem;
 
-  color:#f3ede2;
+  color:var(--text-main);
 
-  font-size:17px;
+  font-size:1.7rem;
 }
+
 
 /* =========================
    INPUTS
@@ -76,22 +91,28 @@
 
   width:100%;
 
-  padding:20px 24px;
+  padding:2rem 2.4rem;
 
-  background:#161616;
+  background:var(--dark-soft);
 
-  border:1px solid #2a2112;
+  border:.1rem solid
+  rgba(198,168,106,.15);
 
-  border-radius:18px;
+  border-radius:1.8rem;
 
-  color:#f3ede2;
+  color:var(--text-main);
 
-  font-size:17px;
+  font-size:1.7rem;
 
-  font-family:"Times New Roman",serif;
+  font-family:inherit;
 
   transition:.35s ease;
 }
+
+
+/* =========================
+   INPUT FOCUS
+========================= */
 
 .form-input:focus,
 .form-textarea:focus,
@@ -99,17 +120,20 @@
 
   outline:none;
 
-  border-color:#b89b6b;
+  border-color:var(--gold);
 
-  box-shadow:0 0 18px rgba(184,155,107,.14);
+  box-shadow:
+  0 0 1.8rem
+  rgba(198,168,106,.14);
 }
 
 .form-textarea{
 
-  min-height:180px;
+  min-height:18rem;
 
   resize:vertical;
 }
+
 
 /* =========================
    PLACEHOLDER
@@ -118,8 +142,9 @@
 .form-input::placeholder,
 .form-textarea::placeholder{
 
-  color:#8e7d63;
+  color:var(--text-soft-dark);
 }
+
 
 /* =========================
    SUBMIT BUTTON
@@ -133,17 +158,17 @@
 
   justify-content:center;
 
-  padding:18px 34px;
+  padding:1.8rem 3.4rem;
 
   border:none;
 
-  border-radius:50px;
+  border-radius:999rem;
 
-  background:#b89b6b;
+  background:var(--gold);
 
-  color:#111111;
+  color:var(--dark);
 
-  font-size:16px;
+  font-size:1.6rem;
 
   font-weight:600;
 
@@ -154,10 +179,16 @@
 
 .form-button:hover{
 
-  transform:translateY(-3px);
+  transform:
+  translateY(-.3rem);
 
-  opacity:.92;
+  background:var(--gold-light);
+
+  box-shadow:
+  0 .8rem 2rem
+  rgba(198,168,106,.18);
 }
+
 
 /* =========================
    SUCCESS MESSAGE
@@ -165,12 +196,13 @@
 
 .form-success{
 
-  margin-top:24px;
+  margin-top:2.4rem;
 
-  color:#b89b6b;
+  color:var(--gold);
 
   line-height:1.8;
 }
+
 
 /* =========================
    ERROR MESSAGE
@@ -178,9 +210,9 @@
 
 .form-error{
 
-  margin-top:10px;
+  margin-top:1rem;
 
   color:#d77b7b;
 
-  font-size:14px;
+  font-size:1.4rem;
 }
