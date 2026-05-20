@@ -4,12 +4,12 @@ FOOTER
 
 .site-footer{
 
-  background:#111111;
+  background:#d7e1e7;
 
   padding:10rem 7% 4rem;
 
   border-top:
-  .1rem solid rgba(198,168,106,.14);
+  .1rem solid rgba(198,168,106,.20);
 }
 
 
@@ -58,12 +58,12 @@ BRAND
 
   border-radius:2rem;
 
-  background:#111111;
+  background:var(--dark);
 
   border:.14rem solid
   rgba(198,168,106,.50);
 
-  color:#c6a86a;
+  color:var(--gold);
 
   font-size:2.2rem;
 
@@ -75,7 +75,7 @@ BRAND
 
   box-shadow:
   0 .6rem 1.8rem
-  rgba(0,0,0,.14);
+  rgba(0,0,0,.08);
 
   transition:.35s ease;
 }
@@ -84,11 +84,11 @@ BRAND
 
   transform:translateY(-.2rem);
 
-  background:#7d1f1f;
+  background:#612c2c;
 
-  border-color:#d6b676;
+  border-color:var(--gold-light);
 
-  color:#d6b676;
+  color:var(--gold-light);
 }
 
 
@@ -98,7 +98,7 @@ BRAND
 
   font-size:2.6rem;
 
-  color:#c6a86a;
+  color:var(--gold);
 
   margin-bottom:1.2rem;
 
@@ -114,7 +114,7 @@ BRAND
 
   line-height:1.9;
 
-  color:#a89d8b;
+  color:#4d545a;
 }
 
 
@@ -138,7 +138,7 @@ FOOTER LINKS
 
   font-size:1.8rem;
 
-  color:#c6a86a;
+  color:var(--gold);
 
   margin-bottom:1.5rem;
 }
@@ -151,7 +151,7 @@ FOOTER LINKS
 
   text-decoration:none;
 
-  color:#d7cfc1;
+  color:#4f5860;
 
   font-size:1.55rem;
 
@@ -160,7 +160,7 @@ FOOTER LINKS
 
 .footer-links a:hover{
 
-  color:#c6a86a;
+  color:var(--gold);
 
   transform:
   translateX(.4rem);
@@ -180,9 +180,9 @@ FOOTER BOTTOM
   text-align:center;
 
   border-top:
-  .1rem solid rgba(255,255,255,.08);
+  .1rem solid rgba(0,0,0,.08);
 
-  color:#918574;
+  color:#667079;
 
   font-size:1.45rem;
 }
