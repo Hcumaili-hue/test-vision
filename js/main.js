@@ -145,48 +145,6 @@ if(fadeElements.length){
 }
 
 
-/* ==========================
-SEARCH BUTTON
-========================== */
-
-const searchBtn =
-document.getElementById(
-  "searchTrigger"
-);
-
-const searchInput =
-document.getElementById(
-  "searchInput"
-);
-
-if(
-  searchBtn &&
-  searchInput
-){
-
-  searchBtn
-  .addEventListener(
-
-    "click",
-
-    ()=>{
-
-      searchInput
-      .scrollIntoView({
-
-        behavior:"smooth",
-
-        block:"center"
-
-      });
-
-      searchInput.focus();
-
-    }
-
-  );
-
-}
 
 /* =========================
 BACK TO TOP
