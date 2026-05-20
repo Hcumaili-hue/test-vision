@@ -354,70 +354,51 @@ document.getElementById(
   "networkTrigger"
 );
 
-const networkOverlay =
+const networkPanel =
 document.getElementById(
-  "networkOverlay"
-);
-
-const networkClose =
-document.getElementById(
-  "networkClose"
+  "networkPanel"
 );
 
 if(
 
   networkBtn &&
 
-  networkOverlay &&
-
-  networkClose
+  networkPanel
 
 ){
 
-  /* OPEN */
+  /* OPEN / CLOSE */
 
   networkBtn
   .addEventListener(
 
     "click",
 
-    ()=>{
+    (e)=>{
 
-      networkOverlay
+      e.stopPropagation();
+
+      networkPanel
       .classList
-      .add(
+      .toggle(
         "active"
       );
-
-      document.body
-      .style
-      .overflow =
-      "hidden";
 
     }
 
   );
 
 
-  /* CLOSE */
+  /* PREVENT CLOSE INSIDE */
 
-  networkClose
+  networkPanel
   .addEventListener(
 
     "click",
 
-    ()=>{
+    (e)=>{
 
-      networkOverlay
-      .classList
-      .remove(
-        "active"
-      );
-
-      document.body
-      .style
-      .overflow =
-      "";
+      e.stopPropagation();
 
     }
 
@@ -426,30 +407,18 @@ if(
 
   /* CLOSE OUTSIDE */
 
-  networkOverlay
+  document
   .addEventListener(
 
     "click",
 
-    (e)=>{
+    ()=>{
 
-      if(
-        e.target ===
-        networkOverlay
-      ){
-
-        networkOverlay
-        .classList
-        .remove(
-          "active"
-        );
-
-        document.body
-        .style
-        .overflow =
-        "";
-
-      }
+      networkPanel
+      .classList
+      .remove(
+        "active"
+      );
 
     }
 
