@@ -602,3 +602,269 @@ if(
   );
 
 }
+/* =========================
+SEARCH SYSTEM
+========================= */
+
+const searchTrigger =
+document.getElementById(
+  "searchTrigger"
+);
+
+const searchOverlay =
+document.getElementById(
+  "searchOverlay"
+);
+
+const searchClose =
+document.getElementById(
+  "searchClose"
+);
+
+const searchInput =
+document.getElementById(
+  "searchInput"
+);
+
+const searchResults =
+document.getElementById(
+  "searchResults"
+);
+
+
+if(
+
+  searchTrigger &&
+
+  searchOverlay &&
+
+  searchClose &&
+
+  searchInput &&
+
+  searchResults
+
+){
+
+  /* OPEN */
+
+  searchTrigger
+  .addEventListener(
+
+    "click",
+
+    ()=>{
+
+      searchOverlay
+      .classList
+      .add(
+        "active"
+      );
+
+      document.body
+      .style
+      .overflow =
+      "hidden";
+
+      setTimeout(()=>{
+
+        searchInput
+        .focus();
+
+      },150);
+
+    }
+
+  );
+
+
+  /* CLOSE */
+
+  searchClose
+  .addEventListener(
+
+    "click",
+
+    ()=>{
+
+      searchOverlay
+      .classList
+      .remove(
+        "active"
+      );
+
+      document.body
+      .style
+      .overflow =
+      "";
+
+      searchInput.value =
+      "";
+
+      searchResults
+      .innerHTML =
+      "";
+
+    }
+
+  );
+
+
+  /* CLOSE OUTSIDE */
+
+  searchOverlay
+  .addEventListener(
+
+    "click",
+
+    (e)=>{
+
+      if(
+        e.target ===
+        searchOverlay
+      ){
+
+        searchOverlay
+        .classList
+        .remove(
+          "active"
+        );
+
+        document.body
+        .style
+        .overflow =
+        "";
+
+      }
+
+    }
+
+  );
+
+
+  /* SEARCH */
+
+  searchInput
+  .addEventListener(
+
+    "input",
+
+    ()=>{
+
+      const query =
+      searchInput
+      .value
+      .toLowerCase()
+      .trim();
+
+      searchResults
+      .innerHTML =
+      "";
+
+      if(!query){
+        return;
+      }
+
+      const searchable =
+      document.querySelectorAll(
+
+        "section h1, section h2, section h3, p"
+
+      );
+
+      searchable
+      .forEach(
+
+        item=>{
+
+          const text =
+          item.textContent
+          .toLowerCase();
+
+          if(
+
+            text.includes(
+              query
+            )
+
+          ){
+
+            const card =
+            document
+            .createElement(
+              "div"
+            );
+
+            card.className =
+            "search-result-card";
+
+            card.innerHTML =
+
+            `
+            <h3>
+            ${item.textContent}
+            </h3>
+
+            <p>
+            Click to navigate
+            to this section.
+            </p>
+            `;
+
+            card
+            .addEventListener(
+
+              "click",
+
+              ()=>{
+
+                const section =
+                item.closest(
+                  "section"
+                );
+
+                if(
+                  section
+                ){
+
+                  searchOverlay
+                  .classList
+                  .remove(
+                    "active"
+                  );
+
+                  document.body
+                  .style
+                  .overflow =
+                  "";
+
+                  section
+                  .scrollIntoView({
+
+                    behavior:
+                    "smooth"
+
+                  });
+
+                }
+
+              }
+
+            );
+
+            searchResults
+            .appendChild(
+              card
+            );
+
+          }
+
+        }
+
+      );
+
+    }
+
+  );
+
+}
