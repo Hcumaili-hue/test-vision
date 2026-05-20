@@ -5,15 +5,29 @@ H. Cumaili Lab
 
 
 /* =========================
-RESEARCH GATEWAY
+GLOBAL SECTIONS
 ========================= */
 
-.research-gateway-section{
+.research-gateway-section,
+.revelation-project-section,
+.researcher-section,
+.publication-section,
+.research-domains-section,
+.academic-network-section,
+.library-gateway-section{
 
   padding:8rem 7%;
 }
 
-.research-gateway-card{
+
+/* =========================
+COMMON CONTAINERS
+========================= */
+
+.research-gateway-card,
+.revelation-container,
+.network-container,
+.library-gateway-card{
 
   max-width:70rem;
 
@@ -22,19 +36,9 @@ RESEARCH GATEWAY
   text-align:center;
 }
 
+.domains-container{
 
-/* =========================
-REVELATION PROJECT
-========================= */
-
-.revelation-project-section{
-
-  padding:8rem 7%;
-}
-
-.revelation-container{
-
-  max-width:70rem;
+  max-width:80rem;
 
   margin:auto;
 
@@ -45,11 +49,6 @@ REVELATION PROJECT
 /* =========================
 RESEARCHER SECTION
 ========================= */
-
-.researcher-section{
-
-  padding:8rem 7%;
-}
 
 .researcher-container{
 
@@ -86,18 +85,13 @@ RESEARCHER SECTION
 
   object-position:center top;
 
-  border-radius:1.8rem;
+  border-radius:1.6rem;
 }
 
 
 /* =========================
 PUBLICATION SECTION
 ========================= */
-
-.publication-section{
-
-  padding:8rem 7%;
-}
 
 .publication-container{
 
@@ -140,39 +134,13 @@ RESEARCH DOMAINS
 
 .research-domains-section{
 
-  padding:8rem 7%;
-
   text-align:center;
-}
-
-.domains-container{
-
-  max-width:80rem;
-
-  margin:auto;
 }
 
 
 /* =========================
 ACADEMIC NETWORK
 ========================= */
-
-.academic-network-section{
-
-  padding:8rem 7%;
-
-  text-align:center;
-}
-
-.network-container{
-
-  max-width:70rem;
-
-  margin:auto;
-}
-
-
-/* TITLE */
 
 .network-description{
 
@@ -219,8 +187,7 @@ ACADEMIC NETWORK
 
 .network-trigger:hover{
 
-  transform:
-  translateY(-.2rem);
+  transform:translateY(-.2rem);
 }
 
 
@@ -263,63 +230,5 @@ ACADEMIC NETWORK
 
 .network-link:hover{
 
-  transform:
-  translateY(-.15rem);
-}
-/* =========================
-LIBRARY GATEWAY
-========================= */
-
-.library-gateway-section{
-
-  padding:8rem 7%;
-}
-
-.library-gateway-card{
-
-  max-width:70rem;
-
-  margin:auto;
-
-  text-align:center;
-}
-/* =========================
-HOME PAGE IMAGES
-========================= */
-
-.researcher-image{
-
-  display:flex;
-
-  justify-content:center;
-}
-
-.researcher-image img{
-
-  width:9rem;
-
-  height:9rem;
-
-  object-fit:cover;
-
-  object-position:center top;
-
-  border-radius:1.6rem;
-}
-
-
-.publication-book{
-
-  display:flex;
-
-  justify-content:center;
-}
-
-.publication-book img{
-
-  width:7rem;
-
-  height:auto;
-
-  object-fit:contain;
+  transform:translateY(-.15rem);
 }
