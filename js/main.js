@@ -498,11 +498,108 @@ if(
         "active"
       );
 
+      document.body
+      .style
+      .overflow =
+      "hidden";
+
     }
 
   );
 
 
+  /* CLOSE */
+
+  menuClose
+  .addEventListener(
+
+    "click",
+
+    ()=>{
+
+      menuOverlay
+      .classList
+      .remove(
+        "active"
+      );
+
+      document.body
+      .style
+      .overflow =
+      "";
+
+    }
+
+  );
+
+
+  /* CLOSE OUTSIDE */
+
+  menuOverlay
+  .addEventListener(
+
+    "click",
+
+    (e)=>{
+
+      if(
+        e.target ===
+        menuOverlay
+      ){
+
+        menuOverlay
+        .classList
+        .remove(
+          "active"
+        );
+
+        document.body
+        .style
+        .overflow =
+        "";
+
+      }
+
+    }
+
+  );
+
+
+  /* CLOSE AFTER LINK CLICK */
+
+  const menuLinks =
+  document.querySelectorAll(
+    ".menu-links a"
+  );
+
+  menuLinks.forEach(
+    link=>{
+
+      link.addEventListener(
+
+        "click",
+
+        ()=>{
+
+          menuOverlay
+          .classList
+          .remove(
+            "active"
+          );
+
+          document.body
+          .style
+          .overflow =
+          "";
+
+        }
+
+      );
+
+    }
+  );
+
+}
   /* CLOSE */
 
   menuClose
