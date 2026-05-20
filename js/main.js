@@ -364,6 +364,7 @@ document.getElementById(
   "networkClose"
 );
 
+
 if(
 
   networkBtn &&
@@ -434,8 +435,10 @@ if(
     (e)=>{
 
       if(
+
         e.target ===
         networkOverlay
+
       ){
 
         networkOverlay
