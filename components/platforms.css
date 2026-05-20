@@ -1,104 +1,88 @@
-
 /* =========================
-ACADEMIC NETWORK
+ACADEMIC NETWORK OVERLAY
 ========================= */
 
-.platforms-section{
+.network-overlay{
 
-  padding:14rem 8%;
+  position:fixed;
 
-  background:var(--cream-soft);
+  inset:0;
 
-  text-align:center;
-}
+  width:100vw;
+  height:100vh;
 
-/* TOGGLE BUTTON */
+  background:
+  rgba(245,241,232,.96);
 
-.network-toggle{
+  backdrop-filter:
+  blur(1.8rem);
 
-  margin-top:5rem;
+  z-index:9999;
 
-  padding:1.8rem 4rem;
+  display:flex;
 
-  border:none;
+  justify-content:center;
 
-  border-radius:999px;
+  align-items:center;
 
-  background:var(--dark-soft);
-
-  color:var(--gold-light);
-
-  font-size:1.6rem;
-
-  font-family:'Cinzel', serif;
-
-  letter-spacing:.08rem;
-
-  cursor:pointer;
-
-  transition:.35s ease;
-
-  border:.1rem solid var(--gold-soft);
-}
-
-.network-toggle:hover{
-
-  transform:translateY(-.4rem);
-
-  background:var(--dark-hover);
-
-  border-color:var(--gold-light);
-}
-
-
-/* NETWORK PANEL */
-
-.platform-network{
-
-  margin-top:6rem;
-
-  display:grid;
-
-  grid-template-columns:
-  repeat(auto-fit,minmax(14rem,1fr));
-
-  gap:2rem;
-
-  padding:4rem;
-
-  border-radius:3rem;
-
-  background:rgba(15,15,15,.82);
-
-  backdrop-filter:blur(1.2rem);
-
-  border:.1rem solid rgba(201,168,97,.25);
+  padding:6%;
 
   opacity:0;
 
-  transform:translateY(3rem) scale(.96);
+  visibility:hidden;
 
   pointer-events:none;
 
-  transition:.6s ease;
+  transform:
+  translateY(2rem);
+
+  transition:.45s ease;
 }
 
 
-/* ACTIVE STATE */
+/* =========================
+ACTIVE STATE
+========================= */
 
-.platform-network.active{
+.network-overlay.active{
 
   opacity:1;
 
-  transform:translateY(0) scale(1);
+  visibility:visible;
 
   pointer-events:auto;
+
+  transform:
+  translateY(0);
 }
 
 
-/* NETWORK ITEM */
+/* =========================
+NETWORK CONTENT
+========================= */
 
-.network-item{
+.network-content{
+
+  position:relative;
+
+  width:min(110rem,100%);
+
+  max-height:88vh;
+
+  overflow:auto;
+
+  padding:5rem;
+
+  border-radius:3.2rem;
+
+  background:var(--dark);
+
+  border:.1rem solid
+  rgba(198,168,106,.18);
+
+  box-shadow:
+  0 2rem 5rem
+  rgba(0,0,0,.12);
 
   display:flex;
 
@@ -106,51 +90,183 @@ ACADEMIC NETWORK
 
   align-items:center;
 
+  gap:3rem;
+
+  text-align:center;
+}
+
+
+/* =========================
+CLOSE BUTTON
+========================= */
+
+.network-close{
+
+  position:absolute;
+
+  top:2.5rem;
+  right:2.5rem;
+
+  width:5.4rem;
+  height:5.4rem;
+
+  border:none;
+
+  border-radius:1.8rem;
+
+  background:var(--dark-soft);
+
+  color:var(--gold);
+
+  font-size:2rem;
+
+  cursor:pointer;
+
+  transition:.35s ease;
+
+  border:.1rem solid
+  rgba(198,168,106,.18);
+}
+
+.network-close:hover{
+
+  transform:
+  translateY(-.25rem);
+
+  background:#7d1f1f;
+
+  color:var(--gold-light);
+}
+
+
+/* =========================
+HC ICON
+========================= */
+
+.network-trigger-icon{
+
+  width:12rem;
+  height:12rem;
+
+  border-radius:50%;
+
+  display:flex;
+
+  align-items:center;
+
   justify-content:center;
 
-  gap:1.2rem;
+  background:
+  rgba(255,255,255,.04);
 
-  padding:2.4rem 1.6rem;
+  border:.14rem solid
+  rgba(198,168,106,.20);
+
+  color:var(--gold);
+
+  font-size:4rem;
+
+  font-weight:700;
+
+  font-family:'Cinzel',serif;
+
+  box-shadow:
+  0 1rem 3rem
+  rgba(0,0,0,.10);
+}
+
+
+/* =========================
+NETWORK LINKS
+========================= */
+
+.network-links{
+
+  width:100%;
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(
+    auto-fit,
+    minmax(18rem,1fr)
+  );
+
+  gap:2rem;
+}
+
+
+/* =========================
+NETWORK LINK
+========================= */
+
+.network-link{
+
+  min-height:10rem;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+  padding:2rem;
 
   border-radius:2rem;
 
   text-decoration:none;
 
-  color:var(--gold-light);
+  color:var(--gold);
 
-  background:rgba(255,255,255,.03);
+  background:
+  rgba(255,255,255,.03);
 
-  border:.1rem solid rgba(201,168,97,.15);
+  border:.1rem solid
+  rgba(198,168,106,.12);
+
+  font-size:1.6rem;
+
+  font-weight:600;
 
   transition:.35s ease;
 }
 
 
-/* ICON */
+/* =========================
+HOVER
+========================= */
 
-.network-item i{
+.network-link:hover{
 
-  font-size:2.8rem;
+  transform:
+  translateY(-.35rem);
+
+  background:#7d1f1f;
+
+  color:var(--gold-light);
+
+  border-color:
+  rgba(198,168,106,.28);
 }
 
 
-/* TEXT */
+/* =========================
+RESPONSIVE
+========================= */
 
-.network-item span{
+@media(max-width:768px){
 
-  font-size:1.4rem;
+  .network-content{
 
-  letter-spacing:.05rem;
-}
+    padding:4rem 2.5rem;
+  }
 
+  .network-links{
 
-/* HOVER */
+    grid-template-columns:
+    1fr;
+  }
 
-.network-item:hover{
-
-  transform:translateY(-.6rem);
-
-  background:rgba(255,255,255,.06);
-
-  border-color:var(--gold-light);
 }
