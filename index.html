@@ -775,7 +775,7 @@ Enter Research Journey Library
 </div>
 
 </section>
-  <!-- =========================
+ <!-- =========================
 SEARCH OVERLAY
 ========================= -->
 
@@ -784,82 +784,54 @@ class="search-overlay"
 id="searchOverlay"
 >
 
-<button
-class="search-close"
-id="searchClose"
->
+  <!-- CLOSE -->
 
-✕
+  <button
+  class="search-close"
+  id="searchClose"
+  >
 
-</button>
+    ✕
+
+  </button>
 
 
-<div class="search-content">
+  <!-- CONTENT -->
 
-  <div class="search-box">
+  <div class="search-content">
 
-    <input
+    <!-- SEARCH INPUT -->
+
+    <div class="search-box">
+
+      <input
       type="text"
+      id="searchInput"
       class="search-input"
       placeholder="Search research, themes, studies..."
-    >
+      >
 
-    <button
+      <button
       class="search-button"
-    >
+      >
 
-      ⌕
-      
-    </button>
-
-  </div>
-
-
-  <div class="search-results">
-
-    <div
-      class="search-result-card search-item"
-    >
-
-      <h3>
-
-        Revelation Project
-
-      </h3>
-
-      <p>
-
-        Research on revelation,
-        prophetic continuity,
-        and Abrahamic traditions.
-
-      </p>
+        ⌕
+        
+      </button>
 
     </div>
 
 
+    <!-- SEARCH RESULTS -->
+
     <div
-      class="search-result-card search-item"
+    id="searchResults"
+    class="search-results"
     >
-
-      <h3>
-
-        Definition of God
-
-      </h3>
-
-      <p>
-
-        Comparative Abrahamic
-        study of divine reality.
-
-      </p>
 
     </div>
 
   </div>
-
-</div>
 
 </div>
 <!-- =========================
