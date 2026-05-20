@@ -354,51 +354,70 @@ document.getElementById(
   "networkTrigger"
 );
 
-const networkPanel =
+const networkOverlay =
 document.getElementById(
-  "networkPanel"
+  "networkOverlay"
+);
+
+const networkClose =
+document.getElementById(
+  "networkClose"
 );
 
 if(
 
   networkBtn &&
 
-  networkPanel
+  networkOverlay &&
+
+  networkClose
 
 ){
 
-  /* OPEN / CLOSE */
+  /* OPEN */
 
   networkBtn
   .addEventListener(
 
     "click",
 
-    (e)=>{
+    ()=>{
 
-      e.stopPropagation();
-
-      networkPanel
+      networkOverlay
       .classList
-      .toggle(
+      .add(
         "active"
       );
+
+      document.body
+      .style
+      .overflow =
+      "hidden";
 
     }
 
   );
 
 
-  /* PREVENT CLOSE INSIDE */
+  /* CLOSE */
 
-  networkPanel
+  networkClose
   .addEventListener(
 
     "click",
 
-    (e)=>{
+    ()=>{
 
-      e.stopPropagation();
+      networkOverlay
+      .classList
+      .remove(
+        "active"
+      );
+
+      document.body
+      .style
+      .overflow =
+      "";
 
     }
 
@@ -407,18 +426,30 @@ if(
 
   /* CLOSE OUTSIDE */
 
-  document
+  networkOverlay
   .addEventListener(
 
     "click",
 
-    ()=>{
+    (e)=>{
 
-      networkPanel
-      .classList
-      .remove(
-        "active"
-      );
+      if(
+        e.target ===
+        networkOverlay
+      ){
+
+        networkOverlay
+        .classList
+        .remove(
+          "active"
+        );
+
+        document.body
+        .style
+        .overflow =
+        "";
+
+      }
 
     }
 
