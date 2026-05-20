@@ -351,7 +351,7 @@ ACADEMIC NETWORK
 
 const networkBtn =
 document.getElementById(
-  "networkTrigger"
+ "headerNetworkTrigger"
 );
 
 const networkOverlay =
