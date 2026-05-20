@@ -383,49 +383,113 @@ if(
 
 
 /* =========================
-ACADEMIC NETWORK
+ACADEMIC NETWORK OVERLAY
 ========================= */
 
-const networkTrigger =
-document.getElementById(
-  "networkTrigger"
+const networkBtn =
+document.querySelector(
+  ".header-network-btn"
 );
 
-const networkPanel =
-document.getElementById(
-  "networkPanel"
+const networkOverlay =
+document.querySelector(
+  ".network-overlay"
 );
+
+const networkClose =
+document.querySelector(
+  ".network-close"
+);
+
 
 if(
-  networkTrigger &&
-  networkPanel
+  networkBtn &&
+  networkOverlay &&
+  networkClose
 ){
 
-  networkTrigger
+  /* OPEN */
+
+  networkBtn
   .addEventListener(
 
     "click",
 
     ()=>{
 
-      networkPanel
+      networkOverlay
       .classList
-      .toggle(
+      .add(
         "active"
       );
 
-      networkTrigger
+      document.body
+      .style
+      .overflow =
+      "hidden";
+
+    }
+
+  );
+
+
+  /* CLOSE */
+
+  networkClose
+  .addEventListener(
+
+    "click",
+
+    ()=>{
+
+      networkOverlay
       .classList
-      .toggle(
-        "opened"
+      .remove(
+        "active"
       );
+
+      document.body
+      .style
+      .overflow =
+      "";
+
+    }
+
+  );
+
+
+  /* CLOSE OUTSIDE */
+
+  networkOverlay
+  .addEventListener(
+
+    "click",
+
+    (e)=>{
+
+      if(
+        e.target ===
+        networkOverlay
+      ){
+
+        networkOverlay
+        .classList
+        .remove(
+          "active"
+        );
+
+        document.body
+        .style
+        .overflow =
+        "";
+
+      }
 
     }
 
   );
 
 }
-
 
 /* =========================
 MENU OVERLAY
