@@ -89,7 +89,7 @@ HERO BANNER
 
   border:.14rem solid rgba(198,168,106,.20);
 
-  background:#111111;
+  background:var(--dark);
 
   box-shadow:
   0 2rem 5rem rgba(0,0,0,.10);
@@ -125,7 +125,7 @@ ACADEMIC LABEL
 
   border:.1rem solid rgba(198,168,106,.18);
 
-  color:#a7864f;
+  color:var(--gold-soft);
 
   font-size:1.35rem;
 
@@ -147,7 +147,7 @@ MAIN TITLE
 
   line-height:1.05;
 
-  color:#c6a86a;
+  color:var(--gold);
 
   margin-bottom:2rem;
 
@@ -167,7 +167,7 @@ SUBTITLE
 
   line-height:1.5;
 
-  color:#b7935a;
+  color:var(--gold);
 
   font-weight:500;
 
@@ -189,7 +189,7 @@ DESCRIPTION
 
   line-height:2;
 
-  color:#5f5a4f;
+  color:var(--text-soft-dark);
 
   margin-bottom:5rem;
 }
