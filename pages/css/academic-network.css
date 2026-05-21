@@ -44,11 +44,17 @@ OFFICIAL LOGOS (Updated Links)
 }
 
 .philpeople-icon {
-    background-image: url('https://philpeople.org/static/img/philpeople-logo.png');
-    background-color: #4f5bd5;     
-    background-size: 68%;         
-    background-position: center;
-    background-repeat: no-repeat;
+
+    background-image:
+    url('https://philpeople.org/logo');
+
+    background-color:#ffffff;
+
+    background-size:68%;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
 }
 
 .ssrn-icon {
