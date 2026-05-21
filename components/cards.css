@@ -8,13 +8,23 @@ CARD SYSTEM
 
   border:.1rem solid var(--gold-soft);
 
-  border-radius:2.4rem;
+  border-radius:2.8rem;
 
   padding:4rem 3.2rem;
 
   transition:.35s ease;
 
   box-shadow:var(--shadow);
+
+  text-decoration:none;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:flex-start;
+
+  min-height:22rem;
 }
 
 .card:hover{
@@ -24,51 +34,41 @@ CARD SYSTEM
   border-color:var(--gold-light);
 }
 
-/* CARD ICON */
+/* CARD NUMBER */
 
-.card-icon{
+.card-number{
 
-  width:8rem;
+  font-size:1.4rem;
 
-  height:8rem;
+  letter-spacing:.2rem;
 
-  border-radius:2rem;
+  color:var(--gold-soft);
 
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  margin-bottom:3rem;
-
-  background:var(--dark-hover);
-
-  border:.1rem solid var(--gold-soft);
-
-  color:var(--gold-light);
-
-  font-size:3rem;
+  margin-bottom:1.8rem;
 }
 
 /* CARD TITLE */
 
 .card-title{
 
-  margin-bottom:2rem;
+  margin:0;
 
   font-size:3rem;
 
+  line-height:1.4;
+
   color:var(--gold-light);
+
+  font-weight:400;
 }
 
 /* CARD TEXT */
 
 .card-text{
 
-  margin-bottom:3rem;
+  margin-top:2rem;
 
-  font-size:2rem;
+  font-size:1.9rem;
 
   color:var(--text-soft);
 
