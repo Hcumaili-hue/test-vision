@@ -1,213 +1,79 @@
 /* =========================
-ACADEMIC NETWORK
+ICON - NEW (No black rectangle + Official logos)
 ========================= */
 
-.academic-network-section{
-
-  padding:90px 7%;
-
-  background:#f3ede2;
+.network-icon {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    margin-bottom: 14px;
+    background-size: 65%;           /* Logo size inside the circle */
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .35s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light elegant shadow */
 }
 
-.academic-network-section h2{
-
-  text-align:center;
-
-  font-size:3.5rem;
-
-  margin-bottom:60px;
-
-  font-family:'Cinzel',serif;
-
-  color:#111111;
+.network-card:hover .network-icon {
+    transform: scale(1.12);
 }
-
 
 /* =========================
-NETWORK GRID
+OFFICIAL PLATFORM LOGOS
 ========================= */
 
-.network-links{
-
-  display:grid;
-
-  grid-template-columns:
-  repeat(auto-fit,minmax(130px,1fr));
-
-  gap:40px;
-
-  justify-items:center;
-
-  max-width:1000px;
-
-  margin:auto;
+.orcid-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg');
+    background-color: #a6ce39;   /* ORCID official color */
 }
 
-
-/* =========================
-NETWORK ITEM
-========================= */
-
-.network-card{
-
-  text-decoration:none;
-
-  display:flex;
-
-  flex-direction:column;
-
-  align-items:center;
-
-  justify-content:center;
-
-  transition:.3s ease;
+.scholar-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg');
+    background-color: #4285f4;
 }
 
-.network-card:hover{
-
-  transform:translateY(-6px);
+.zenodo-icon {
+    background-image: url('https://about.zenodo.org/static/img/logos/zenodo-gradient-round.svg');
+    background-color: #5c6bc0;
 }
 
-
-/* =========================
-ICON
-========================= */
-
-.network-icon{
-
-  width:82px;
-
-  height:82px;
-
-  border-radius:50%;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  margin-bottom:14px;
-
-  transition:.35s ease;
+.osf-icon {
+    background-image: url('https://osf.io/static/img/osf_logo.svg');
+    background-color: #8e24aa;
 }
 
-.network-card:hover .network-icon{
-
-  transform:scale(1.12);
+.philpeople-icon {
+    background-image: url('https://philpeople.org/static/img/philpeople-logo.png');
+    background-color: #3949ab;
 }
 
-.network-icon i{
-
-  font-size:34px;
-
-  color:#ffffff;
+.ssrn-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/SSRN_Logo.svg');
+    background-color: #1565c0;
 }
 
-
-/* =========================
-TEXT
-========================= */
-
-.network-card span{
-
-  color:#111111;
-
-  font-size:1rem;
-
-  font-family:'Cinzel',serif;
-
-  text-align:center;
+.academia-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/66/Academia-logo-2021.svg');
+    background-color: #222222;
 }
 
-
-/* =========================
-PLATFORM COLORS
-========================= */
-
-.orcid-icon{
-  background:#a6ce39;
+.medium-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ec/Medium_logo.svg');
+    background-color: #000000;
 }
 
-.scholar-icon{
-  background:#4285f4;
+.wordpress-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg');
+    background-color: #21759b;
 }
 
-.zenodo-icon{
-  background:#5c6bc0;
+.linkedin-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg');
+    background-color: #0a66c2;
 }
 
-.osf-icon{
-  background:#8e24aa;
-}
-
-.philpeople-icon{
-  background:#3949ab;
-}
-
-.ssrn-icon{
-  background:#1565c0;
-}
-
-.academia-icon{
-  background:#222222;
-}
-
-.medium-icon{
-  background:#000000;
-}
-
-.wordpress-icon{
-  background:#21759b;
-}
-
-.linkedin-icon{
-  background:#0a66c2;
-}
-
-.email-icon{
-  background:#c9a44c;
-}
-
-
-/* =========================
-MOBILE
-========================= */
-
-@media(max-width:768px){
-
-  .academic-network-section{
-
-    padding:70px 5%;
-  }
-
-  .academic-network-section h2{
-
-    font-size:2.5rem;
-  }
-
-  .network-links{
-
-    grid-template-columns:
-    repeat(3,1fr);
-
-    gap:28px;
-  }
-
-  .network-icon{
-
-    width:68px;
-
-    height:68px;
-  }
-
-  .network-icon i{
-
-    font-size:28px;
-  }
-
-  .network-card span{
-
-    font-size:.9rem;
-  }
+.email-icon {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/561/561127.png');
+    background-size: 55%;
+    background-color: #c9a44c;
 }
