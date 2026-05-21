@@ -21,108 +21,92 @@ href="../pages/css/research-library.css">
 
 <body>
 
-.library-page{
-  padding:120px 7%;
-  background:#f4efe5;
-}
+<section class="library-page">
 
-.library-container{
-  max-width:1400px;
-  margin:auto;
-}
+  <div class="library-container">
 
-.library-container h1{
-  font-size:58px;
-  color:#111;
-  margin-bottom:24px;
-}
+    <h1>
+      Research Library
+    </h1>
 
-.library-container p{
-  max-width:950px;
-  font-size:20px;
-  line-height:1.9;
-  color:#5d564b;
-  margin-bottom:70px;
-}
+    <p>
+      Explore the expanding research archive including comparative Abrahamic studies,
+      divine revelation, scriptural interpretation, semantic analysis, prophetic continuity,
+      historical theology, manuscript traditions, and the movement of sacred meaning.
+    </p>
 
-.library-grid{
-  display:grid;
+    <div class="library-grid">
 
-  grid-template-columns:
-  repeat(auto-fit,minmax(280px,1fr));
+      <a href="god-first-then-religion/" class="library-card">
+        <span>01</span>
+        <h3>God First, Then Religion</h3>
+      </a>
 
-  gap:34px;
-}
+      <a href="definition-of-god/" class="library-card">
+        <span>02</span>
+        <h3>The Definition of God</h3>
+      </a>
 
-.library-card{
+      <a href="divine-names/" class="library-card">
+        <span>03</span>
+        <h3>Divine Names</h3>
+      </a>
 
-  background:#111111;
+      <a href="divine-revelation/" class="library-card">
+        <span>04</span>
+        <h3>Divine Revelation</h3>
+      </a>
 
-  border:1px solid #2a2112;
+      <a href="expected-prophet/" class="library-card">
+        <span>05</span>
+        <h3>Expected Prophet</h3>
+      </a>
 
-  border-radius:30px;
+      <a href="human-interpretation/" class="library-card">
+        <span>06</span>
+        <h3>Human Interpretation</h3>
+      </a>
 
-  padding:42px 34px;
+      <a href="prophetic-continuity/" class="library-card">
+        <span>07</span>
+        <h3>Prophetic Continuity</h3>
+      </a>
 
-  min-height:230px;
+      <a href="prophetic-history/" class="library-card">
+        <span>08</span>
+        <h3>Prophetic History</h3>
+      </a>
 
-  text-decoration:none;
+      <a href="prophetic-silence/" class="library-card">
+        <span>09</span>
+        <h3>Prophetic Silence</h3>
+      </a>
 
-  transition:.35s ease;
+      <a href="comparative-law/" class="library-card">
+        <span>10</span>
+        <h3>Comparative Law</h3>
+      </a>
 
-  display:flex;
+      <a href="research-archive/" class="library-card">
+        <span>11</span>
+        <h3>Research Archive</h3>
+      </a>
 
-  flex-direction:column;
+      <a href="scripture-manuscripts/" class="library-card">
+        <span>12</span>
+        <h3>Scripture & Manuscripts</h3>
+      </a>
 
-  justify-content:flex-start;
-}
+      <a href="semantic-analysis/" class="library-card">
+        <span>13</span>
+        <h3>Semantic Analysis</h3>
+      </a>
 
-.library-card:hover{
+    </div>
 
-  transform:translateY(-8px);
+  </div>
 
-  border-color:#b7904f;
-}
+</section>
 
-.library-card span{
-
-  font-size:14px;
-
-  color:#5e523d;
-
-  letter-spacing:2px;
-
-  margin-bottom:18px;
-}
-
-.library-card h3{
-
-  color:#d8b97b;
-
-  font-size:34px;
-
-  line-height:1.4;
-
-  font-weight:400;
-}
-
-@media(max-width:900px){
-
-  .library-container h1{
-    font-size:46px;
-  }
-
-  .library-container p{
-    font-size:18px;
-  }
-
-  .library-card{
-    min-height:190px;
-    padding:34px 28px;
-  }
-
-  .library-card h3{
-    font-size:28px;
-  }
-
-}
+</body>
+</html>
