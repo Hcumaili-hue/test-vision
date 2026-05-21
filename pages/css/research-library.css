@@ -21,403 +21,108 @@ href="../pages/css/research-library.css">
 
 <body>
 
-<section class="library-page">
+.library-page{
+  padding:120px 7%;
+  background:#f4efe5;
+}
 
-  <!-- HERO -->
+.library-container{
+  max-width:1400px;
+  margin:auto;
+}
 
-  <div class="library-hero">
+.library-container h1{
+  font-size:58px;
+  color:#111;
+  margin-bottom:24px;
+}
 
-    <h1>
+.library-container p{
+  max-width:950px;
+  font-size:20px;
+  line-height:1.9;
+  color:#5d564b;
+  margin-bottom:70px;
+}
 
-      Research Library
+.library-grid{
+  display:grid;
 
-    </h1>
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
 
-    <p>
+  gap:34px;
+}
 
-      Explore an expanding scholarly archive
-      dedicated to comparative Abrahamic studies,
-      divine revelation,
-      sacred language,
-      scriptural history,
-      semantic analysis,
-      prophetic continuity,
-      theology,
-      law,
-      manuscript traditions,
-      and the evolving interpretation of revelation.
+.library-card{
 
-    </p>
+  background:#111111;
 
-  </div>
+  border:1px solid #2a2112;
 
+  border-radius:30px;
 
-  <!-- GRID -->
+  padding:42px 34px;
 
-  <div class="library-grid">
+  min-height:230px;
 
+  text-decoration:none;
 
-    <a
-    href="god-first-then-religion/"
-    class="library-card">
+  transition:.35s ease;
 
-      <span class="library-number">
+  display:flex;
 
-        01
+  flex-direction:column;
 
-      </span>
+  justify-content:flex-start;
+}
 
-      <h2>
+.library-card:hover{
 
-        God First, Then Religion
+  transform:translateY(-8px);
 
-      </h2>
+  border-color:#b7904f;
+}
 
-      <p>
+.library-card span{
 
-        Core thesis,
-        comparative framework,
-        and continuity
-        of revelation.
+  font-size:14px;
 
-      </p>
+  color:#5e523d;
 
-    </a>
+  letter-spacing:2px;
 
+  margin-bottom:18px;
+}
 
-    <a
-    href="definition-of-god/"
-    class="library-card">
+.library-card h3{
 
-      <span class="library-number">
+  color:#d8b97b;
 
-        02
+  font-size:34px;
 
-      </span>
+  line-height:1.4;
 
-      <h2>
+  font-weight:400;
+}
 
-        The Definition of God
+@media(max-width:900px){
 
-      </h2>
+  .library-container h1{
+    font-size:46px;
+  }
 
-      <p>
+  .library-container p{
+    font-size:18px;
+  }
 
-        Divine names,
-        transcendence,
-        attributes,
-        and sacred presence.
+  .library-card{
+    min-height:190px;
+    padding:34px 28px;
+  }
 
-      </p>
-
-    </a>
-
-
-    <a
-    href="divine-names/"
-    class="library-card">
-
-      <span class="library-number">
-
-        03
-
-      </span>
-
-      <h2>
-
-        Divine Names
-
-      </h2>
-
-      <p>
-
-        Sacred naming,
-        divine language,
-        attributes,
-        and theology.
-
-      </p>
-
-    </a>
-
-
-    <a
-    href="divine-revelation/"
-    class="library-card">
-
-      <span class="library-number">
-
-        04
-
-      </span>
-
-      <h2>
-
-        Divine Revelation
-
-      </h2>
-
-      <p>
-
-        Revelation,
-        prophetic transmission,
-        Gabriel,
-        and divine speech.
-
-      </p>
-
-    </a>
-
-
-    <a
-    href="scripture-manuscripts/"
-    class="library-card">
-
-      <span class="library-number">
-
-        05
-
-      </span>
-
-      <h2>
-
-        Scripture & Manuscripts
-
-      </h2>
-
-      <p>
-
-        Torah,
-        Gospel,
-        Qur’an,
-        codices,
-        and manuscript traditions.
-
-      </p>
-
-    </a>
-
-
-    <a
-    href="prophetic-continuity/"
-    class="library-card">
-
-      <span class="library-number">
-
-        06
-
-      </span>
-
-      <h2>
-
-        Prophetic Continuity
-
-      </h2>
-
-      <p>
-
-        Sacred succession,
-        historical continuity,
-        and revelation.
-
-      </p>
-
-    </a>
-
-
-    <a
-    href="prophetic-silence/"
-    class="library-card">
-
-      <span class="library-number">
-
-        07
-
-      </span>
-
-      <h2>
-
-        Prophetic Silence
-
-      </h2>
-
-      <p>
-
-        Second Temple silence,
-        transition,
-        and expectation.
-
-      </p>
-
-    </a>
-
-
-    <a
-    href="expected-prophet/"
-    class="library-card">
-
-      <span class="library-number">
-
-        08
-
-      </span>
-
-      <h2>
-
-        The Expected Prophet
-
-      </h2>
-
-      <p>
-
-        Messianic expectation,
-        Paraclete traditions,
-        and future prophecy.
-
-      </p>
-
-    </a>
-
-
-    <a
-    href="comparative-law/"
-    class="library-card">
-
-      <span class="library-number">
-
-        09
-
-      </span>
-
-      <h2>
-
-        Comparative Law
-
-      </h2>
-
-      <p>
-
-        Sacred law,
-        covenant structure,
-        and legal transformation.
-
-      </p>
-
-    </a>
-
-
-    <a
-    href="semantic-analysis/"
-    class="library-card">
-
-      <span class="library-number">
-
-        10
-
-      </span>
-
-      <h2>
-
-        Semantic Analysis
-
-      </h2>
-
-      <p>
-
-        Hebrew semantics,
-        translation,
-        instability,
-        and terminology.
-
-      </p>
-
-    </a>
-
-
-    <a
-    href="human-interpretation/"
-    class="library-card">
-
-      <span class="library-number">
-
-        11
-
-      </span>
-
-      <h2>
-
-        Human Interpretation
-
-      </h2>
-
-      <p>
-
-        Interpretation,
-        religious development,
-        and theology.
-
-      </p>
-
-    </a>
-
-
-    <a
-    href="research-archive/"
-    class="library-card">
-
-      <span class="library-number">
-
-        12
-
-      </span>
-
-      <h2>
-
-        Research Archive
-
-      </h2>
-
-      <p>
-
-        Publications,
-        ongoing essays,
-        research materials,
-        and studies.
-
-      </p>
-
-    </a>
-
-
-    <a
-    href="prophetic-history/"
-    class="library-card">
-
-      <span class="library-number">
-
-        13
-
-      </span>
-
-      <h2>
-
-        Prophetic History
-
-      </h2>
-
-      <p>
-
-        Abrahamic prophetic history,
-        covenantal continuity,
-        and sacred transmission.
-
-      </p>
-
-    </a>
-
-  </div>
-
-</section>
-
-</body>
-</html>
+  .library-card h3{
+    font-size:28px;
+  }
+
+}
