@@ -125,7 +125,20 @@ NETWORK ICON
   object-fit:cover;
 }
 
+/* =========================
+OPEN EFFECT
+========================= */
 
+.network-open{
+
+  transform:scale(.96);
+}
+
+
+.network-open .network-icon{
+
+  transform:scale(1.9);
+}
 /* =========================
 HOVER EFFECT
 ========================= */
