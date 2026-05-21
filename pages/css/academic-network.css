@@ -43,18 +43,18 @@ OFFICIAL LOGOS (Updated Links)
     background-color: #8e24aa; background-size: 58%;
 }
 
-.philpeople-icon {
+.philpeople-icon{
 
-    background-image:
-   url('https://philpapers.org)
+  background-image:
+  url('https://philpeople.org/static/img/philpeople-logo.png');
 
-    background-color:#ffffff;
+  background-color:#3949ab;
 
-    background-size:68%;
+  background-size:68%;
 
-    background-position:center;
+  background-position:center;
 
-    background-repeat:no-repeat;
+  background-repeat:no-repeat;
 }
 
 .ssrn-icon {
