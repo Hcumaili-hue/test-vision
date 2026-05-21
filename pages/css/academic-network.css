@@ -47,14 +47,19 @@ OFFICIAL LOGOS (Updated Links)
 
   background:#3949ab;
 
-  background-image:
-  url('https://philpeople.org/assets/logo.png');
+  color:#ffffff;
 
-  background-size:62%;
+  font-family:'Cinzel',serif;
 
-  background-position:center;
+  font-size:2.6rem;
 
-  background-repeat:no-repeat;
+  font-weight:700;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
 }
 
 .ssrn-icon {
