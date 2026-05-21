@@ -44,9 +44,17 @@ OFFICIAL LOGOS (Updated Links)
 }
 
 .philpeople-icon {
-    background-image: url('https://philpeople.org/static/img/philpeople-logo.png');
-    background-color: #3949ab;
-    background-size: 50%;   /* PhilPeople شعاره مختلف شوية */
+
+    background-image:
+    url('https://philpeople.org/assets/pp-logo.png');
+
+    background-color:#4f5bd5;
+
+    background-size:72%;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
 }
 
 .ssrn-icon {
