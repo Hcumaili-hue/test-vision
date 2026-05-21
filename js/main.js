@@ -493,271 +493,171 @@ if(
 
 }
 /* =========================
-SEARCH SYSTEM
+SITE SEARCH INDEX
 ========================= */
 
-const searchTrigger =
-document.getElementById(
-  "searchTrigger"
-);
+const searchIndex = [
 
-const searchOverlay =
-document.getElementById(
-  "searchOverlay"
-);
+  {
+    title:"Library",
+    description:
+    "Research library and publications",
 
-const searchClose =
-document.getElementById(
-  "searchClose"
-);
+    url:"pages/library.html"
+  },
 
-const searchInput =
-document.getElementById(
-  "searchInput"
-);
+  {
+    title:"Archive",
+    description:
+    "Academic archive",
 
-const searchResults =
-document.getElementById(
-  "searchResults"
-);
+    url:"pages/archive.html"
+  },
+
+  {
+    title:"Academic Network",
+    description:
+    "Research profiles and platforms",
+
+    url:"pages/academic-network.html"
+  },
+
+  {
+    title:"Core Thesis",
+    description:
+    "Core Abrahamic thesis",
+
+    url:"pages/core-thesis.html"
+  },
+
+  {
+    title:"Prophetic Continuity",
+    description:
+    "Continuity of prophecy",
+
+    url:
+    "pages/prophetic-continuity.html"
+  },
+
+  {
+    title:"Comparative Law",
+    description:
+    "Comparative Abrahamic law",
+
+    url:
+    "pages/comparative-law.html"
+  },
+
+  {
+    title:"God First Then Religion",
+    description:
+    "Definition of God study",
+
+    url:
+    "pages/god-first-then-religion.html"
+  }
+
+];
 
 
-if(
+/* =========================
+SEARCH
+========================= */
 
-  searchTrigger &&
+searchInput
+.addEventListener(
 
-  searchOverlay &&
+  "input",
 
-  searchClose &&
+  ()=>{
 
-  searchInput &&
+    const query =
 
-  searchResults
+    searchInput
+    .value
+    .toLowerCase()
+    .trim();
 
-){
+    searchResults
+    .innerHTML = "";
 
-  /* OPEN */
-
-  searchTrigger
-  .addEventListener(
-
-    "click",
-
-    ()=>{
-
-      searchOverlay
-      .classList
-      .add(
-        "active"
-      );
-
-      document.body
-      .style
-      .overflow =
-      "hidden";
-
-      setTimeout(()=>{
-
-        searchInput
-        .focus();
-
-      },150);
-
+    if(!query){
+      return;
     }
 
-  );
+    const results =
 
+    searchIndex.filter(
 
-  /* CLOSE */
+      item =>
 
-  searchClose
-  .addEventListener(
+      item.title
+      .toLowerCase()
+      .includes(query)
 
-    "click",
+      ||
 
-    ()=>{
+      item.description
+      .toLowerCase()
+      .includes(query)
 
-      searchOverlay
-      .classList
-      .remove(
-        "active"
-      );
+    );
 
-      document.body
-      .style
-      .overflow =
-      "";
+    results.forEach(
 
-      searchInput.value =
-      "";
+      item=>{
 
-      searchResults
-      .innerHTML =
-      "";
-
-    }
-
-  );
-
-
-  /* CLOSE OUTSIDE */
-
-  searchOverlay
-  .addEventListener(
-
-    "click",
-
-    (e)=>{
-
-      if(
-        e.target ===
-        searchOverlay
-      ){
-
-        searchOverlay
-        .classList
-        .remove(
-          "active"
+        const card =
+        document
+        .createElement(
+          "div"
         );
 
-        document.body
-        .style
-        .overflow =
-        "";
+        card.className =
+        "search-result-card";
 
-      }
+        card.innerHTML =
 
-    }
+        `
+        <h3>
 
-  );
+          ${item.title}
 
+        </h3>
 
-  /* SEARCH */
+        <p>
 
-  searchInput
-  .addEventListener(
+          ${item.description}
 
-    "input",
+        </p>
+        `;
 
-    ()=>{
+        card
+        .addEventListener(
 
-      const query =
-      searchInput
-      .value
-      .toLowerCase()
-      .trim();
+          "click",
 
-      searchResults
-      .innerHTML =
-      "";
+          ()=>{
 
-      if(!query){
-        return;
-      }
-
-      const searchable =
-      document.querySelectorAll(
-
-        "section h1, section h2, section h3, p"
-
-      );
-
-      searchable
-      .forEach(
-
-        item=>{
-
-          const text =
-          item.textContent
-          .toLowerCase();
-
-          if(
-
-            text.includes(
-              query
-            )
-
-          ){
-
-            const card =
-            document
-            .createElement(
-              "div"
-            );
-
-            card.className =
-            "search-result-card";
-
-            card.innerHTML =
-
-            `
-            <h3>
-            ${item.textContent}
-            </h3>
-
-            <p>
-            Click to navigate
-            to this section.
-            </p>
-            `;
-
-            card
-            .addEventListener(
-
-              "click",
-
-              ()=>{
-
-                const section =
-                item.closest(
-                  "section"
-                );
-
-                if(
-                  section
-                ){
-
-                  searchOverlay
-                  .classList
-                  .remove(
-                    "active"
-                  );
-
-                  document.body
-                  .style
-                  .overflow =
-                  "";
-
-                  section
-                  .scrollIntoView({
-
-                    behavior:
-                    "smooth"
-
-                  });
-
-                }
-
-              }
-
-            );
-
-            searchResults
-            .appendChild(
-              card
-            );
+            window.location.href =
+            item.url;
 
           }
 
-        }
+        );
 
-      );
+        searchResults
+        .appendChild(
+          card
+        );
 
-    }
+      }
 
-  );
+    );
 
-}
+  }
+
+);
 /* =========================
 ACADEMIC NETWORK EFFECT
 ========================= */
