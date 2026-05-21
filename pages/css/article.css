@@ -132,7 +132,11 @@ RESEARCH LIBRARY CARDS
 
   margin:0;
 }
+.library-card{
 
+  background:red !important;
+
+}
 
 /* =========================
 ARTICLE PAGE STYLE
