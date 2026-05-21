@@ -70,146 +70,71 @@ PRIMARY + SECONDARY BUTTONS
 }
 
 /* =========================
-ACADEMIC NETWORK BUTTONS
+PLATFORM LOGOS
 ========================= */
-
-.network-card{
-
-  min-height:22rem;
-
-  padding:3rem 2rem;
-
-  border-radius:2.6rem;
-
-  background:#111111;
-
-  display:flex;
-
-  flex-direction:column;
-
-  align-items:center;
-
-  justify-content:center;
-
-  gap:2rem;
-
-  text-decoration:none;
-
-  transition:.35s ease;
-
-  cursor:pointer;
-}
-
-
-.network-card:hover{
-
-  transform:translateY(-.5rem);
-}
-
-
-/* =========================
-NETWORK ICON
-========================= */
-
-.network-icon{
-
-  width:8rem;
-
-  height:8rem;
-
-  border-radius:50%;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  font-size:2.8rem;
-
-  color:#ffffff;
-}
-
-
-.network-card span{
-
-  color:#d4b26a;
-
-  font-size:1.8rem;
-
-  font-weight:500;
-
-  text-align:center;
-
-  font-family:'Cinzel',serif;
-}
-
-
-/* =========================
-PLATFORM COLORS
-========================= */
-
-.reddit-icon{
-
-  background:#ff4500;
-}
-
-.wordpress-icon{
-
-  background:#21759b;
-}
 
 .orcid-icon{
 
-  background:#a6ce39;
+  background-image:
+  url("../assets/network/orcid.png");
 }
 
 .scholar-icon{
 
-  background:#4285f4;
+  background-image:
+  url("../assets/network/scholar.png");
 }
 
 .zenodo-icon{
 
-  background:#5c6bc0;
+  background-image:
+  url("../assets/network/zenodo.png");
 }
 
 .osf-icon{
 
-  background:#9c27b0;
+  background-image:
+  url("../assets/network/osf.png");
 }
 
 .medium-icon{
 
-  background:#000000;
+  background-image:
+  url("../assets/network/medium.png");
 }
 
 .linkedin-icon{
 
-  background:#0a66c2;
+  background-image:
+  url("../assets/network/linkedin.png");
 }
 
 .philpeople-icon{
 
-  background:#4f5bd5;
+  background-image:
+  url("../assets/network/philpeople.png");
 }
 
 .ssrn-icon{
 
-  background:#1565c0;
+  background-image:
+  url("../assets/network/ssrn.png");
 }
 
 .academia-icon{
 
-  background:#222222;
+  background-image:
+  url("../assets/network/academia.png");
+}
+
+.wordpress-icon{
+
+  background-image:
+  url("../assets/network/wordpress.png");
 }
 
 .email-icon{
 
-  background:#c9a44c;
-}
-
-.amazon-icon{
-
-  background:#ff9900;
+  background-image:
+  url("../assets/network/email.png");
 }
