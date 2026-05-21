@@ -1,161 +1,270 @@
-/* =========================
+<!-- =========================
 ACADEMIC NETWORK
-========================= */
+========================= -->
 
-.academic-network-section{
+<section
+id="academic-network"
+class="academic-network-section"
+>
 
-  padding:10rem 7%;
+  <h2>
 
-  background:#f3ede2;
-}
+    Academic Network
 
+  </h2>
 
-/* TITLE */
+  <div class="network-links">
 
-.academic-network-section h2{
+    <!-- ORCID -->
 
-  text-align:center;
+    <a
+    href="https://orcid.org/0009-0005-8938-119X"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="network-card"
+    >
 
-  font-size:4rem;
+      <div
+      class="network-icon orcid-icon"
+      >
+      </div>
 
-  margin-bottom:5rem;
+      <span>
 
-  font-family:'Cinzel',serif;
+        ORCID
 
-  color:#111111;
-}
+      </span>
 
+    </a>
 
-/* GRID */
 
-.network-links{
+    <!-- GOOGLE SCHOLAR -->
 
-  display:grid;
+    <a
+    href="https://scholar.google.com/citations?user=1JX9BRIAAAAJ&hl=ar"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="network-card"
+    >
 
-  grid-template-columns:
-  repeat(auto-fit,minmax(180px,1fr));
+      <div
+      class="network-icon scholar-icon"
+      >
+      </div>
 
-  gap:2rem;
-}
+      <span>
 
+        Google Scholar
 
-/* CARD */
+      </span>
 
-.network-card{
+    </a>
 
-  background:#111111;
 
-  border-radius:2rem;
+    <!-- ZENODO -->
 
-  min-height:180px;
+    <a
+    href="https://zenodo.org/records/20130053"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="network-card"
+    >
 
-  padding:2.2rem;
+      <div
+      class="network-icon zenodo-icon"
+      >
+      </div>
 
-  text-decoration:none;
+      <span>
 
-  display:flex;
+        Zenodo
 
-  flex-direction:column;
+      </span>
 
-  align-items:center;
+    </a>
 
-  justify-content:center;
 
-  gap:1.5rem;
+    <!-- OSF -->
 
-  transition:.35s ease;
+    <a
+    href="https://osf.io/5t7u2/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="network-card"
+    >
 
-  overflow:hidden;
+      <div
+      class="network-icon osf-icon"
+      >
+      </div>
 
-  position:relative;
-}
+      <span>
 
+        OSF
 
-.network-card:hover{
+      </span>
 
-  transform:
-  translateY(-6px);
-}
+    </a>
 
 
-/* ICON */
+    <!-- PHILPEOPLE -->
 
-.network-icon{
+    <a
+    href="https://philpeople.org/profiles/h-cumaili"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="network-card"
+    >
 
-  width:74px;
+      <div
+      class="network-icon philpeople-icon"
+      >
+      </div>
 
-  height:74px;
+      <span>
 
-  border-radius:50%;
+        PhilPeople
 
-  overflow:hidden;
+      </span>
 
-  display:flex;
+    </a>
 
-  align-items:center;
 
-  justify-content:center;
+    <!-- SSRN -->
 
-  transition:.35s ease;
-}
+    <a
+    href="https://ssrn.com/author=11365068"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="network-card"
+    >
 
+      <div
+      class="network-icon ssrn-icon"
+      >
+      </div>
 
-/* LOGO */
+      <span>
 
-.network-icon img{
+        SSRN
 
-  width:100%;
+      </span>
 
-  height:100%;
+    </a>
 
-  object-fit:cover;
 
-  border-radius:50%;
-}
+    <!-- ACADEMIA -->
 
+    <a
+    href="https://independentresearcher.academia.edu/HCumaili"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="network-card"
+    >
 
-/* NAME */
+      <div
+      class="network-icon academia-icon"
+      >
+      </div>
 
-.network-card span{
+      <span>
 
-  color:#d4b26a;
+        Academia
 
-  font-size:1.7rem;
+      </span>
 
-  font-weight:600;
+    </a>
 
-  text-align:center;
-}
 
+    <!-- MEDIUM -->
 
-/* CLICK EFFECT */
+    <a
+    href="https://medium.com/@H.cumaili"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="network-card"
+    >
 
-.network-card.network-open
-.network-icon{
+      <div
+      class="network-icon medium-icon"
+      >
+      </div>
 
-  transform:scale(2.4);
-}
+      <span>
 
+        Medium
 
-/* MOBILE */
+      </span>
 
-@media(max-width:768px){
+    </a>
 
-  .network-links{
 
-    grid-template-columns:
-    repeat(2,1fr);
-  }
+    <!-- WORDPRESS -->
 
-  .network-card{
+    <a
+    href="https://hcumaili.wordpress.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="network-card"
+    >
 
-    min-height:150px;
-  }
+      <div
+      class="network-icon wordpress-icon"
+      >
+      </div>
 
-  .network-icon{
+      <span>
 
-    width:62px;
+        WordPress
 
-    height:62px;
-  }
-}
+      </span>
+
+    </a>
+
+
+    <!-- LINKEDIN -->
+
+    <a
+    href="https://www.linkedin.com/in/h-cumaili-620b12206/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="network-card"
+    >
+
+      <div
+      class="network-icon linkedin-icon"
+      >
+      </div>
+
+      <span>
+
+        LinkedIn
+
+      </span>
+
+    </a>
+
+
+    <!-- EMAIL -->
+
+    <a
+    href="mailto:contact@h-cumaili.com"
+    class="network-card"
+    >
+
+      <div
+      class="network-icon email-icon"
+      >
+      </div>
+
+      <span>
+
+        Academic Email
+
+      </span>
+
+    </a>
+
+  </div>
+
+</section>
