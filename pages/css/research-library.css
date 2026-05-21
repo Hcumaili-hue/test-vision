@@ -13,352 +13,409 @@ content="width=device-width, initial-scale=1.0">
 Research Library | H. Cumaili
 </title>
 
+<link
+rel="stylesheet"
+href="../pages/css/research-library.css">
+
 </head>
 
 <body>
 
-<section class="article-page">
+<section class="library-page">
 
-<div class="article-container">
+  <!-- HERO -->
 
-<h1>
-Research Library
-</h1>
+  <div class="library-hero">
 
-<h2>
-The Comprehensive Abrahamic Research Archive
-</h2>
+    <h1>
 
-<p>
+      Research Library
 
-Explore an expanding scholarly archive
-dedicated to comparative Abrahamic studies,
-divine revelation,
-sacred language,
-scriptural history,
-semantic analysis,
-prophetic continuity,
-theology,
-law,
-manuscript traditions,
-and the evolving interpretation of revelation.
+    </h1>
 
-</p>
+    <p>
 
+      Explore an expanding scholarly archive
+      dedicated to comparative Abrahamic studies,
+      divine revelation,
+      sacred language,
+      scriptural history,
+      semantic analysis,
+      prophetic continuity,
+      theology,
+      law,
+      manuscript traditions,
+      and the evolving interpretation of revelation.
 
-<!-- GRID -->
+    </p>
 
-<div class="library-grid">
+  </div>
 
-<a
-href="god-first-then-religion/"
-class="library-card">
 
-<h3>
-01
-</h3>
+  <!-- GRID -->
 
-<h4>
-God First, Then Religion
-</h4>
+  <div class="library-grid">
 
-<p>
 
-Core thesis,
-comparative framework,
-and continuity
-of revelation.
+    <a
+    href="god-first-then-religion/"
+    class="library-card">
 
-</p>
+      <span class="library-number">
 
-</a>
+        01
 
+      </span>
 
-<a
-href="definition-of-god/"
-class="library-card">
+      <h2>
 
-<h3>
-02
-</h3>
+        God First, Then Religion
 
-<h4>
-The Definition of God
-</h4>
+      </h2>
 
-<p>
+      <p>
 
-Divine names,
-transcendence,
-attributes,
-and sacred presence.
+        Core thesis,
+        comparative framework,
+        and continuity
+        of revelation.
 
-</p>
+      </p>
 
-</a>
+    </a>
 
 
-<a
-href="divine-names/"
-class="library-card">
+    <a
+    href="definition-of-god/"
+    class="library-card">
 
-<h3>
-03
-</h3>
+      <span class="library-number">
 
-<h4>
-Divine Names
-</h4>
+        02
 
-<p>
+      </span>
 
-Sacred naming,
-divine language,
-attributes,
-and theology.
+      <h2>
 
-</p>
+        The Definition of God
 
-</a>
+      </h2>
 
+      <p>
 
-<a
-href="divine-revelation/"
-class="library-card">
+        Divine names,
+        transcendence,
+        attributes,
+        and sacred presence.
 
-<h3>
-04
-</h3>
+      </p>
 
-<h4>
-Divine Revelation
-</h4>
+    </a>
 
-<p>
 
-Revelation,
-prophetic transmission,
-Gabriel,
-and divine speech.
+    <a
+    href="divine-names/"
+    class="library-card">
 
-</p>
+      <span class="library-number">
 
-</a>
+        03
 
+      </span>
 
-<a
-href="scripture-manuscripts/"
-class="library-card">
+      <h2>
 
-<h3>
-05
-</h3>
+        Divine Names
 
-<h4>
-Scripture & Manuscripts
-</h4>
+      </h2>
 
-<p>
+      <p>
 
-Torah,
-Gospel,
-Qur’an,
-codices,
-and manuscript traditions.
+        Sacred naming,
+        divine language,
+        attributes,
+        and theology.
 
-</p>
+      </p>
 
-</a>
+    </a>
 
 
-<a
-href="prophetic-continuity/"
-class="library-card">
+    <a
+    href="divine-revelation/"
+    class="library-card">
 
-<h3>
-06
-</h3>
+      <span class="library-number">
 
-<h4>
-Prophetic Continuity
-</h4>
+        04
 
-<p>
+      </span>
 
-Sacred succession,
-historical continuity,
-and revelation.
+      <h2>
 
-</p>
+        Divine Revelation
 
-</a>
+      </h2>
 
+      <p>
 
-<a
-href="prophetic-silence/"
-class="library-card">
+        Revelation,
+        prophetic transmission,
+        Gabriel,
+        and divine speech.
 
-<h3>
-07
-</h3>
+      </p>
 
-<h4>
-Prophetic Silence
-</h4>
+    </a>
 
-<p>
 
-Second Temple silence,
-transition,
-and expectation.
+    <a
+    href="scripture-manuscripts/"
+    class="library-card">
 
-</p>
+      <span class="library-number">
 
-</a>
+        05
 
+      </span>
 
-<a
-href="expected-prophet/"
-class="library-card">
+      <h2>
 
-<h3>
-08
-</h3>
+        Scripture & Manuscripts
 
-<h4>
-The Expected Prophet
-</h4>
+      </h2>
 
-<p>
+      <p>
 
-Messianic expectation,
-Paraclete traditions,
-and future prophecy.
+        Torah,
+        Gospel,
+        Qur’an,
+        codices,
+        and manuscript traditions.
 
-</p>
+      </p>
 
-</a>
+    </a>
 
 
-<a
-href="comparative-law/"
-class="library-card">
+    <a
+    href="prophetic-continuity/"
+    class="library-card">
 
-<h3>
-09
-</h3>
+      <span class="library-number">
 
-<h4>
-Comparative Law
-</h4>
+        06
 
-<p>
+      </span>
 
-Sacred law,
-covenant structure,
-and legal transformation.
+      <h2>
 
-</p>
+        Prophetic Continuity
 
-</a>
+      </h2>
 
+      <p>
 
-<a
-href="semantic-analysis/"
-class="library-card">
+        Sacred succession,
+        historical continuity,
+        and revelation.
 
-<h3>
-10
-</h3>
+      </p>
 
-<h4>
-Semantic Analysis
-</h4>
+    </a>
 
-<p>
 
-Hebrew semantics,
-translation,
-instability,
-and terminology.
+    <a
+    href="prophetic-silence/"
+    class="library-card">
 
-</p>
+      <span class="library-number">
 
-</a>
+        07
 
+      </span>
 
-<a
-href="human-interpretation/"
-class="library-card">
+      <h2>
 
-<h3>
-11
-</h3>
+        Prophetic Silence
 
-<h4>
-Human Interpretation
-</h4>
+      </h2>
 
-<p>
+      <p>
 
-Interpretation,
-religious development,
-and theology.
+        Second Temple silence,
+        transition,
+        and expectation.
 
-</p>
+      </p>
 
-</a>
+    </a>
 
 
-<a
-href="research-archive/"
-class="library-card">
+    <a
+    href="expected-prophet/"
+    class="library-card">
 
-<h3>
-12
-</h3>
+      <span class="library-number">
 
-<h4>
-Research Archive
-</h4>
+        08
 
-<p>
+      </span>
 
-Publications,
-ongoing essays,
-research materials,
-and studies.
+      <h2>
 
-</p>
+        The Expected Prophet
 
-</a>
+      </h2>
 
+      <p>
 
-<a
-href="prophetic-history/"
-class="library-card">
+        Messianic expectation,
+        Paraclete traditions,
+        and future prophecy.
 
-<h3>
-13
-</h3>
+      </p>
 
-<h4>
-Prophetic History
-</h4>
+    </a>
 
-<p>
 
-Abrahamic prophetic history,
-covenantal continuity,
-and sacred transmission.
+    <a
+    href="comparative-law/"
+    class="library-card">
 
-</p>
+      <span class="library-number">
 
-</a>
+        09
 
-</div>
+      </span>
 
-</div>
+      <h2>
+
+        Comparative Law
+
+      </h2>
+
+      <p>
+
+        Sacred law,
+        covenant structure,
+        and legal transformation.
+
+      </p>
+
+    </a>
+
+
+    <a
+    href="semantic-analysis/"
+    class="library-card">
+
+      <span class="library-number">
+
+        10
+
+      </span>
+
+      <h2>
+
+        Semantic Analysis
+
+      </h2>
+
+      <p>
+
+        Hebrew semantics,
+        translation,
+        instability,
+        and terminology.
+
+      </p>
+
+    </a>
+
+
+    <a
+    href="human-interpretation/"
+    class="library-card">
+
+      <span class="library-number">
+
+        11
+
+      </span>
+
+      <h2>
+
+        Human Interpretation
+
+      </h2>
+
+      <p>
+
+        Interpretation,
+        religious development,
+        and theology.
+
+      </p>
+
+    </a>
+
+
+    <a
+    href="research-archive/"
+    class="library-card">
+
+      <span class="library-number">
+
+        12
+
+      </span>
+
+      <h2>
+
+        Research Archive
+
+      </h2>
+
+      <p>
+
+        Publications,
+        ongoing essays,
+        research materials,
+        and studies.
+
+      </p>
+
+    </a>
+
+
+    <a
+    href="prophetic-history/"
+    class="library-card">
+
+      <span class="library-number">
+
+        13
+
+      </span>
+
+      <h2>
+
+        Prophetic History
+
+      </h2>
+
+      <p>
+
+        Abrahamic prophetic history,
+        covenantal continuity,
+        and sacred transmission.
+
+      </p>
+
+    </a>
+
+  </div>
 
 </section>
 
