@@ -14,7 +14,7 @@ ACADEMIC NETWORK
 
   text-align:center;
 
-  font-size:3.6rem;
+  font-size:3.4rem;
 
   margin-bottom:4rem;
 
@@ -30,18 +30,20 @@ NETWORK GRID
 
 .network-links{
 
-  width:min(8rem,8%);
+  width:100%;
+
+  max-width:90rem;
 
   margin:auto;
 
   display:grid;
 
   grid-template-columns:
-  repeat(auto-fit,minmax(15rem,1fr));
-
-  gap:1.8rem;
+  repeat(auto-fit,minmax(12rem,12rem));
 
   justify-content:center;
+
+  gap:1.5rem;
 }
 
 
@@ -51,9 +53,9 @@ NETWORK CARD
 
 .network-card{
 
-  min-height:8rem;
+  width:12rem;
 
-  padding:1.8rem;
+  height:12rem;
 
   border-radius:2rem;
 
@@ -67,26 +69,23 @@ NETWORK CARD
 
   justify-content:center;
 
-  gap:1.2rem;
+  gap:1rem;
 
   text-decoration:none;
 
-  transition:.35s ease;
+  transition:.3s ease;
 
   overflow:hidden;
-
-  position:relative;
 }
 
 
 .network-card:hover{
 
-  transform:
-  translateY(-.35rem);
+  transform:translateY(-4px);
 
   box-shadow:
   0 1rem 2rem
-  rgba(0,0,0,.18);
+  rgba(0,0,0,.16);
 }
 
 
@@ -96,13 +95,11 @@ NETWORK ICON
 
 .network-icon{
 
-  width:5.5rem;
+  width:4.8rem;
 
-  height:5.5rem;
+  height:4.8rem;
 
   border-radius:50%;
-
-  overflow:hidden;
 
   display:flex;
 
@@ -110,42 +107,28 @@ NETWORK ICON
 
   justify-content:center;
 
+  color:#ffffff;
+
+  font-size:2rem;
+
   transition:.35s ease;
-
-  background:#1a1a1a;
 }
 
-
-.network-icon img{
-
-  width:10;
-
-  height:10;
-
-  object-fit:cover;
-}
 
 /* =========================
-OPEN EFFECT
+PLATFORM ICON SCALE
 ========================= */
 
-.network-open{
+.network-card:hover
+.network-icon{
 
-  transform:scale(.96);
+  transform:scale(1.12);
 }
 
 
 .network-open .network-icon{
 
-  transform:scale(1.9);
-}
-/* =========================
-HOVER EFFECT
-========================= */
-
-.network-card:hover .network-icon{
-
-  transform:scale(1.18);
+  transform:scale(1.6);
 }
 
 
@@ -157,9 +140,7 @@ TEXT
 
   color:#d4b26a;
 
-  font-size:1.45rem;
-
-  font-weight:500;
+  font-size:1.2rem;
 
   text-align:center;
 
@@ -170,49 +151,68 @@ TEXT
 
 
 /* =========================
+PLATFORM COLORS
+========================= */
+
+.orcid-icon{
+  background:#a6ce39;
+}
+
+.scholar-icon{
+  background:#4285f4;
+}
+
+.zenodo-icon{
+  background:#5c6bc0;
+}
+
+.osf-icon{
+  background:#9c27b0;
+}
+
+.philpeople-icon{
+  background:#4f5bd5;
+}
+
+.ssrn-icon{
+  background:#1565c0;
+}
+
+.academia-icon{
+  background:#222222;
+}
+
+.medium-icon{
+  background:#000000;
+}
+
+.wordpress-icon{
+  background:#21759b;
+}
+
+.linkedin-icon{
+  background:#0a66c2;
+}
+
+.email-icon{
+  background:#c9a44c;
+}
+
+
+/* =========================
 MOBILE
 ========================= */
 
 @media(max-width:768px){
 
-  .academic-network-section{
+  .network-links{
 
-    padding:6rem 5%;
+    grid-template-columns:
+    repeat(2,12rem);
   }
 
   .academic-network-section h2{
 
-    font-size:2.8rem;
-
-    margin-bottom:3rem;
-  }
-
-  .network-links{
-
-    grid-template-columns:
-    repeat(2,1fr);
-
-    gap:1.4rem;
-  }
-
-  .network-card{
-
-    min-height:12rem;
-
-    padding:1.4rem;
-
-    border-radius:1.8rem;
-  }
-
-  .network-icon{
-
-    width:4.8rem;
-
-    height:4.8rem;
-  }
-
-  .network-card span{
-
-    font-size:1.25rem;
+    font-size:2.6rem;
   }
 }
