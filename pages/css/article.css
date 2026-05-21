@@ -256,7 +256,37 @@ ARTICLE PAGE STYLE
   color:#2f2b28;
 }
 
+/* =========================
+ARTICLE LISTS
+========================= */
 
+.article-page ul,
+.article-page ol{
+
+  margin:3rem 0;
+
+  padding-left:3rem;
+
+  color:#2f2b28;
+}
+
+.article-page li{
+
+  font-size:2rem;
+
+  line-height:2;
+
+  color:#2f2b28;
+
+  margin-bottom:1rem;
+}
+
+/* GOLD BULLETS */
+
+.article-page li::marker{
+
+  color:var(--gold);
+}
 /* =========================
 RESPONSIVE
 ========================= */
