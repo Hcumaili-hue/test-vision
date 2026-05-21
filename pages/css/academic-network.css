@@ -79,3 +79,61 @@ OFFICIAL LOGOS (Updated Links)
     background-size: 52%;
     background-color: #c9a44c;
 }
+/* =========================
+NETWORK LAYOUT FIX
+(Horizontal Layout)
+========================= */
+
+.network-links{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(130px,1fr));
+
+    gap:38px;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    justify-items:center;
+}
+
+
+/* =========================
+CARD
+========================= */
+
+.network-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    text-align:center;
+}
+
+
+/* =========================
+TEXT
+========================= */
+
+.network-card span{
+
+    margin-top:10px;
+
+    color:#111111;
+
+    font-size:1rem;
+
+    font-family:'Cinzel',serif;
+
+    line-height:1.3;
+}
