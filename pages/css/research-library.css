@@ -1,112 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+/* =========================
+RESEARCH LIBRARY
+========================= */
 
-<head>
+.library-grid{
 
-<meta charset="UTF-8">
+  display:grid;
 
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0">
+  grid-template-columns:
+  repeat(auto-fit,minmax(28rem,1fr));
 
-<title>
-Research Library | H. Cumaili
-</title>
+  gap:3rem;
 
-<link
-rel="stylesheet"
-href="../pages/css/research-library.css">
+  margin-top:6rem;
+}
 
-</head>
+.library-grid .card{
 
-<body>
+  min-height:22rem;
 
-<section class="library-page">
+  text-decoration:none;
 
-  <div class="library-container">
+  display:flex;
 
-    <h1>
-      Research Library
-    </h1>
+  flex-direction:column;
 
-    <p>
-      Explore the expanding research archive including comparative Abrahamic studies,
-      divine revelation, scriptural interpretation, semantic analysis, prophetic continuity,
-      historical theology, manuscript traditions, and the movement of sacred meaning.
-    </p>
+  justify-content:flex-start;
+}
 
-    <div class="library-grid">
+.card-number{
 
-      <a href="god-first-then-religion/" class="library-card">
-        <span>01</span>
-        <h3>God First, Then Religion</h3>
-      </a>
+  font-size:1.4rem;
 
-      <a href="definition-of-god/" class="library-card">
-        <span>02</span>
-        <h3>The Definition of God</h3>
-      </a>
+  color:var(--gold-soft);
 
-      <a href="divine-names/" class="library-card">
-        <span>03</span>
-        <h3>Divine Names</h3>
-      </a>
+  letter-spacing:.2rem;
 
-      <a href="divine-revelation/" class="library-card">
-        <span>04</span>
-        <h3>Divine Revelation</h3>
-      </a>
+  margin-bottom:1.8rem;
+}
 
-      <a href="expected-prophet/" class="library-card">
-        <span>05</span>
-        <h3>Expected Prophet</h3>
-      </a>
+.library-grid .card-title{
 
-      <a href="human-interpretation/" class="library-card">
-        <span>06</span>
-        <h3>Human Interpretation</h3>
-      </a>
+  margin:0;
 
-      <a href="prophetic-continuity/" class="library-card">
-        <span>07</span>
-        <h3>Prophetic Continuity</h3>
-      </a>
+  font-size:3rem;
 
-      <a href="prophetic-history/" class="library-card">
-        <span>08</span>
-        <h3>Prophetic History</h3>
-      </a>
+  line-height:1.4;
 
-      <a href="prophetic-silence/" class="library-card">
-        <span>09</span>
-        <h3>Prophetic Silence</h3>
-      </a>
+  color:var(--gold-light);
 
-      <a href="comparative-law/" class="library-card">
-        <span>10</span>
-        <h3>Comparative Law</h3>
-      </a>
-
-      <a href="research-archive/" class="library-card">
-        <span>11</span>
-        <h3>Research Archive</h3>
-      </a>
-
-      <a href="scripture-manuscripts/" class="library-card">
-        <span>12</span>
-        <h3>Scripture & Manuscripts</h3>
-      </a>
-
-      <a href="semantic-analysis/" class="library-card">
-        <span>13</span>
-        <h3>Semantic Analysis</h3>
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-</body>
-</html>
+  font-weight:400;
+}
