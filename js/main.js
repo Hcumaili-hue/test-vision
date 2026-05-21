@@ -774,18 +774,14 @@ networkCards.forEach(card=>{
     const url =
     this.getAttribute('href');
 
-    this.classList.add('network-open');
+    this.classList.add(
+      'network-open'
+    );
 
     setTimeout(()=>{
 
-      window.open(
-        url,
-        '_blank'
-      );
-
-      this.classList.remove(
-        'network-open'
-      );
+      window.location.href =
+      url;
 
     },320);
 
