@@ -11,6 +11,7 @@ RESEARCH LIBRARY PAGE
   min-height:100vh;
 }
 
+
 /* =========================
 LIBRARY CONTAINER
 ========================= */
@@ -22,8 +23,9 @@ LIBRARY CONTAINER
   margin:auto;
 }
 
+
 /* =========================
-LIBRARY TITLE
+LIBRARY TITLES
 ========================= */
 
 .library-title{
@@ -32,14 +34,10 @@ LIBRARY TITLE
 
   font-weight:500;
 
-  color:#111111;
+  color:var(--gold);
 
   margin-bottom:2.4rem;
 }
-
-/* =========================
-LIBRARY INTRO
-========================= */
 
 .library-intro{
 
@@ -49,10 +47,11 @@ LIBRARY INTRO
 
   line-height:1.9;
 
-  color:#5d564b;
+  color:#3e3a35;
 
   margin-bottom:7rem;
 }
+
 
 /* =========================
 RESEARCH LIBRARY CARDS
@@ -72,7 +71,8 @@ RESEARCH LIBRARY CARDS
 
   background:#111111;
 
-  border:.1rem solid #2a2112;
+  border:.12rem solid
+  rgba(198,168,106,.22);
 
   border-radius:3rem;
 
@@ -89,6 +89,9 @@ RESEARCH LIBRARY CARDS
   flex-direction:column;
 
   justify-content:flex-start;
+
+  box-shadow:
+  0 .8rem 2rem rgba(0,0,0,.08);
 }
 
 .library-card:hover{
@@ -96,18 +99,26 @@ RESEARCH LIBRARY CARDS
   transform:translateY(-.6rem);
 
   border-color:var(--gold);
+
+  background:#181818;
 }
+
+
+/* CARD NUMBER */
 
 .library-card span{
 
   font-size:1.4rem;
 
-  color:#6f5c3b;
+  color:#8d7647;
 
   letter-spacing:.2rem;
 
   margin-bottom:1.8rem;
 }
+
+
+/* CARD TITLE */
 
 .library-card h3{
 
@@ -121,6 +132,130 @@ RESEARCH LIBRARY CARDS
 
   margin:0;
 }
+
+
+/* =========================
+ARTICLE PAGE STYLE
+========================= */
+
+.article-page{
+
+  background:#f4efe5;
+
+  min-height:100vh;
+
+  padding:10rem 7%;
+}
+
+.article-container{
+
+  width:min(100rem,100%);
+
+  margin:auto;
+}
+
+
+/* ARTICLE TITLES */
+
+.article-page h1{
+
+  font-size:5.4rem;
+
+  color:var(--gold);
+
+  margin-bottom:3rem;
+}
+
+.article-page h2{
+
+  color:var(--gold);
+
+  margin-top:7rem;
+
+  margin-bottom:2.4rem;
+
+  font-size:3.6rem;
+}
+
+.article-page h3{
+
+  color:var(--gold);
+
+  margin-top:5rem;
+
+  margin-bottom:2rem;
+
+  font-size:2.8rem;
+}
+
+
+/* ARTICLE TEXT */
+
+.article-page p{
+
+  font-size:2rem;
+
+  line-height:2;
+
+  color:#2f2b28;
+
+  margin-bottom:3rem;
+}
+
+
+/* BLOCKQUOTE */
+
+.article-page blockquote{
+
+  background:#ede5d8;
+
+  border-left:.3rem solid
+  var(--gold);
+
+  padding:3rem;
+
+  border-radius:2rem;
+
+  margin:5rem 0;
+
+  color:#3d3832;
+}
+
+
+/* TABLES */
+
+.article-page table{
+
+  width:100%;
+
+  border-collapse:collapse;
+
+  margin:5rem 0;
+
+  background:#fffaf2;
+}
+
+.article-page th{
+
+  background:#ece2cf;
+
+  color:var(--gold);
+
+  padding:2rem;
+
+  text-align:left;
+}
+
+.article-page td{
+
+  padding:2rem;
+
+  border:.1rem solid
+  rgba(198,168,106,.25);
+
+  color:#2f2b28;
+}
+
 
 /* =========================
 RESPONSIVE
@@ -147,14 +282,20 @@ RESPONSIVE
 
   .library-card h3{
 
-    font-size:2.6rem;
+    font-size:2.5rem;
+  }
+
+  .article-page h1{
+
+    font-size:4.4rem;
   }
 
 }
 
 @media(max-width:60rem){
 
-  .library-page{
+  .library-page,
+  .article-page{
 
     padding:9rem 5%;
   }
@@ -164,9 +305,14 @@ RESPONSIVE
     font-size:4rem;
   }
 
-  .library-intro{
+  .article-page h1{
 
-    font-size:1.7rem;
+    font-size:3.8rem;
+  }
+
+  .article-page p{
+
+    font-size:1.8rem;
   }
 
 }
