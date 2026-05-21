@@ -4,82 +4,67 @@ ACADEMIC NETWORK
 
 .academic-network-section{
 
-  padding:12rem 7%;
+  padding:10rem 7%;
 
   background:#f3ede2;
 }
 
 
-.network-container{
+.academic-network-section h2{
 
-  width:min(135rem,100%);
+  text-align:center;
 
-  margin:auto;
-}
-
-
-/* =========================
-HEADER
-========================= */
-
-.network-label{
-
-  display:block;
-
-  font-size:1.45rem;
-
-  color:#7d7466;
-
-  letter-spacing:.08rem;
-
-  margin-bottom:1.2rem;
-}
-
-
-.network-title{
-
-  font-size:5rem;
-
-  color:#c6a86a;
+  font-size:4rem;
 
   margin-bottom:5rem;
 
-  line-height:1.1;
-
   font-family:'Cinzel', serif;
+
+  color:#111111;
 }
 
 
 /* =========================
-GRID
+NETWORK PANEL
 ========================= */
 
-.network-grid{
+.network-links{
+
+  max-width:90rem;
+
+  margin:auto;
+
+  background:#f8f4ec;
+
+  border:.1rem solid rgba(0,0,0,.08);
+
+  border-radius:3rem;
+
+  padding:5rem;
 
   display:grid;
 
   grid-template-columns:
-  repeat(3,1fr);
+  repeat(auto-fit,minmax(16rem,1fr));
 
-  gap:2.6rem;
+  gap:2.5rem;
+
+  box-shadow:
+  0 2rem 5rem rgba(0,0,0,.06);
 }
 
 
 /* =========================
-CARD
+NETWORK CARD
 ========================= */
 
 .network-card{
 
-  min-height:24rem;
-
-  padding:3rem;
-
-  border-radius:3rem;
-
   background:#111111;
 
-  text-decoration:none;
+  border-radius:2.2rem;
+
+  padding:2.4rem 1.5rem;
 
   display:flex;
 
@@ -89,39 +74,145 @@ CARD
 
   justify-content:center;
 
-  gap:2rem;
+  gap:1.5rem;
+
+  text-decoration:none;
 
   transition:.35s ease;
 
-  box-shadow:
-  0 .8rem 2rem
-  rgba(0,0,0,.12);
+  border:.12rem solid transparent;
 }
 
-
-/* HOVER */
 
 .network-card:hover{
 
   transform:
   translateY(-.5rem);
+
+  border-color:#d4b26a;
+
+  box-shadow:
+  0 1rem 3rem rgba(0,0,0,.15);
 }
 
 
 /* =========================
-ICON
+ROUND ICON
 ========================= */
 
 .network-icon{
 
-  width:8rem;
+  width:7rem;
 
-  height:8rem;
+  height:7rem;
 
   border-radius:50%;
+
+  overflow:hidden;
 
   display:flex;
 
   align-items:center;
 
-  justify
+  justify-content:center;
+
+  background:#ffffff;
+
+  transition:.35s ease;
+}
+
+
+/* =========================
+REAL PLATFORM LOGOS
+========================= */
+
+.network-icon img{
+
+  width:70%;
+
+  height:70%;
+
+  object-fit:contain;
+
+  transition:.35s ease;
+}
+
+
+/* hover animation */
+
+.network-card:hover .network-icon{
+
+  transform:scale(1.08);
+}
+
+
+/* click effect */
+
+.network-card:active{
+
+  transform:scale(.96);
+}
+
+
+.network-card:active .network-icon{
+
+  transform:scale(1.18);
+}
+
+
+/* =========================
+TEXT
+========================= */
+
+.network-card span{
+
+  color:#d4b26a;
+
+  font-size:1.5rem;
+
+  font-weight:600;
+
+  text-align:center;
+
+  line-height:1.4;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+  .network-links{
+
+    padding:3rem;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:1.8rem;
+  }
+
+  .network-icon{
+
+    width:6rem;
+
+    height:6rem;
+  }
+
+  .network-card span{
+
+    font-size:1.3rem;
+  }
+}
+
+
+@media(max-width:500px){
+
+  .network-links{
+
+    grid-template-columns:
+    repeat(2,1fr);
+  }
+}
