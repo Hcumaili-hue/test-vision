@@ -10,6 +10,8 @@ ACADEMIC NETWORK
 }
 
 
+/* TITLE */
+
 .academic-network-section h2{
 
   text-align:center;
@@ -18,53 +20,38 @@ ACADEMIC NETWORK
 
   margin-bottom:5rem;
 
-  font-family:'Cinzel', serif;
+  font-family:'Cinzel',serif;
 
   color:#111111;
 }
 
 
-/* =========================
-NETWORK PANEL
-========================= */
+/* GRID */
 
 .network-links{
-
-  max-width:90rem;
-
-  margin:auto;
-
-  background:#f8f4ec;
-
-  border:.1rem solid rgba(0,0,0,.08);
-
-  border-radius:3rem;
-
-  padding:5rem;
 
   display:grid;
 
   grid-template-columns:
-  repeat(auto-fit,minmax(16rem,1fr));
+  repeat(auto-fit,minmax(180px,1fr));
 
-  gap:2.5rem;
-
-  box-shadow:
-  0 2rem 5rem rgba(0,0,0,.06);
+  gap:2rem;
 }
 
 
-/* =========================
-NETWORK CARD
-========================= */
+/* CARD */
 
 .network-card{
 
   background:#111111;
 
-  border-radius:2.2rem;
+  border-radius:2rem;
 
-  padding:2.4rem 1.5rem;
+  min-height:180px;
+
+  padding:2.2rem;
+
+  text-decoration:none;
 
   display:flex;
 
@@ -76,35 +63,28 @@ NETWORK CARD
 
   gap:1.5rem;
 
-  text-decoration:none;
-
   transition:.35s ease;
 
-  border:.12rem solid transparent;
+  overflow:hidden;
+
+  position:relative;
 }
 
 
 .network-card:hover{
 
   transform:
-  translateY(-.5rem);
-
-  border-color:#d4b26a;
-
-  box-shadow:
-  0 1rem 3rem rgba(0,0,0,.15);
+  translateY(-6px);
 }
 
 
-/* =========================
-ROUND ICON
-========================= */
+/* ICON */
 
 .network-icon{
 
-  width:7rem;
+  width:74px;
 
-  height:7rem;
+  height:74px;
 
   border-radius:50%;
 
@@ -116,128 +96,66 @@ ROUND ICON
 
   justify-content:center;
 
-  background:#ffffff;
-
   transition:.35s ease;
 }
 
 
-/* =========================
-REAL PLATFORM LOGOS
-========================= */
+/* LOGO */
 
 .network-icon img{
 
-  width:70%;
+  width:100%;
 
-  height:70%;
+  height:100%;
 
-  object-fit:contain;
+  object-fit:cover;
 
-  transition:.35s ease;
+  border-radius:50%;
 }
 
 
-/* hover animation */
-
-.network-card:hover .network-icon{
-
-  transform:scale(1.08);
-}
-
-
-/* click effect */
-
-.network-card:active{
-
-  transform:scale(.96);
-}
-
-
-.network-card:active .network-icon{
-
-  transform:scale(1.18);
-}
-
-
-/* =========================
-TEXT
-========================= */
+/* NAME */
 
 .network-card span{
 
   color:#d4b26a;
 
-  font-size:1.5rem;
+  font-size:1.7rem;
 
   font-weight:600;
 
   text-align:center;
-
-  line-height:1.4;
-}
-
-/* =========================
-OPEN EFFECT
-========================= */
-
-.network-card{
-
-  transition:
-  transform .28s ease,
-  box-shadow .28s ease;
 }
 
 
-.network-card:hover{
+/* CLICK EFFECT */
 
-  transform:
-  translateY(-.5rem);
+.network-card.network-open
+.network-icon{
+
+  transform:scale(2.4);
 }
 
 
-.network-card.network-open{
-
-  transform:
-  scale(1.08)
-  rotate(-2deg);
-}
-
-/* =========================
-MOBILE
-========================= */
+/* MOBILE */
 
 @media(max-width:768px){
 
   .network-links{
 
-    padding:3rem;
-
     grid-template-columns:
     repeat(2,1fr);
+  }
 
-    gap:1.8rem;
+  .network-card{
+
+    min-height:150px;
   }
 
   .network-icon{
 
-    width:6rem;
+    width:62px;
 
-    height:6rem;
-  }
-
-  .network-card span{
-
-    font-size:1.3rem;
-  }
-}
-
-
-@media(max-width:500px){
-
-  .network-links{
-
-    grid-template-columns:
-    repeat(2,1fr);
+    height:62px;
   }
 }
