@@ -80,11 +80,20 @@ OFFICIAL LOGOS (Updated Links)
 
     background-repeat:no-repeat;
 }
-.wordpress-icon {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg');
-    background-color: #21759b;
-}
 
+.wordpress-icon {
+
+    background-image:
+    url('https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg');
+
+    background-color:#ffffff;
+
+    background-size:58%;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+}
 .linkedin-icon {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg');
     background-color: #0a66c2;
