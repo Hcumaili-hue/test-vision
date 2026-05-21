@@ -40,13 +40,13 @@ OFFICIAL LOGOS (Updated Links)
 
 .osf-icon {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg');
-    background-color: #8e24aa;
+    background-color: #8e24aa; background-size: 58%;
 }
 
 .philpeople-icon {
     background-image: url('https://philpeople.org/static/img/philpeople-logo.png');
     background-color: #3949ab;
-    background-size: 58%;   /* PhilPeople شعاره مختلف شوية */
+    background-size: 50%;   /* PhilPeople شعاره مختلف شوية */
 }
 
 .ssrn-icon {
@@ -56,12 +56,12 @@ OFFICIAL LOGOS (Updated Links)
 
 .academia-icon {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/66/Academia-logo-2021.svg');
-    background-color: #222222;
+    background-color: #ffffff;
 }
 
 .medium-icon {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ec/Medium_logo.svg');
-    background-color: #000000;
+    background-color: #111111;
 }
 
 .wordpress-icon {
