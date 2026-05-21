@@ -43,12 +43,12 @@ OFFICIAL LOGOS (Updated Links)
     background-color: #8e24aa; background-size: 58%;
 }
 
-.philpeople-icon{
+.philpeople .link-icon{
+
+  background:#3949ab;
 
   background-image:
   url('https://philpeople.org/assets/logo.png');
-
-  background-color:#3949ab;
 
   background-size:62%;
 
