@@ -1,0 +1,197 @@
+/* =========================
+ACADEMIC NETWORK
+========================= */
+
+.academic-network-section{
+
+  padding:10rem 7%;
+
+  background:#f3ede2;
+}
+
+
+.academic-network-section h2{
+
+  text-align:center;
+
+  font-size:4rem;
+
+  margin-bottom:5rem;
+
+  font-family:'Cinzel', serif;
+
+  color:#111111;
+}
+
+
+/* =========================
+NETWORK GRID
+========================= */
+
+.network-links{
+
+  width:min(120rem,100%);
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(18rem,1fr));
+
+  gap:2rem;
+}
+
+
+/* =========================
+NETWORK CARD
+========================= */
+
+.network-card{
+
+  min-height:18rem;
+
+  padding:2rem;
+
+  border-radius:2.4rem;
+
+  background:#111111;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:1.8rem;
+
+  text-decoration:none;
+
+  transition:.35s ease;
+
+  overflow:hidden;
+
+  position:relative;
+
+}
+
+
+.network-card:hover{
+
+  transform:
+  translateY(-.5rem);
+
+  box-shadow:
+  0 1.4rem 3rem
+  rgba(0,0,0,.18);
+}
+
+
+/* =========================
+NETWORK ICON
+========================= */
+
+.network-icon{
+
+  width:7rem;
+
+  height:7rem;
+
+  border-radius:50%;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  overflow:hidden;
+
+  transition:.35s ease;
+}
+
+
+.network-icon img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+}
+
+
+/* =========================
+HOVER EFFECT
+========================= */
+
+.network-card:hover
+.network-icon{
+
+  transform:scale(1.15);
+}
+
+
+/* =========================
+TEXT
+========================= */
+
+.network-card span{
+
+  color:#d4b26a;
+
+  font-size:1.7rem;
+
+  font-weight:500;
+
+  text-align:center;
+
+  font-family:'Cinzel', serif;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+  .academic-network-section{
+
+    padding:7rem 5%;
+  }
+
+  .academic-network-section h2{
+
+    font-size:3rem;
+  }
+
+  .network-links{
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:1.6rem;
+  }
+
+  .network-card{
+
+    min-height:15rem;
+
+    border-radius:2rem;
+  }
+
+  .network-icon{
+
+    width:6rem;
+
+    height:6rem;
+  }
+
+  .network-card span{
+
+    font-size:1.45rem;
+  }
+}
