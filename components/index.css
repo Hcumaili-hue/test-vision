@@ -2,7 +2,135 @@
 HOME PAGE
 H. Cumaili Lab
 ========================================= */
+/* =========================
+RESEARCH LIBRARY GRID
+========================= */
 
+.library-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(3,1fr);
+
+  gap:26px;
+
+  margin-top:60px;
+}
+
+
+/* =========================
+CARD
+========================= */
+
+.library-card{
+
+  background:#111111;
+
+  border-radius:28px;
+
+  padding:34px 28px;
+
+  min-height:290px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:space-between;
+
+  text-decoration:none;
+
+  transition:.35s ease;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.12);
+}
+
+.library-card:hover{
+
+  transform:translateY(-6px);
+}
+
+
+/* =========================
+TEXT INSIDE CARD
+========================= */
+
+.card-number{
+
+  color:#c9a44c;
+
+  font-size:.9rem;
+
+  font-family:'Cinzel', serif;
+
+  margin-bottom:14px;
+
+  display:block;
+}
+
+.library-card h3{
+
+  color:#c9a44c;
+
+  font-size:2rem;
+
+  line-height:1.3;
+
+  margin-bottom:18px;
+}
+
+.library-card p{
+
+  color:#d8c79b;
+
+  line-height:2;
+
+  font-size:1.05rem;
+}
+
+.card-arrow{
+
+  color:#c9a44c;
+
+  font-size:2rem;
+
+  margin-top:24px;
+
+  display:block;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+  .library-grid{
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:18px;
+  }
+
+  .library-card{
+
+    min-height:250px;
+
+    padding:24px 20px;
+
+    border-radius:24px;
+  }
+
+  .library-card h3{
+
+    font-size:1.4rem;
+  }
+
+}
 
 /* =========================
 GLOBAL SECTIONS
