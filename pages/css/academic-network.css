@@ -51,7 +51,7 @@ NETWORK CARD
 
 .network-card{
 
-  min-height:14rem;
+  min-height:8rem;
 
   padding:1.8rem;
 
@@ -118,9 +118,9 @@ NETWORK ICON
 
 .network-icon img{
 
-  width:100%;
+  width:10;
 
-  height:100%;
+  height:10;
 
   object-fit:cover;
 }
