@@ -68,10 +68,18 @@ OFFICIAL LOGOS (Updated Links)
 }
 
 .medium-icon {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ec/Medium_logo.svg');
-    background-color: #111111;
-}
 
+    background-image:
+    url('https://upload.wikimedia.org/wikipedia/commons/e/ec/Medium_logo.svg');
+
+    background-color:#ffffff;
+
+    background-size:58%;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+}
 .wordpress-icon {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg');
     background-color: #21759b;
