@@ -758,3 +758,37 @@ if(
   );
 
 }
+/* =========================
+ACADEMIC NETWORK EFFECT
+========================= */
+
+const networkCards =
+document.querySelectorAll('.network-card');
+
+networkCards.forEach(card=>{
+
+  card.addEventListener('click',function(e){
+
+    e.preventDefault();
+
+    const url =
+    this.getAttribute('href');
+
+    this.classList.add('network-open');
+
+    setTimeout(()=>{
+
+      window.open(
+        url,
+        '_blank'
+      );
+
+      this.classList.remove(
+        'network-open'
+      );
+
+    },320);
+
+  });
+
+});
