@@ -7,24 +7,25 @@ ICON - NEW (No black rectangle + Official logos)
     height: 82px;
     border-radius: 50%;
     margin-bottom: 14px;
-    background-size: 65%;           /* Logo size inside the circle */
+    background-size: 62%;           /* جرب 58% أو 68% حسب الشعار */
     background-position: center;
     background-repeat: no-repeat;
     transition: .35s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light elegant shadow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 }
 
+/* Hover Effect */
 .network-card:hover .network-icon {
     transform: scale(1.12);
 }
 
 /* =========================
-OFFICIAL PLATFORM LOGOS
+OFFICIAL LOGOS (Updated Links)
 ========================= */
 
 .orcid-icon {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg');
-    background-color: #a6ce39;   /* ORCID official color */
+    background-color: #a6ce39;
 }
 
 .scholar-icon {
@@ -38,13 +39,14 @@ OFFICIAL PLATFORM LOGOS
 }
 
 .osf-icon {
-    background-image: url('https://osf.io/static/img/osf_logo.svg');
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg');
     background-color: #8e24aa;
 }
 
 .philpeople-icon {
     background-image: url('https://philpeople.org/static/img/philpeople-logo.png');
     background-color: #3949ab;
+    background-size: 58%;   /* PhilPeople شعاره مختلف شوية */
 }
 
 .ssrn-icon {
@@ -74,6 +76,6 @@ OFFICIAL PLATFORM LOGOS
 
 .email-icon {
     background-image: url('https://cdn-icons-png.flaticon.com/512/561/561127.png');
-    background-size: 55%;
+    background-size: 52%;
     background-color: #c9a44c;
 }
