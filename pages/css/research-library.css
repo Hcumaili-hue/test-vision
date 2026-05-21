@@ -38,15 +38,37 @@ RESEARCH LIBRARY
   margin-bottom:1.8rem;
 }
 
-.library-grid .card-title{
+/* =========================
+TITLE
+========================= */
 
-  margin:0;
+/* TITLE */
 
-  font-size:3rem;
+.library-card h3{
 
-  line-height:1.4;
+  color:var(--gold-light) !important;
 
-  color:var(--gold-light);
+  margin-bottom:18px;
 
-  font-weight:400;
+  font-family:'Cinzel', serif;
+
+  font-size:34px;
+
+  line-height:1.3;
+
+  font-weight:600;
+}
+
+.library-card h3 a{
+
+  color:inherit !important;
+
+  text-decoration:none !important;
+
+  transition:.3s ease;
+}
+
+.library-card:hover h3{
+
+  color:var(--gold) !important;
 }
