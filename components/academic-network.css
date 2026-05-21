@@ -177,6 +177,31 @@ TEXT
   line-height:1.4;
 }
 
+/* =========================
+OPEN EFFECT
+========================= */
+
+.network-card{
+
+  transition:
+  transform .28s ease,
+  box-shadow .28s ease;
+}
+
+
+.network-card:hover{
+
+  transform:
+  translateY(-.5rem);
+}
+
+
+.network-card.network-open{
+
+  transform:
+  scale(1.08)
+  rotate(-2deg);
+}
 
 /* =========================
 MOBILE
