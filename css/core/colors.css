@@ -4,17 +4,17 @@
      GOLD
   ========================= */
 
-  --gold:#c6a86a;
-  --gold-light:#e7d2a2;
-  --gold-soft:#5f4b24;
+  --gold:#b8924f;
+  --gold-light:#c6a86a;
+  --gold-soft:#7b5d2b;
 
 
   /* =========================
      BACKGROUND / SURFACE
   ========================= */
 
-  --cream:#f8f3ea;
-  --cream-soft:#f3ede2;
+  --cream:#f4efe5;
+  --cream-soft:#f1eadf;
 
   --white:var(--cream);
 
@@ -32,8 +32,8 @@
      TEXT (DARK THEME)
   ========================= */
 
-  --text-main:#f3ead7;
-  --text-soft:#cfc2a8;
+  --text-main:#f2e7cf;
+  --text-soft:#b79f78;
 
 
   /* =========================
@@ -41,6 +41,6 @@
   ========================= */
 
   --text-dark:#1b1b1b;
-  --text-soft-dark:#5f5a4f;
+  --text-soft-dark:#4f493f;
 
 }
