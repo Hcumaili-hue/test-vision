@@ -1,5 +1,5 @@
 /* =========================
-   TABLE SYSTEM
+TABLE SYSTEM
 ========================= */
 
 .table-wrapper{
@@ -10,11 +10,11 @@
 
   margin:60px 0;
 
-  border:1px solid #2a2112;
+  border:1px solid #d6c7a8;
 
   border-radius:28px;
 
-  background:#111111;
+  background:#f5efe3;
 }
 
 .comparison-table{
@@ -24,45 +24,51 @@
   border-collapse:collapse;
 
   min-width:900px;
+
+  table-layout:fixed;
 }
 
 /* =========================
-   TABLE HEAD
+TABLE HEAD
 ========================= */
 
 .comparison-table thead{
 
-  background:#161616;
+  background:#b89b6b;
 }
 
 .comparison-table th{
 
   padding:26px 30px;
 
-  color:#f3ede2;
+  color:#111111;
 
   font-size:20px;
 
+  font-weight:700;
+
   text-align:left;
 
-  border-bottom:1px solid #2a2112;
+  border-bottom:1px solid #cbb58d;
 
   font-family:"Times New Roman",serif;
 }
 
 /* =========================
-   TABLE BODY
+TABLE BODY
 ========================= */
 
 .comparison-table td{
 
   padding:24px 30px;
 
-  color:#d7c8ae;
+  color:#1f1f1f;
+
+  background:#f5efe3;
 
   line-height:1.9;
 
-  border-bottom:1px solid #1e1e1e;
+  border-bottom:1px solid #ddd2bc;
 
   vertical-align:top;
 
@@ -76,29 +82,29 @@
 
 .comparison-table tbody tr:hover{
 
-  background:#181818;
+  background:#efe5d3;
 }
 
 /* =========================
-   HIGHLIGHT COLUMN
+HIGHLIGHT COLUMN
 ========================= */
 
 .highlight-cell{
 
-  color:#b89b6b;
+  color:#9b7a47;
 
-  font-weight:600;
+  font-weight:700;
 }
 
 /* =========================
-   TABLE TITLE
+TABLE TITLE
 ========================= */
 
 .table-title{
 
   font-size:34px;
 
-  color:#f3ede2;
+  color:#b89b6b;
 
   margin-bottom:26px;
 
@@ -106,57 +112,16 @@
 }
 
 /* =========================
-   TABLE NOTES
+TABLE NOTES
 ========================= */
 
 .table-note{
 
   margin-top:20px;
 
-  color:#9f8d71;
+  color:#5b5144;
 
   line-height:1.8;
 
   font-size:15px;
-}
-/* =========================
-DEFINITION OF GOD TABLE
-========================= */
-
-.comparison-table{
-
-  width:100%;
-  border-collapse:collapse;
-  table-layout:fixed;
-  margin-top:4rem;
-}
-
-.comparison-table th{
-
-  background:#10151d;
-  color:#f4efe5;
-  padding:22px;
-  font-size:18px;
-  font-weight:600;
-  text-align:left;
-}
-
-.comparison-table td{
-
-  padding:24px;
-
-  color:#8c7442;
-
-  font-size:16px;
-  line-height:1.9;
-  font-weight:500;
-
-  vertical-align:top;
-
-  border-bottom:1px solid #ddd;
-}
-
-.comparison-table tr:hover{
-
-  background:#faf7f1;
 }
