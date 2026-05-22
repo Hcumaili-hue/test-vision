@@ -42,7 +42,7 @@ CARD SYSTEM
 
   letter-spacing:.2rem;
 
-  color:var(--gold-soft);
+  color:#7a5d2a;
 
   margin-bottom:1.8rem;
 }
@@ -57,7 +57,7 @@ CARD SYSTEM
 
   line-height:1.4;
 
-  color:var(--gold-light);
+  color:#8b6a2d;
 
   font-weight:400;
 }
@@ -70,7 +70,7 @@ CARD SYSTEM
 
   font-size:1.9rem;
 
-  color:var(--text-soft);
+  color:#5c5548;
 
   line-height:1.9;
 }
