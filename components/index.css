@@ -222,17 +222,13 @@ RESEARCHER SECTION
 PUBLICATION SECTION
 ========================= */
 
-.publication-container{
+.publication-book img{
 
-  display:flex;
+  width:28rem;
 
-  flex-direction:column;
+  height:auto;
 
-  align-items:center;
-
-  gap:18rem;
-
-  text-align:center;
+  object-fit:contain;
 }
 
 
