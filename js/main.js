@@ -337,7 +337,6 @@ if(
                 row.style
                 .display =
                 "none";
-
               }
 
             }
