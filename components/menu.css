@@ -35,7 +35,18 @@ MENU OVERLAY
 
   transition:.35s ease;
 }
+.menu-overlay{
 
+  opacity:1 !important;
+
+  visibility:visible !important;
+
+  pointer-events:auto !important;
+
+  background:red !important;
+
+  z-index:999999 !important;
+}
 
 /* =========================
 OPEN STATE
