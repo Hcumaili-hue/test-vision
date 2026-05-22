@@ -1,34 +1,4 @@
 /* =========================
-HOME PAGE
-========================= */
-
-.home-page{
-
-  background:#f4efe5;
-}
-
-
-/* =========================
-INDEX SECTION SYSTEM
-========================= */
-
-.research-gateway-section,
-.revelation-project-section,
-.researcher-section,
-.publication-section,
-.research-domains-section,
-.academic-network-section,
-.library-gateway-section{
-
-  position:relative;
-
-  padding:12rem 7%;
-
-  overflow:hidden;
-}
-
-
-/* =========================
 ACADEMIC CREAM SYSTEM
 UNIFIED PAGE COLORS
 ========================= */
