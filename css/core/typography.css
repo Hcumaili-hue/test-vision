@@ -15,9 +15,9 @@ body{
 
   line-height:1.8;
 
-  color:var(--text-main);
+  color:var(--text-dark);
 
-  background:var(--dark);
+  background:var(--cream);
 }
 
 /* HEADINGS */
