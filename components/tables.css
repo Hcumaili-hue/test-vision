@@ -119,3 +119,44 @@
 
   font-size:15px;
 }
+/* =========================
+DEFINITION OF GOD TABLE
+========================= */
+
+.comparison-table{
+
+  width:100%;
+  border-collapse:collapse;
+  table-layout:fixed;
+  margin-top:4rem;
+}
+
+.comparison-table th{
+
+  background:#10151d;
+  color:#f4efe5;
+  padding:22px;
+  font-size:18px;
+  font-weight:600;
+  text-align:left;
+}
+
+.comparison-table td{
+
+  padding:24px;
+
+  color:#2a2a2a; /* هذا المهم */
+
+  font-size:16px;
+  line-height:1.9;
+  font-weight:500;
+
+  vertical-align:top;
+
+  border-bottom:1px solid #ddd;
+}
+
+.comparison-table tr:hover{
+
+  background:#faf7f1;
+}
