@@ -74,3 +74,27 @@ CARD SYSTEM
 
   line-height:1.9;
 }
+.card{
+
+  background:#d7e1e7;
+
+  border:.1rem solid var(--gold-soft);
+
+  border-radius:2.8rem;
+
+  padding:4rem 3.2rem;
+
+  transition:.35s ease;
+
+  box-shadow:var(--shadow);
+
+  text-decoration:none;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:flex-start;
+
+  min-height:22rem;
+}
