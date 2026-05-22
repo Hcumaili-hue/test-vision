@@ -85,16 +85,14 @@ TABLE BODY
   transition:.35s ease;
 }
 
-.comparison-table tbody tr:hover{
+.comparison-table tr{
 
-  background:#161616;
-
-  transform:translateX(6px);
+  transition:.3s ease;
 }
 
-.comparison-table tbody tr:hover td{
+.comparison-table tbody tr:hover{
 
-  color:#f5efe3;
+  background:#b89b6b;
 }
 /* =========================
 HIGHLIGHT COLUMN
