@@ -20,7 +20,7 @@ PROFILE IMAGE
 
   align-items:center;
 
-  margin-bottom:3rem;
+  margin-bottom:9rem;
 }
 
 
@@ -79,7 +79,7 @@ BOOK IMAGE
 
   align-items:center;
 
-  margin-top:4rem;
+  margin-top:9rem;
 }
 
 
@@ -212,7 +212,7 @@ HOME PAGE IMAGES
 
 .publication-book img{
 
-  width:7rem;
+  width:9rem;
 
   height:auto;
 
