@@ -29,13 +29,17 @@ MENU OVERLAY
 
   visibility:hidden;
 
-  transform:translateY(-20px);
+  pointer-events:none;
+
+  transform:translateY(-2rem);
 
   transition:.35s ease;
 }
 
 
-/* OPEN STATE */
+/* =========================
+OPEN STATE
+========================= */
 
 .menu-overlay.active{
 
@@ -43,11 +47,15 @@ MENU OVERLAY
 
   visibility:visible;
 
+  pointer-events:auto;
+
   transform:translateY(0);
 }
 
 
-/* CLOSE BUTTON */
+/* =========================
+CLOSE BUTTON
+========================= */
 
 .menu-close{
 
@@ -70,10 +78,19 @@ MENU OVERLAY
   font-size:2rem;
 
   cursor:pointer;
+
+  transition:.3s ease;
+}
+
+.menu-close:hover{
+
+  background:#7d1f1f;
 }
 
 
-/* MENU LINKS */
+/* =========================
+MENU LINKS
+========================= */
 
 .menu-links{
 
@@ -102,10 +119,14 @@ MENU OVERLAY
 .menu-links a:hover{
 
   color:#9f8054;
+
+  transform:translateY(-.2rem);
 }
 
 
-/* MENU SUBTEXT */
+/* =========================
+MENU SUBTEXT
+========================= */
 
 .menu-caption{
 
