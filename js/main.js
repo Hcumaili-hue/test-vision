@@ -280,7 +280,7 @@ if(
 TABLE FILTER
 ========================= */
 
-const filterButtons =
+const tableFilterButtons =
 document.querySelectorAll(
   ".filter-btn"
 );
@@ -291,21 +291,28 @@ document.querySelectorAll(
 );
 
 if(
-  filterButtons.length &&
+
+  tableFilterButtons.length &&
+
   tableRows.length
+
 ){
 
-  filterButtons.forEach(
+  tableFilterButtons.forEach(
+
     btn=>{
 
       btn.addEventListener(
+
         "click",
+
         ()=>{
 
           const category =
           btn.dataset.filter;
 
           tableRows.forEach(
+
             row=>{
 
               if(
@@ -334,17 +341,18 @@ if(
               }
 
             }
+
           );
 
         }
+
       );
 
     }
+
   );
 
 }
-
-
 /* =========================
 MENU OVERLAY
 ========================= */
