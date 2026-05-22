@@ -17,27 +17,23 @@ RESEARCH LIBRARY
 
 /* CARD */
 
-.library-card{
+.library-card p{
 
-  min-height:24rem;
+  font-size:1.8rem;
 
-  display:flex;
+  line-height:1.8;
 
-  flex-direction:column;
+  color:#5b5650;
 
-  justify-content:flex-start;
+  margin-top:1.6rem;
 
-  padding:3.2rem;
+  display:-webkit-box;
 
-  border-radius:2.8rem;
+  -webkit-line-clamp:4;
 
-    background:#f7f1e6;
+  -webkit-box-orient:vertical;
 
-  border:1px solid #2b2215;
-
-  text-decoration:none;
-
-  transition:.35s ease;
+  overflow:hidden;
 }
 
 .library-card:hover{
