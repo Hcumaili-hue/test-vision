@@ -345,14 +345,13 @@ if(
 }
 
 
-
 /* =========================
 MENU OVERLAY
 ========================= */
 
 const headerMenuBtn =
-document.querySelector(
-  ".header-menu-btn"
+document.getElementById(
+  "menuTrigger"
 );
 
 const menuOverlay =
@@ -386,9 +385,7 @@ if(
 
       menuOverlay
       .classList
-      .add(
-        "active"
-      );
+      .add("active");
 
       document.body
       .style
@@ -411,9 +408,7 @@ if(
 
       menuOverlay
       .classList
-      .remove(
-        "active"
-      );
+      .remove("active");
 
       document.body
       .style
@@ -441,9 +436,7 @@ if(
 
         menuOverlay
         .classList
-        .remove(
-          "active"
-        );
+        .remove("active");
 
         document.body
         .style
@@ -475,9 +468,7 @@ if(
 
           menuOverlay
           .classList
-          .remove(
-            "active"
-          );
+          .remove("active");
 
           document.body
           .style
@@ -489,9 +480,11 @@ if(
       );
 
     }
+
   );
 
 }
+
 /* =========================
 SITE SEARCH INDEX
 ========================= */
