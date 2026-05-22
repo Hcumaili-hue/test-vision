@@ -376,26 +376,27 @@ if(
 
   /* OPEN */
 
-  headerMenuBtn
-  .addEventListener(
+headerMenuBtn
+.addEventListener(
 
-    "click",
+  "click",
 
-    ()=>{
+  ()=>{
 
-      menuOverlay
-      .classList
-      .add("active");
+    console.log("MENU CLICKED");
 
-      document.body
-      .style
-      .overflow =
-      "hidden";
+    menuOverlay
+    .classList
+    .add("active");
 
-    }
+    document.body
+    .style
+    .overflow =
+    "hidden";
 
-  );
+  }
 
+);
 
   /* CLOSE */
 
