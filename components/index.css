@@ -206,9 +206,9 @@ RESEARCHER SECTION
 
 .researcher-image img{
 
-  width:9rem;
+  width:16rem;
 
-  height:9rem;
+  height:16rem;
 
   object-fit:cover;
 
@@ -230,7 +230,7 @@ PUBLICATION SECTION
 
   align-items:center;
 
-  gap:2rem;
+  gap:18rem;
 
   text-align:center;
 }
@@ -249,7 +249,7 @@ PUBLICATION SECTION
 
 .publication-book img{
 
-  width:7rem;
+  width:18rem;
 
   height:auto;
 
