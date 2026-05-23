@@ -1,48 +1,135 @@
 /* =========================
-TEST MENU
+MENU OVERLAY
 ========================= */
 
 .menu-overlay{
 
-  position:fixed !important;
+  position:fixed;
 
-  inset:0 !important;
+  inset:0;
 
-  z-index:999999 !important;
+  z-index:9999;
 
-  display:none !important;
+  background:
+  rgba(17,17,17,.75);
 
-  background:red !important;
+  opacity:0;
+
+  visibility:hidden;
+
+  transition:.3s ease;
 }
 
+
+/* ACTIVE */
 
 .menu-overlay.active{
 
-  display:flex !important;
+  opacity:1;
 
-  align-items:center !important;
-
-  justify-content:center !important;
+  visibility:visible;
 }
 
 
+/* =========================
+MENU PANEL
+========================= */
+
 .menu-panel{
 
-  width:80% !important;
+  width:min(110rem,90%);
 
-  min-height:70vh !important;
+  margin:6rem auto;
 
-  background:white !important;
+  background:#f3ede2;
 
-  border:1rem solid blue !important;
+  border-radius:3rem;
 
-  display:block !important;
+  padding:4rem;
+}
 
-  opacity:1 !important;
 
-  visibility:visible !important;
+/* =========================
+MENU HEADER
+========================= */
 
-  position:relative !important;
+.menu-header{
 
-  z-index:999999 !important;
+  display:flex;
+
+  align-items:center;
+
+  justify-content:
+  space-between;
+
+  margin-bottom:3rem;
+}
+
+
+.menu-label{
+
+  font-size:2rem;
+
+  font-weight:700;
+}
+
+
+.menu-close-btn{
+
+  border:none;
+
+  background:#111;
+
+  color:#fff;
+
+  padding:1rem 2rem;
+
+  border-radius:1.4rem;
+
+  cursor:pointer;
+}
+
+
+/* =========================
+MENU GRID
+========================= */
+
+.menu-grid{
+
+  display:grid;
+
+  gap:2rem;
+}
+
+
+/* =========================
+MENU CARD
+========================= */
+
+.menu-card{
+
+  display:block;
+
+  background:#fff;
+
+  padding:2rem;
+
+  border-radius:2rem;
+
+  text-decoration:none;
+
+  color:#111;
+
+  font-size:2rem;
+
+  border:1px solid #ddd;
+
+  transition:.25s ease;
+}
+
+
+.menu-card:hover{
+
+  transform:
+  translateY(-3px);
 }
