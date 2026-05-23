@@ -602,6 +602,76 @@ if(
 
 }
 /* =========================
+MENU ELEMENTS
+========================= */
+
+const menuTrigger =
+document.getElementById(
+  "menuTrigger"
+);
+
+const menuOverlay =
+document.getElementById(
+  "menuOverlay"
+);
+
+const menuClose =
+document.getElementById(
+  "menuClose"
+);
+
+
+/* =========================
+MENU
+========================= */
+
+if(
+
+  menuTrigger &&
+
+  menuOverlay &&
+
+  menuClose
+
+){
+
+  /* OPEN */
+
+  menuTrigger
+  .addEventListener(
+
+    "click",
+
+    ()=>{
+
+      menuOverlay
+      .classList
+      .add("active");
+
+    }
+
+  );
+
+
+  /* CLOSE */
+
+  menuClose
+  .addEventListener(
+
+    "click",
+
+    ()=>{
+
+      menuOverlay
+      .classList
+      .remove("active");
+
+    }
+
+  );
+
+}
+/* =========================
 ACADEMIC NETWORK EFFECT
 ========================= */
 
