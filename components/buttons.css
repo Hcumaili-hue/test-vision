@@ -2,7 +2,52 @@
 H. Cumaili Lab
 BUTTON SYSTEM
 ========================================= */
+/* =========================
+MENU BUTTON
+========================= */
 
+.header-menu-btn{
+
+  min-height:5rem;
+
+  padding:0 2rem;
+
+  border:none;
+
+  outline:none;
+
+  cursor:pointer;
+
+  border-radius:1.6rem;
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-decoration:none;
+
+  font-size:1.45rem;
+
+  font-weight:600;
+
+  background:#111111;
+
+  color:#d4b26a;
+
+  transition:.35s ease;
+}
+
+
+.header-menu-btn:hover{
+
+  transform:translateY(-.2rem);
+
+  background:#7d1f1f;
+
+  color:#d6b676;
+}
 
 /* =========================
 PRIMARY + SECONDARY BUTTONS
