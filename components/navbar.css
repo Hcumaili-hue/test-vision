@@ -167,8 +167,7 @@ HEADER BUTTONS
 ========================= */
 
 .header-search-btn,
-.header-network-btn,
-.header-menu-btn{
+
 
   min-height:5rem;
 
@@ -203,8 +202,6 @@ HEADER BUTTONS
 
 
 .header-search-btn:hover,
-.header-network-btn:hover,
-.header-menu-btn:hover{
 
   transform:translateY(-.2rem);
 
