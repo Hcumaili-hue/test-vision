@@ -1,1 +1,52 @@
+/* =========================
+MENU OVERLAY
+========================= */
 
+.menu-overlay{
+
+  position:fixed;
+
+  inset:0;
+
+  z-index:9999;
+
+  opacity:0;
+
+  visibility:hidden;
+
+  background:
+  rgba(17,17,17,.75);
+
+  backdrop-filter:
+  blur(12px);
+
+  transition:.35s ease;
+}
+
+
+/* ACTIVE */
+
+.menu-overlay.active{
+
+  opacity:1;
+
+  visibility:visible;
+}
+
+
+/* =========================
+MENU PANEL
+========================= */
+
+.menu-panel{
+
+  width:min(120rem,92%);
+
+  margin:6rem auto;
+
+  background:#f3ede2;
+
+  border-radius:3rem;
+
+  padding:4rem;
+}
