@@ -36,6 +36,8 @@ if(header){
     }
   );
 
+}
+
 
 /* =========================
 SMOOTH SCROLL
@@ -56,8 +58,6 @@ smoothLinks.forEach(link=>{
       link.getAttribute(
         "href"
       );
-
-      /* ignore empty */
 
       if(
         !href ||
@@ -133,13 +133,12 @@ if(fadeElements.length){
   fadeElements.forEach(
     el=>{
 
-      observer.observe(
-        el
-      );
+      observer.observe(el);
 
     }
   );
 
+}
 
 
 /* =========================
@@ -189,6 +188,8 @@ if(topBtn){
 
     }
   );
+
+}
 
 
 /* =========================
@@ -279,80 +280,8 @@ if(
 
   );
 
-/* =========================
-TABLE FILTER
-========================= */
+}
 
-const tableFilterButtons =
-document.querySelectorAll(
-  ".filter-btn"
-);
-
-const tableRows =
-document.querySelectorAll(
-  ".table-row"
-);
-
-if(
-
-  tableFilterButtons.length &&
-
-  tableRows.length
-
-){
-
-  tableFilterButtons.forEach(
-
-    btn=>{
-
-      btn.addEventListener(
-
-        "click",
-
-        ()=>{
-
-          const category =
-          btn.dataset.filter;
-
-          tableRows.forEach(
-
-            row=>{
-
-              if(
-
-                category ===
-                "all"
-
-                ||
-
-                row.dataset
-                .category
-                === category
-
-              ){
-
-                row.style
-                .display =
-                "table-row";
-
-              }else{
-
-                row.style
-                .display =
-                "none";
-              }
-
-            }
-
-          );
-
-        }
-
-      );
-
-    }
-
-  );
 
 /* =========================
 SITE SEARCH INDEX
@@ -390,36 +319,10 @@ const searchIndex = [
     "Core Abrahamic thesis",
 
     url:"pages/core-thesis.html"
-  },
-
-  {
-    title:"Prophetic Continuity",
-    description:
-    "Continuity of prophecy",
-
-    url:
-    "pages/prophetic-continuity.html"
-  },
-
-  {
-    title:"Comparative Law",
-    description:
-    "Comparative Abrahamic law",
-
-    url:
-    "pages/comparative-law.html"
-  },
-
-  {
-    title:"God First Then Religion",
-    description:
-    "Definition of God study",
-
-    url:
-    "pages/god-first-then-religion.html"
   }
 
 ];
+
 
 /* =========================
 SEARCH ELEMENTS
@@ -450,6 +353,7 @@ document.getElementById(
   "searchResults"
 );
 
+
 /* =========================
 SEARCH
 ========================= */
@@ -468,8 +372,6 @@ if(
 
 ){
 
-  /* OPEN */
-
   searchTrigger
   .addEventListener(
 
@@ -484,9 +386,6 @@ if(
     }
 
   );
-
-
-  /* CLOSE */
 
   searchClose
   .addEventListener(
@@ -503,9 +402,6 @@ if(
 
   );
 
-
-  /* SEARCH INPUT */
-
   searchInput
   .addEventListener(
 
@@ -521,7 +417,8 @@ if(
       .trim();
 
       searchResults
-      .innerHTML = "";
+      .innerHTML =
+      "";
 
       if(!query){
         return;
@@ -533,15 +430,15 @@ if(
 
         item =>
 
-        item.title
-        .toLowerCase()
-        .includes(query)
+          item.title
+          .toLowerCase()
+          .includes(query)
 
-        ||
+          ||
 
-        item.description
-        .toLowerCase()
-        .includes(query)
+          item.description
+          .toLowerCase()
+          .includes(query)
 
       );
 
@@ -561,17 +458,8 @@ if(
           card.innerHTML =
 
           `
-          <h3>
-
-            ${item.title}
-
-          </h3>
-
-          <p>
-
-            ${item.description}
-
-          </p>
+          <h3>${item.title}</h3>
+          <p>${item.description}</p>
           `;
 
           card
@@ -600,6 +488,9 @@ if(
     }
 
   );
+
+}
+
 
 /* =========================
 MENU ELEMENTS
@@ -635,8 +526,6 @@ if(
 
 ){
 
-  /* OPEN */
-
   menuTrigger
   .addEventListener(
 
@@ -651,9 +540,6 @@ if(
     }
 
   );
-
-
-  /* CLOSE */
 
   menuClose
   .addEventListener(
@@ -670,33 +556,48 @@ if(
 
   );
 
+}
+
+
 /* =========================
 ACADEMIC NETWORK EFFECT
 ========================= */
 
 const networkCards =
-document.querySelectorAll('.network-card');
+document.querySelectorAll(
+  ".network-card"
+);
 
-networkCards.forEach(card=>{
+networkCards.forEach(
+  card=>{
 
-  card.addEventListener('click',function(e){
+    card.addEventListener(
 
-    e.preventDefault();
+      "click",
 
-    const url =
-    this.getAttribute('href');
+      function(e){
 
-    this.classList.add(
-      'network-open'
+        e.preventDefault();
+
+        const url =
+        this.getAttribute(
+          "href"
+        );
+
+        this.classList.add(
+          "network-open"
+        );
+
+        setTimeout(()=>{
+
+          window.location.href =
+          url;
+
+        },320);
+
+      }
+
     );
 
-    setTimeout(()=>{
-
-      window.location.href =
-      url;
-
-    },320);
-
-  });
-
-});
+  }
+);
