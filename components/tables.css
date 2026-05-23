@@ -1,5 +1,5 @@
 /* =========================
-   TABLE SYSTEM
+TABLE SYSTEM
 ========================= */
 
 .table-wrapper{
@@ -8,26 +8,36 @@
 
   overflow-x:auto;
 
-  margin:60px 0;
+  margin:6rem 0;
 
-  border:1px solid #2a2112;
+  border:.1rem solid #2a2112;
 
-  border-radius:28px;
+  border-radius:2.8rem;
 
   background:#111111;
+
+  box-shadow:
+  0 1rem 3rem
+  rgba(0,0,0,.10);
 }
+
+
+/* =========================
+TABLE
+========================= */
 
 .comparison-table{
 
   width:100%;
 
-  border-collapse:collapse;
+  min-width:90rem;
 
-  min-width:900px;
+  border-collapse:collapse;
 }
 
+
 /* =========================
-   TABLE HEAD
+TABLE HEAD
 ========================= */
 
 .comparison-table thead{
@@ -35,87 +45,127 @@
   background:#161616;
 }
 
+
 .comparison-table th{
 
-  padding:26px 30px;
+  padding:2.6rem 3rem;
 
   color:#f3ede2;
 
-  font-size:20px;
+  font-size:2rem;
+
+  font-family:
+  'Cinzel', serif;
+
+  font-weight:600;
 
   text-align:left;
 
-  border-bottom:1px solid #2a2112;
-
-  font-family:"Times New Roman",serif;
+  border-bottom:
+  .1rem solid #2a2112;
 }
 
+
 /* =========================
-   TABLE BODY
+TABLE BODY
 ========================= */
 
 .comparison-table td{
 
-  padding:24px 30px;
+  padding:2.4rem 3rem;
 
   color:#d7c8ae;
 
-  line-height:1.9;
+  font-size:1.7rem;
 
-  border-bottom:1px solid #1e1e1e;
+  line-height:1.9;
 
   vertical-align:top;
 
-  font-size:17px;
+  border-bottom:
+  .1rem solid #1e1e1e;
 }
 
-.comparison-table tr{
+
+.comparison-table tbody tr{
 
   transition:.3s ease;
 }
+
 
 .comparison-table tbody tr:hover{
 
   background:#181818;
 }
 
+
 /* =========================
-   HIGHLIGHT COLUMN
+HIGHLIGHT CELL
 ========================= */
 
-.highlight-cell{
+.table-cell-highlight{
 
-  color:#d7c8ae;
+  color:#f3ede2;
 
   font-weight:600;
 }
 
+
 /* =========================
-   TABLE TITLE
+TABLE TITLE
 ========================= */
 
 .table-title{
 
-  font-size:34px;
+  margin-bottom:2.6rem;
+
+  font-size:3.4rem;
+
+  font-family:
+  'Cinzel', serif;
 
   color:#f3ede2;
 
-  margin-bottom:26px;
-
-  font-family:"Times New Roman",serif;
+  line-height:1.2;
 }
 
+
 /* =========================
-   TABLE NOTES
+TABLE NOTE
 ========================= */
 
 .table-note{
 
-  margin-top:20px;
+  margin-top:2rem;
 
   color:#9f8d71;
 
-  line-height:1.8;
+  font-size:1.5rem;
 
-  font-size:15px;
+  line-height:1.8;
+}
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+  .comparison-table{
+
+    min-width:72rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td{
+
+    padding:2rem;
+  }
+
+  .table-title{
+
+    font-size:2.8rem;
+  }
+
 }
