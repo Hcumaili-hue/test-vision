@@ -487,9 +487,9 @@ if(
 
     ()=>{
 
-  searchOverlay
-.classList
-.add("search-open");
+      searchOverlay
+      .classList
+      .add("active");
 
     }
 
@@ -512,6 +512,8 @@ if(
     }
 
   );
+
+}
 
 
   /* SEARCH INPUT */
@@ -655,9 +657,10 @@ if(
 
     ()=>{
 
-    menuOverlay
-.classList
-.add("menu-open");
+      menuOverlay
+      .classList
+      .add("active");
+
     }
 
   );
@@ -674,7 +677,7 @@ if(
 
       menuOverlay
       .classList
-      .remove("menu-open");
+      .remove("active");
 
     }
 
