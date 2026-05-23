@@ -261,8 +261,7 @@ if(
 
           ){
 
-            link.classList.add(
-              "active"
+            link.classList.add("is-active")
             );
 
           }
@@ -476,9 +475,9 @@ if(
 
     ()=>{
 
-      searchOverlay
-      .classList
-      .add("active");
+  searchOverlay
+.classList
+.add("search-open");
 
     }
 
@@ -644,10 +643,9 @@ if(
 
     ()=>{
 
-      menuOverlay
-      .classList
-      .add("active");
-
+    menuOverlay
+.classList
+.add("menu-open");
     }
 
   );
@@ -664,7 +662,7 @@ if(
 
       menuOverlay
       .classList
-      .remove("active");
+      .remove("menu-open");
 
     }
 
