@@ -10,6 +10,14 @@ MENU OVERLAY
 
   z-index:9999;
 
+  display:flex;
+
+  align-items:flex-start;
+
+  justify-content:center;
+
+  padding:5rem 2rem;
+
   background:
   rgba(17,17,17,.75);
 
@@ -39,97 +47,15 @@ MENU PANEL
 
   width:min(110rem,90%);
 
-  margin:6rem auto;
-
   background:#f3ede2;
 
   border-radius:3rem;
 
   padding:4rem;
-}
 
+  min-height:60vh;
 
-/* =========================
-MENU HEADER
-========================= */
-
-.menu-header{
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:
-  space-between;
-
-  margin-bottom:3rem;
-}
-
-
-.menu-label{
-
-  font-size:2rem;
-
-  font-weight:700;
-}
-
-
-.menu-close-btn{
-
-  border:none;
-
-  background:#111;
-
-  color:#fff;
-
-  padding:1rem 2rem;
-
-  border-radius:1.4rem;
-
-  cursor:pointer;
-}
-
-
-/* =========================
-MENU GRID
-========================= */
-
-.menu-grid{
-
-  display:grid;
-
-  gap:2rem;
-}
-
-
-/* =========================
-MENU CARD
-========================= */
-
-.menu-card{
-
-  display:block;
-
-  background:#fff;
-
-  padding:2rem;
-
-  border-radius:2rem;
-
-  text-decoration:none;
-
-  color:#111;
-
-  font-size:2rem;
-
-  border:1px solid #ddd;
-
-  transition:.25s ease;
-}
-
-
-.menu-card:hover{
-
-  transform:
-  translateY(-3px);
+  box-shadow:
+  0 2rem 5rem
+  rgba(0,0,0,.20);
 }
