@@ -14,8 +14,16 @@ MENU OVERLAY
 
   visibility:hidden;
 
+  display:flex;
+
+  align-items:flex-start;
+
+  justify-content:center;
+
+  padding:5rem 2rem;
+
   background:
-  rgba(17,17,17,.75);
+  rgba(17,17,17,.82);
 
   backdrop-filter:
   blur(12px);
@@ -42,11 +50,15 @@ MENU PANEL
 
   width:min(120rem,92%);
 
-  margin:6rem auto;
+  min-height:70vh;
 
   background:#f3ede2;
 
   border-radius:3rem;
 
   padding:4rem;
+
+  box-shadow:
+  0 2rem 5rem
+  rgba(0,0,0,.28);
 }
