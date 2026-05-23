@@ -279,7 +279,7 @@ ACADEMIC NETWORK DOCK
 
   margin-bottom:2.6rem;
 
-  color:#9d7a33;
+  color:#red;
 
   font-family:'Cinzel',serif;
 
@@ -311,7 +311,7 @@ DOCK STRIP
 
   border-radius:999rem;
 
-  background:#d7e1e7;
+  background:#red;
 
   border:.18rem solid
   rgba(157,122,51,.45);
@@ -355,7 +355,7 @@ ICON
   border:.14rem solid
   rgba(198,168,106,.28);
 
-  color:#d4b26a;
+  color:#red;
 
   display:flex;
 
