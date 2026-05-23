@@ -212,26 +212,34 @@ document.querySelectorAll(
 );
 
 if(
+
   sections.length &&
+
   navLinks.length
+
 ){
 
   window.addEventListener(
+
     "scroll",
+
     ()=>{
 
       let current =
       "";
 
       sections.forEach(
+
         section=>{
 
           const sectionTop =
           section.offsetTop;
 
           if(
+
             window.scrollY >=
             sectionTop - 150
+
           ){
 
             current =
@@ -240,13 +248,15 @@ if(
           }
 
         }
+
       );
 
       navLinks.forEach(
+
         link=>{
 
           link.classList.remove(
-            "active"
+            "is-active"
           );
 
           if(
@@ -261,20 +271,21 @@ if(
 
           ){
 
-            link.classList.add("is-active")
-             
+            link.classList.add(
+              "is-active"
             );
 
           }
 
         }
+
       );
 
     }
+
   );
 
 }
-
 
 /* =========================
 TABLE FILTER
