@@ -1,61 +1,69 @@
 /* =========================
-ICON - NEW (No black rectangle + Official logos)
+ACADEMIC NETWORK DOCK
 ========================= */
 
-.network-icon {
-    width: 82px;
-    height: 82px;
-    border-radius: 50%;
-    margin-bottom: 14px;
-    background-size: 62%;           /* جرب 58% أو 68% حسب الشعار */
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: .35s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+.academic-dock-section{
+
+  text-align:center;
+
+  margin-top:6rem;
 }
 
-/* Hover Effect */
-.network-card:hover .network-icon {
-    transform: scale(1.12);
-}
 
-/* =========================
-OFFICIAL LOGOS (Updated Links)
-========================= */
+.academic-dock-section h4{
 
-.orcid-icon {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg');
-    background-color: #a6ce39;
-}
+  margin-bottom:2.6rem;
 
-.scholar-icon {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg');
-    background-color: #4285f4;
-}
-
-.zenodo-icon {
-    background-image: url('https://about.zenodo.org/static/img/logos/zenodo-gradient-round.svg');
-    background-color: #5c6bc0;
-}
-
-.osf-icon {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg');
-    background-color: #8e24aa; background-size: 58%;
-}
-
-.philpeople-icon{
-
-  background:#3949ab;
-
-  color:#ffffff;
+  color:#9d7a33;
 
   font-family:'Cinzel',serif;
 
-  font-size:2.6rem;
+  font-size:2.4rem;
 
-  font-weight:700;
+  font-weight:600;
+}
 
-  letter-spacing:-2px;
+
+/* =========================
+DOCK STRIP
+========================= */
+
+.academic-dock{
+
+  display:flex;
+
+  align-items:flex-end;
+
+  justify-content:center;
+
+  gap:1.4rem;
+
+  width:fit-content;
+
+  margin:auto;
+
+  padding:2rem 2.4rem;
+
+  border-radius:999rem;
+
+  background:#d7e1e7;
+
+  border:.18rem solid
+  rgba(157,122,51,.45);
+
+  box-shadow:
+  0 1.2rem 3rem
+  rgba(0,0,0,.10);
+}
+
+
+/* =========================
+ITEM
+========================= */
+
+.dock-item{
+
+  text-decoration:none;
 
   display:flex;
 
@@ -64,102 +72,92 @@ OFFICIAL LOGOS (Updated Links)
   justify-content:center;
 }
 
-.ssrn-icon {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/SSRN_Logo.svg');
-    background-color: #1565c0;
-}
 
-.academia-icon {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/66/Academia-logo-2021.svg');
-    background-color: #ffffff;
-}
-
-.medium-icon {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0d/Medium_%28website%29_logo.svg');
-    background-color: #ffffff;
-    background-size: 58%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.wordpress-icon {
-
-    background-image:
-    url('https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg');
-
-    background-color:#ffffff;
-
-    background-size:58%;
-
-    background-position:center;
-
-    background-repeat:no-repeat;
-}
-.linkedin-icon {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg');
-    background-color: #0a66c2;
-}
-
-.email-icon {
-    background-image: url('https://cdn-icons-png.flaticon.com/512/561/561127.png');
-    background-size: 52%;
-    background-color: #c9a44c;
-}
 /* =========================
-NETWORK LAYOUT FIX
-(Horizontal Layout)
+ICON
 ========================= */
 
-.network-links{
+.dock-icon{
 
-    display:grid;
+  width:6.8rem;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(130px,1fr));
+  height:6.8rem;
 
-    gap:38px;
+  border-radius:50%;
 
-    max-width:1100px;
+  background:#111111;
 
-    margin:auto;
+  border:.14rem solid
+  rgba(198,168,106,.28);
 
-    justify-items:center;
+  color:#d4b26a;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+  font-family:'Cinzel',serif;
+
+  font-size:1.35rem;
+
+  font-weight:700;
+
+  transition:
+  transform .28s ease,
+  box-shadow .28s ease,
+  border-color .28s ease;
 }
 
 
 /* =========================
-CARD
+HOVER
 ========================= */
 
-.network-card{
+.dock-item:hover .dock-icon{
 
-    display:flex;
+  transform:
+  translateY(-1.4rem)
+  scale(1.38);
 
-    flex-direction:column;
+  border-color:#c6a86a;
 
-    align-items:center;
+  box-shadow:
+  0 1.6rem 3rem
+  rgba(0,0,0,.18);
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+  .academic-dock{
+
+    width:100%;
 
     justify-content:center;
 
-    text-decoration:none;
+    flex-wrap:wrap;
 
-    text-align:center;
-}
+    border-radius:3rem;
+
+    padding:2rem;
+  }
 
 
-/* =========================
-TEXT
-========================= */
+  .dock-icon{
 
-.network-card span{
+    width:5.6rem;
 
-    margin-top:10px;
+    height:5.6rem;
 
-    color:#111111;
+    font-size:1.1rem;
+  }
 
-    font-size:1rem;
-
-    font-family:'Cinzel',serif;
-
-    line-height:1.3;
 }
