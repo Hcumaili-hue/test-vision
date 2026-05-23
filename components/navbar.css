@@ -200,11 +200,14 @@ HEADER BUTTONS
   transition:.35s ease;
 }
 
-
 .header-search-btn:hover,
+.header-menu-btn:hover{
 
   transform:translateY(-.2rem);
 
+  background:#7d1f1f;
+
+  color:#d6b676;
 }
 /* =========================
 RESPONSIVE
