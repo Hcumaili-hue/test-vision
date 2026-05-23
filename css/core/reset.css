@@ -2,7 +2,9 @@
 RESET SYSTEM
 ========================= */
 
-*{
+*,
+*::before,
+*::after{
 
   margin:0;
 
@@ -11,36 +13,74 @@ RESET SYSTEM
   box-sizing:border-box;
 }
 
+
+/* =========================
+DOCUMENT
+========================= */
+
 html{
 
   scroll-behavior:smooth;
+
+  font-size:62.5%;
 }
 
+
 body{
+
+  min-height:100vh;
 
   overflow-x:hidden;
 }
 
-img{
 
-  max-width:100%;
+/* =========================
+MEDIA
+========================= */
+
+img,
+picture,
+video,
+canvas,
+svg{
 
   display:block;
+
+  max-width:100%;
 }
+
+
+/* =========================
+LINKS
+========================= */
 
 a{
 
   text-decoration:none;
+
+  color:inherit;
 }
 
-ul{
+
+/* =========================
+LISTS
+========================= */
+
+ul,
+ol{
 
   list-style:none;
 }
 
+
+/* =========================
+FORM ELEMENTS
+========================= */
+
 button,
 input,
-textarea{
+textarea,
+select{
 
   border:none;
 
@@ -49,4 +89,22 @@ textarea{
   background:none;
 
   font:inherit;
+}
+
+
+button{
+
+  cursor:pointer;
+}
+
+
+/* =========================
+TABLES
+========================= */
+
+table{
+
+  border-collapse:collapse;
+
+  border-spacing:0;
 }
