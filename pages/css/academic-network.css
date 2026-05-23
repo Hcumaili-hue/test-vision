@@ -114,22 +114,68 @@ ICON
 
 
 /* =========================
-HOVER
+MAC DOCK EFFECT
 ========================= */
+
+.dock-item{
+
+  transition:
+  transform .28s ease;
+}
+
+
+/* MAIN ICON */
 
 .dock-item:hover .dock-icon{
 
   transform:
-  translateY(-1.4rem)
-  scale(1.38);
+  translateY(-1.6rem)
+  scale(1.42);
 
   border-color:#c6a86a;
 
   box-shadow:
-  0 1.6rem 3rem
-  rgba(0,0,0,.18);
+  0 1.8rem 3rem
+  rgba(0,0,0,.22);
 }
 
+
+/* NEIGHBOR EFFECT */
+
+.academic-dock:hover .dock-item{
+
+  transform:scale(.96);
+}
+
+
+.dock-item:hover{
+
+  transform:scale(1.08);
+}
+
+
+/* RIGHT NEIGHBOR */
+
+.dock-item:hover
++ .dock-item .dock-icon{
+
+  transform:
+  translateY(-.8rem)
+  scale(1.18);
+}
+
+
+/* LEFT NEIGHBOR */
+
+.dock-item:has(
++ .dock-item:hover
+)
+.dock-icon{
+
+  transform:
+  translateY(-.8rem)
+  scale(1.18);
+}
 
 /* =========================
 MOBILE
