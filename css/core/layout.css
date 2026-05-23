@@ -13,7 +13,10 @@ LAYOUT SYSTEM
   padding:0 4rem;
 }
 
-/* SECTIONS */
+
+/* =========================
+SECTIONS
+========================= */
 
 section{
 
@@ -21,12 +24,11 @@ section{
 }
 
 
-/* OPTIONAL SECTION SIZE */
-
 .section-small{
 
   padding:8rem 0;
 }
+
 
 .section-large{
 
@@ -34,7 +36,9 @@ section{
 }
 
 
-/* GRID SYSTEM */
+/* =========================
+GRID SYSTEM
+========================= */
 
 .grid{
 
@@ -44,7 +48,15 @@ section{
 }
 
 
-/* FLEX SYSTEM */
+.grid-center{
+
+  place-items:center;
+}
+
+
+/* =========================
+FLEX SYSTEM
+========================= */
 
 .flex{
 
@@ -54,7 +66,38 @@ section{
 }
 
 
-/* CENTER */
+.flex-between{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:
+  space-between;
+}
+
+
+.flex-center{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+}
+
+
+.flex-column{
+
+  display:flex;
+
+  flex-direction:column;
+}
+
+
+/* =========================
+CENTER
+========================= */
 
 .center{
 
@@ -63,4 +106,33 @@ section{
   align-items:center;
 
   justify-content:center;
+}
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+  .container{
+
+    padding:0 2rem;
+  }
+
+  section{
+
+    padding:9rem 0;
+  }
+
+  .section-small{
+
+    padding:6rem 0;
+  }
+
+  .section-large{
+
+    padding:12rem 0;
+  }
+
 }
