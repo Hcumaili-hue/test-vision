@@ -18,9 +18,8 @@ MENU OVERLAY
 
   padding:10rem 6%;
 
- 
   background:
-  rgba(0,0,0,.58);
+  rgba(0,0,0,.55);
 
   backdrop-filter:
   blur(18px);
@@ -51,7 +50,7 @@ MENU PANEL
 
   width:min(92rem,100%);
 
-  background:#d7e1e7;
+  background:#f4efe5;
 
   border-radius:4rem;
 
@@ -90,7 +89,7 @@ HEADER
 
   font-family:'Cinzel',serif;
 
- color:#9d7a33;
+  color:#c6a86a;
 
   font-weight:700;
 }
@@ -171,7 +170,7 @@ MENU CARD
   .1rem solid
   rgba(198,168,106,.15);
 
-   color:#9d7a33;
+  color:#c6a86a;
 
   font-size:2rem;
 
