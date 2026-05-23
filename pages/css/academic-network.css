@@ -176,7 +176,102 @@ MAC DOCK EFFECT
   translateY(-.8rem)
   scale(1.18);
 }
+/* =========================
+OFFICIAL DOCK LOGOS
+========================= */
 
+.orcid-icon{
+
+  background:
+  #a6ce39
+  url('https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg')
+  center/56% no-repeat;
+}
+
+
+.scholar-icon{
+
+  background:
+  #4285f4
+  url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg')
+  center/56% no-repeat;
+}
+
+
+.zenodo-icon{
+
+  background:
+  #5c6bc0
+  url('https://about.zenodo.org/static/img/logos/zenodo-gradient-round.svg')
+  center/58% no-repeat;
+}
+
+
+.ssrn-icon{
+
+  background:
+  #1565c0
+  url('https://upload.wikimedia.org/wikipedia/commons/7/7a/SSRN_Logo.svg')
+  center/62% no-repeat;
+}
+
+
+.osf-icon{
+
+  background:
+  #8e24aa
+  url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg')
+  center/54% no-repeat;
+}
+
+
+.medium-icon{
+
+  background:
+  #ffffff
+  url('https://upload.wikimedia.org/wikipedia/commons/0/0d/Medium_%28website%29_logo.svg')
+  center/54% no-repeat;
+}
+
+
+.wordpress-icon{
+
+  background:
+  #ffffff
+  url('https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg')
+  center/56% no-repeat;
+}
+
+
+.linkedin-icon{
+
+  background:
+  #0a66c2
+  url('https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg')
+  center/56% no-repeat;
+}
+
+
+/* PHILPEOPLE FALLBACK */
+
+.philpeople-icon{
+
+  background:#3949ab;
+
+  color:#ffffff;
+
+  font-family:'Cinzel',serif;
+
+  font-size:2rem;
+
+  font-weight:700;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+}
 /* =========================
 MOBILE
 ========================= */
