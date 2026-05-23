@@ -264,55 +264,165 @@ RESEARCH DOMAINS
 
 
 /* =========================
-ACADEMIC NETWORK
+ACADEMIC NETWORK DOCK
 ========================= */
 
-.network-description{
+.academic-dock-section{
 
-  max-width:42rem;
+  text-align:center;
 
-  margin:1.5rem auto 3rem;
-
-  line-height:1.8;
+  margin-top:6rem;
 }
 
 
-/* CENTER BUTTON */
+.academic-dock-section h4{
 
-.network-center{
+  margin-bottom:2.6rem;
+
+  color:#9d7a33;
+
+  font-family:'Cinzel',serif;
+
+  font-size:2.4rem;
+
+  font-weight:600;
+}
+
+
+/* =========================
+DOCK STRIP
+========================= */
+
+.academic-dock{
 
   display:flex;
 
+  align-items:flex-end;
+
   justify-content:center;
 
-  margin-bottom:2rem;
+  gap:1.4rem;
+
+  width:fit-content;
+
+  margin:auto;
+
+  padding:2rem 2.4rem;
+
+  border-radius:999rem;
+
+  background:#d7e1e7;
+
+  border:.18rem solid
+  rgba(157,122,51,.45);
+
+  box-shadow:
+  0 1.2rem 3rem
+  rgba(0,0,0,.10);
 }
 
 
-/* NETWORK TRIGGER */
+/* =========================
+ITEM
+========================= */
 
-.network-trigger{
+.dock-item{
 
-  width:6rem;
+  text-decoration:none;
 
-  height:6rem;
+  display:flex;
 
-  border:none;
+  align-items:center;
+
+  justify-content:center;
+}
+
+
+/* =========================
+ICON
+========================= */
+
+.dock-icon{
+
+  width:6.8rem;
+
+  height:6.8rem;
 
   border-radius:50%;
 
-  cursor:pointer;
+  background:#111111;
 
-  font-size:1.5rem;
+  border:.14rem solid
+  rgba(198,168,106,.28);
+
+  color:#d4b26a;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+  font-family:'Cinzel',serif;
+
+  font-size:1.35rem;
 
   font-weight:700;
 
-  transition:.35s ease;
+  transition:
+  transform .28s ease,
+  box-shadow .28s ease,
+  border-color .28s ease;
 }
 
-.network-trigger:hover{
 
-  transform:translateY(-.2rem);
+/* =========================
+HOVER
+========================= */
+
+.dock-item:hover .dock-icon{
+
+  transform:
+  translateY(-1.4rem)
+  scale(1.38);
+
+  border-color:#c6a86a;
+
+  box-shadow:
+  0 1.6rem 3rem
+  rgba(0,0,0,.18);
 }
 
 
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+  .academic-dock{
+
+    width:100%;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    border-radius:3rem;
+
+    padding:2rem;
+  }
+
+
+  .dock-icon{
+
+    width:5.6rem;
+
+    height:5.6rem;
+
+    font-size:1.1rem;
+  }
+
+}
