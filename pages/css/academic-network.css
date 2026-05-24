@@ -6,69 +6,30 @@
     background-color: #111111;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;     /* غيرناها من 56% إلى contain */
+    background-size: 58%;
     border: 0.18rem solid rgba(198, 168, 106, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Cinzel', serif;
-    font-size: 1.4rem;
-    font-weight: 700;
     color: #f0d38a;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
-.orcid-icon      { 
-    background-color: #16a34a; 
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg'); 
-    background-size: 58%;
-}
-
-.scholar-icon    { 
-    background-color: #4285f4; 
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg'); 
-    background-size: 62%;
-}
-
-.zenodo-icon     { 
-    background-color: #5c6bc0; 
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/66/Zenodo-gradient-square.svg'); 
-    background-size: 58%;
-}
-
-.ssrn-icon       { 
-    background-color: #1565c0; 
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/SSRN_Logo.svg'); 
-    background-size: 70%;
-}
-
-.osf-icon        { 
-    background-color: #8e24aa; 
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg'); 
-    background-size: 55%;
-}
-
-.medium-icon     { 
-    background-color: #ffffff; 
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0d/Medium_%28website%29_logo.svg'); 
-    background-size: 65%;
-}
-
-.wordpress-icon  { 
-    background-color: #ffffff; 
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg'); 
-    background-size: 60%;
-}
-
-.linkedin-icon   { 
-    background-color: #0a66c2; 
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg'); 
-    background-size: 58%;
-}
+/* ========================= LOGOS ========================= */
+.orcid-icon      { background-color: #16a34a;    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg'); }
+.scholar-icon    { background-color: #4285f4;    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg'); }
+.zenodo-icon     { background-color: #5c6bc0;    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/66/Zenodo-gradient-square.svg'); }
+.ssrn-icon       { background-color: #1565c0;    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/SSRN_Logo.svg'); background-size: 68%; }
+.osf-icon        { background-color: #8e24aa;    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg'); background-size: 54%; }
+.medium-icon     { background-color: #ffffff;    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0d/Medium_%28website%29_logo.svg'); background-size: 64%; }
+.wordpress-icon  { background-color: #21759b;    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg'); }
+.linkedin-icon   { background-color: #0a66c2;    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg'); }
 
 .philpeople-icon {
     background: linear-gradient(135deg, #3949ab, #5c6bc0);
     color: white;
-    font-size: 2.3rem;
+    font-family: system-ui, Arial, sans-serif;
+    font-size: 2.35rem;
+    font-weight: 700;
 }
