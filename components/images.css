@@ -32,7 +32,7 @@ RESEARCHER CONTAINER
 
   align-items:flex-start;
 
-  gap:3.2rem;
+  gap:2rem;
 }
 
 
@@ -58,9 +58,9 @@ RESEARCHER PROFILE IMAGE
 
 .researcher-profile-image{
 
-  width:13rem;
+  width:16rem;
 
-  height:13rem;
+  height:16rem;
 
   object-fit:cover;
 
@@ -118,7 +118,7 @@ BOOK WRAPPER
 
   width:100%;
 
-  margin:2rem 0 4rem;
+  margin:1rem 0 4rem;
 }
 
 
@@ -128,7 +128,7 @@ BOOK IMAGE
 
 .publication-book-image{
 
-  width:24rem;
+  width:32rem;
 
   height:auto;
 
