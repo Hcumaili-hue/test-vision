@@ -7,7 +7,10 @@ RESEARCH LIBRARY
   display:grid;
 
   grid-template-columns:
-  repeat(auto-fit,minmax(28rem,1fr));
+  repeat(
+    auto-fit,
+    minmax(28rem,1fr)
+  );
 
   gap:3rem;
 
@@ -15,7 +18,54 @@ RESEARCH LIBRARY
 }
 
 
-/* CARD */
+/* =========================
+CARD
+========================= */
+
+.library-card{
+
+  background:#f7f1e6;
+
+  border:.18rem solid
+  rgba(198,168,106,.35);
+
+  border-radius:3rem;
+
+  padding:4rem 3rem;
+
+  min-height:28rem;
+
+  text-decoration:none;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:flex-start;
+
+  transition:.35s ease;
+
+  box-shadow:
+  0 1rem 3rem
+  rgba(0,0,0,.08);
+}
+
+
+/* NUMBER */
+
+.library-card span{
+
+  font-size:1.4rem;
+
+  color:var(--gold-soft);
+
+  letter-spacing:.2rem;
+
+  margin-bottom:1.8rem;
+}
+
+
+/* TEXT */
 
 .library-card p{
 
@@ -36,62 +86,10 @@ RESEARCH LIBRARY
   overflow:hidden;
 }
 
-.library-card:hover{
 
-  transform:translateY(-8px);
-
-  border-color:var(--gold-soft);
-}
-
-
-/* NUMBER */
-
-.library-card span{
-
-  font-size:1.4rem;
-
-  color:var(--gold-soft);
-
-  letter-spacing:.2rem;
-
-  margin-bottom:1.8rem;
-
-  display:#f7f1e6;
-
-}
-
-
-/* TITLE */
-
-.library-card{
-
-  background:#f7f1e6;
-
-  border:.18rem solid
-  rgba(198,168,106,.35);
-
-  border-radius:3rem;
-
-  padding:4rem 3rem;
-
-  min-height:28rem;
-
-  text-decoration:none;
-
-  transition:.35s ease;
-
-  display:flex;
-
-  flex-direction:column;
-
-  justify-content:flex-start;
-
-  box-shadow:
-  0 1rem 3rem rgba(0,0,0,.08);
-}
-
-
-/* HOVER */
+/* =========================
+HOVER
+========================= */
 
 .library-card:hover{
 
@@ -107,8 +105,12 @@ RESEARCH LIBRARY
   0 2rem 4rem
   rgba(0,0,0,.12);
 }
-html,
-body,
+
+
+/* =========================
+PAGE BACKGROUND
+========================= */
+
 .library-page{
 
   background:#d7e1e7;
