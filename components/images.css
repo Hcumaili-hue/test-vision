@@ -23,11 +23,12 @@ RESEARCHER IMAGE
 
   display:flex;
 
-  align-items:center;
+  align-items:flex-start;
 
-  justify-content:center;
+  justify-content:flex-start;
+
+  flex-shrink:0;
 }
-
 
 .researcher-profile-image{
 
@@ -58,6 +59,18 @@ RESEARCHER IMAGE
     0,
     .08
   );
+}
+/* =========================
+RESEARCHER CONTAINER
+========================= */
+
+.researcher-container{
+
+  display:flex;
+
+  align-items:flex-start;
+
+  gap:2.8rem;
 }
 
 
