@@ -1,308 +1,117 @@
-/* =========================
-ACADEMIC NETWORK DOCK
-========================= */
-
-.academic-dock-section{
-
-  text-align:center;
-
-  margin-top:6rem;
+/* ========================= ACADEMIC NETWORK DOCK ========================= */
+.academic-dock-section {
+    text-align: center;
+    margin-top: 7rem;
 }
 
-
-.academic-dock-section h4{
-
-  margin-bottom:2.6rem;
-
-  color:#9d7a33;
-
-  font-family:'Cinzel',serif;
-
-  font-size:2.4rem;
-
-  font-weight:600;
+.academic-dock-section h4 {
+    margin-bottom: 2.8rem;
+    color: #9d7a33;
+    font-family: 'Cinzel', serif;
+    font-size: 2.45rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
-
-/* =========================
-DOCK STRIP
-========================= */
-
-.academic-dock{
-
-  display:flex;
-
-  flex-direction:row;
-
-  flex-wrap:nowrap;
-
-  align-items:flex-end;
-
-  justify-content:center;
-
-  gap:1.4rem;
-
-  width:fit-content;
-
-  margin:auto;
-
-  padding:2rem 2.4rem;
-
-  border-radius:999rem;
-
-  background:#d7e1e7;
-
-  border:.18rem solid
-  rgba(157,122,51,.45);
-
-  box-shadow:
-  0 1.2rem 3rem
-  rgba(0,0,0,.10);
+/* ========================= DOCK STRIP ========================= */
+.academic-dock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1.5rem;
+    width: fit-content;
+    margin: auto;
+    padding: 2.2rem 2.8rem;
+    border-radius: 9999px;
+    background: #d7e1e7;
+    border: 0.2rem solid rgba(157, 122, 51, 0.45);
+    box-shadow: 
+        0 1.4rem 3.5rem rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255,255,255,0.6);
+    backdrop-filter: blur(12px);
 }
 
-
-/* =========================
-ITEM
-========================= */
-
-.dock-item{
-
-  text-decoration:none;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  transition:
-  transform .28s ease;
+/* ========================= ITEM ========================= */
+.dock-item {
+    text-decoration: none;
+    position: relative;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-/* =========================
-ICON
-========================= */
-
-.dock-icon{
-
-  width:6.8rem;
-
-  height:6.8rem;
-
-  border-radius:50%;
-
-  background:#111111;
-
-  background-position:center;
-
-  background-repeat:no-repeat;
-
-  background-size:56%;
-
-  border:.14rem solid
-  rgba(198,168,106,.28);
-
-  color:#d4b26a;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  text-align:center;
-
-  font-family:'Cinzel',serif;
-
-  font-size:1.35rem;
-
-  font-weight:700;
-
-  transition:
-  transform .28s ease,
-  box-shadow .28s ease,
-  border-color .28s ease;
+/* ========================= ICON ========================= */
+.dock-icon {
+    width: 6.8rem;
+    height: 6.8rem;
+    border-radius: 50%;
+    background-color: #111111;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 56%;
+    border: 0.16rem solid rgba(198, 168, 106, 0.3);
+    color: #d4b26a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    font-size: 1.32rem;
+    font-weight: 700;
+    transition: all 0.28s cubic-bezier(0.4, 0.0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-
-/* =========================
-MAC DOCK EFFECT
-========================= */
-
-.dock-item:hover .dock-icon{
-
-  transform:
-  translateY(-1.6rem)
-  scale(1.42);
-
-  border-color:#c6a86a;
-
-  box-shadow:
-  0 1.8rem 3rem
-  rgba(0,0,0,.22);
+/* MAC DOCK MAGIC */
+.academic-dock:hover .dock-item {
+    transform: scale(0.95);
 }
 
-
-/* SMALL GLOBAL SHRINK */
-
-.academic-dock:hover
-.dock-item{
-
-  transform:scale(.96);
+.dock-item:hover .dock-icon {
+    transform: translateY(-1.65rem) scale(1.45);
+    border-color: #c6a86a;
+    box-shadow: 0 2rem 3.5rem rgba(0, 0, 0, 0.28);
 }
 
-
-/* ACTIVE ITEM */
-
-.dock-item:hover{
-
-  transform:scale(1.08);
+/* Neighbor Effect */
+.dock-item:hover + .dock-item .dock-icon,
+.dock-item:has(+ .dock-item:hover) .dock-icon {
+    transform: translateY(-0.85rem) scale(1.22);
 }
 
+/* ========================= LOGOS ========================= */
+.orcid-icon      { background-color: #16a34a; background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg'); }
+.scholar-icon    { background-color: #4285f4; background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg'); }
+.zenodo-icon     { background-color: #5c6bc0; background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/66/Zenodo-gradient-square.svg'); }
+.ssrn-icon       { background-color: #1565c0; background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/SSRN_Logo.svg'); }
+.osf-icon        { background-color: #8e24aa; background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg'); background-size: 52%; }
+.medium-icon     { background-color: #ffffff; background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0d/Medium_%28website%29_logo.svg'); }
+.wordpress-icon  { background-color: #ffffff; background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg'); }
+.linkedin-icon   { background-color: #0a66c2; background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg'); }
 
-/* RIGHT NEIGHBOR */
-
-.dock-item:hover
-+ .dock-item
-.dock-icon{
-
-  transform:
-  translateY(-.8rem)
-  scale(1.18);
+.philpeople-icon {
+    background: #3949ab;
+    color: white;
+    font-size: 2.1rem;
 }
 
-
-/* LEFT NEIGHBOR */
-
-.dock-item:has(
-+ .dock-item:hover
-)
-.dock-icon{
-
-  transform:
-  translateY(-.8rem)
-  scale(1.18);
-}
-
-
-/* =========================
-OFFICIAL LOGOS
-========================= */
-
-.orcid-icon{
-
-  background-color:#16a34a;
-
-  background-image:
-  url('https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg');
-}
-
-
-.scholar-icon{
-
-  background-color:#4285f4;
-
-  background-image:
-  url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg');
-}
-
-
-.zenodo-icon{
-
-  background-color:#5c6bc0;
-
-  background-image:
-  url('https://upload.wikimedia.org/wikipedia/commons/6/66/Zenodo-gradient-square.svg');
-}
-
-
-.ssrn-icon{
-
-  background-color:#1565c0;
-
-  background-image:
-  url('https://upload.wikimedia.org/wikipedia/commons/7/7a/SSRN_Logo.svg');
-}
-
-
-.osf-icon{
-
-  background-color:#8e24aa;
-
-  background-image:
-  url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg');
-
-  background-size:52%;
-}
-
-
-.medium-icon{
-
-  background-color:#ffffff;
-
-  background-image:
-  url('https://upload.wikimedia.org/wikipedia/commons/0/0d/Medium_%28website%29_logo.svg');
-}
-
-
-.wordpress-icon{
-
-  background-color:#ffffff;
-
-  background-image:
-  url('https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg');
-}
-
-
-.linkedin-icon{
-
-  background-color:#0a66c2;
-
-  background-image:
-  url('https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg');
-}
-
-
-/* FALLBACK */
-
-.philpeople-icon{
-
-  background:#3949ab;
-
-  color:#ffffff;
-
-  font-size:2rem;
-}
-
-
-/* =========================
-MOBILE
-========================= */
-
-@media(max-width:768px){
-
-  .academic-dock{
-
-    width:100%;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    border-radius:3rem;
-
-    padding:2rem;
-  }
-
-
-  .dock-icon{
-
-    width:5.6rem;
-
-    height:5.6rem;
-
-    font-size:1.1rem;
-  }
-
+/* ========================= MOBILE ========================= */
+@media (max-width: 768px) {
+    .academic-dock {
+        width: 100%;
+        max-width: 520px;
+        flex-wrap: wrap;
+        border-radius: 3rem;
+        padding: 2rem 1.8rem;
+        gap: 1.2rem;
+    }
+    
+    .dock-icon {
+        width: 5.4rem;
+        height: 5.4rem;
+        font-size: 1.05rem;
+    }
+    
+    .dock-item:hover .dock-icon {
+        transform: translateY(-1.1rem) scale(1.28);
+    }
 }
