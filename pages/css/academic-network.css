@@ -54,7 +54,7 @@
 
 .zenodo-icon{
     background-color:#6b46c1;
-    background-image:url('/assets/icons/Zenodo.png');
+   background-image:url('../assets/icons/Zenodo.png');
     background-repeat:no-repeat;
     background-position:center;
     background-size:72%;
