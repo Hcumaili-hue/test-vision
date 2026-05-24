@@ -50,31 +50,46 @@ RESEARCHER CONTENT
 }
 
 
+/* =========================================
+RESEARCHER PROFILE
+========================================= */
+
+
 /* =========================
-RESEARCHER IMAGE
+PROFILE WRAPPER
 ========================= */
 
 .researcher-image{
 
-  margin-bottom:2.4rem;
+  display:flex;
+
+  justify-content:flex-start;
+
+  align-items:flex-start;
+
+  width:100%;
+
+  margin:0 0 2.4rem;
 }
 
 
 /* =========================
-RESEARCHER PROFILE IMAGE
+PROFILE IMAGE
 ========================= */
 
 .researcher-profile-image{
 
   width:18rem;
 
-  height:18rem;
+  height:auto;
 
   object-fit:cover;
 
   object-position:center top;
 
   border-radius:2rem;
+
+  margin:0;
 
   border:
   .12rem solid
@@ -102,10 +117,8 @@ RESEARCHER PROFILE IMAGE
 .researcher-profile-image:hover{
 
   transform:
-  translateY(-.3rem);
+  translateY(-.4rem);
 }
-
-
 /* =========================
 TEXT SPACING
 ========================= */
