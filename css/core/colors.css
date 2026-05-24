@@ -1,7 +1,12 @@
+/* =========================================
+   Color System
+   H. Cumaili Institute
+========================================= */
+
 :root{
 
   /* =========================
-     GOLD
+     GOLD PALETTE
   ========================= */
 
   --gold:#b8924f;
@@ -16,11 +21,12 @@
   --cream:#f4efe5;
   --cream-soft:#f1eadf;
 
-  --white:var(--cream);
+  --white:
+  var(--cream);
 
 
   /* =========================
-     DARK
+     DARK SYSTEM
   ========================= */
 
   --dark:#0f0f0f;
@@ -29,18 +35,77 @@
 
 
   /* =========================
-     TEXT (DARK THEME)
+     TEXT
   ========================= */
+
+  /* Dark surfaces */
 
   --text-main:#f2e7cf;
   --text-soft:#b79f78;
 
-
-  /* =========================
-     TEXT (LIGHT / CREAM THEME)
-  ========================= */
+  /* Cream / light surfaces */
 
   --text-dark:#1b1b1b;
   --text-soft-dark:#4f493f;
 
+
+  /* =========================
+     BORDER SYSTEM
+  ========================= */
+
+  --border-soft:
+  rgba(
+    198,
+    168,
+    106,
+    .18
+  );
+
+  --border-medium:
+  rgba(
+    198,
+    168,
+    106,
+    .28
+  );
+
+  --border-strong:
+  rgba(
+    198,
+    168,
+    106,
+    .50
+  );
+
+
+  /* =========================
+     SHADOW SYSTEM
+  ========================= */
+
+  --shadow-soft:
+  0 .6rem 1.8rem
+  rgba(
+    0,
+    0,
+    0,
+    .08
+  );
+
+  --shadow:
+  0 1rem 3rem
+  rgba(
+    0,
+    0,
+    0,
+    .10
+  );
+
+  --shadow-heavy:
+  0 2rem 5rem
+  rgba(
+    0,
+    0,
+    0,
+    .18
+  );
 }
