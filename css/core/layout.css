@@ -1,5 +1,10 @@
+/* =========================================
+   Layout System
+========================================= */
+
+
 /* =========================
-LAYOUT SYSTEM
+CONTAINER
 ========================= */
 
 .container{
@@ -10,29 +15,37 @@ LAYOUT SYSTEM
 
   margin:auto;
 
-  padding:0 4rem;
+  padding:
+  0
+  4rem;
 }
 
 
 /* =========================
-SECTIONS
+SECTION SPACING
 ========================= */
 
 section{
 
-  padding:12rem 0;
+  padding:
+  12rem
+  0;
 }
 
 
 .section-small{
 
-  padding:8rem 0;
+  padding:
+  8rem
+  0;
 }
 
 
 .section-large{
 
-  padding:16rem 0;
+  padding:
+  16rem
+  0;
 }
 
 
@@ -96,7 +109,7 @@ FLEX SYSTEM
 
 
 /* =========================
-CENTER
+CENTER UTILITIES
 ========================= */
 
 .center{
@@ -106,33 +119,4 @@ CENTER
   align-items:center;
 
   justify-content:center;
-}
-
-
-/* =========================
-RESPONSIVE
-========================= */
-
-@media(max-width:768px){
-
-  .container{
-
-    padding:0 2rem;
-  }
-
-  section{
-
-    padding:9rem 0;
-  }
-
-  .section-small{
-
-    padding:6rem 0;
-  }
-
-  .section-large{
-
-    padding:12rem 0;
-  }
-
 }
