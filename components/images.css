@@ -18,21 +18,23 @@ img{
 
 
 /* =========================================
-RESEARCHER
+RESEARCHER SECTION
 ========================================= */
+
+
 /* =========================
 RESEARCHER CONTAINER
 ========================= */
 
 .researcher-container{
 
-  display:flex;
+  width:
+  min(
+    100rem,
+    100%
+  );
 
-  justify-content:center;
-
-  width:100%;
-
-  padding:5rem 8%;
+  margin:auto;
 }
 
 
@@ -42,54 +44,41 @@ RESEARCHER CONTENT
 
 .researcher-content{
 
-  width:100%;
-
-  max-width:84rem;
+  width:
+  min(
+    78rem,
+    100%
+  );
 
   text-align:left;
 }
 
 
-/* =========================================
-RESEARCHER PROFILE
-========================================= */
-
-
 /* =========================
-PROFILE WRAPPER
+RESEARCHER IMAGE
 ========================= */
 
 .researcher-image{
 
-  display:flex;
-
-  justify-content:flex-start;
-
-  align-items:flex-start;
-
-  width:100%;
-
-  margin:0 0 2.4rem;
+  margin-bottom:3rem;
 }
 
 
 /* =========================
-PROFILE IMAGE
+RESEARCHER PROFILE IMAGE
 ========================= */
 
 .researcher-profile-image{
 
-  width:18rem;
+  width:16rem;
 
-  height:auto;
+  height:16rem;
 
   object-fit:cover;
 
   object-position:center top;
 
   border-radius:2rem;
-
-  margin:0;
 
   border:
   .12rem solid
@@ -117,33 +106,7 @@ PROFILE IMAGE
 .researcher-profile-image:hover{
 
   transform:
-  translateY(-.4rem);
-}
-/* =========================
-TEXT SPACING
-========================= */
-
-.section-mini{
-
-  display:block;
-
-  margin:0 0 1rem;
-}
-
-
-.section-title{
-
-  margin:0 0 2rem;
-}
-
-
-.section-text{
-
-  margin:0 0 2rem;
-
-  line-height:1.9;
-
-  max-width:78rem;
+  translateY(-.3rem);
 }
 
 /* =========================================
