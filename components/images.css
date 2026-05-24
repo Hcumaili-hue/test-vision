@@ -25,18 +25,18 @@ RESEARCHER
 /* =========================
 RESEARCHER CONTAINER
 ========================= */
-
 .researcher-container{
 
   display:flex;
 
   align-items:flex-start;
 
-  gap:2rem;
+  gap:3rem;
 
   max-width:110rem;
-}
 
+  width:100%;
+}
 
 /* =========================
 RESEARCHER IMAGE WRAPPER
