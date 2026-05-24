@@ -1,5 +1,10 @@
+/* =========================================
+   Tables System
+========================================= */
+
+
 /* =========================
-TABLE SYSTEM
+TABLE WRAPPER
 ========================= */
 
 .table-wrapper{
@@ -8,17 +13,26 @@ TABLE SYSTEM
 
   overflow-x:auto;
 
-  margin:6rem 0;
-
-  border:.1rem solid #2a2112;
-
-  border-radius:2.8rem;
+  margin:
+  6rem
+  0;
 
   background:#111111;
 
+  border:
+  .1rem solid
+  #2a2112;
+
+  border-radius:2.8rem;
+
   box-shadow:
   0 1rem 3rem
-  rgba(0,0,0,.10);
+  rgba(
+    0,
+    0,
+    0,
+    .10
+  );
 }
 
 
@@ -48,21 +62,25 @@ TABLE HEAD
 
 .comparison-table th{
 
-  padding:2.6rem 3rem;
+  padding:
+  2.6rem
+  3rem;
+
+  text-align:left;
+
+  border-bottom:
+  .1rem solid
+  #2a2112;
 
   color:#f3ede2;
 
   font-size:2rem;
 
-  font-family:
-  'Cinzel', serif;
-
   font-weight:600;
 
-  text-align:left;
-
-  border-bottom:
-  .1rem solid #2a2112;
+  font-family:
+  'Cinzel',
+  serif;
 }
 
 
@@ -72,24 +90,32 @@ TABLE BODY
 
 .comparison-table td{
 
-  padding:2.4rem 3rem;
+  padding:
+  2.4rem
+  3rem;
+
+  vertical-align:top;
+
+  border-bottom:
+  .1rem solid
+  #1e1e1e;
 
   color:#d7c8ae;
 
   font-size:1.7rem;
 
   line-height:1.9;
-
-  vertical-align:top;
-
-  border-bottom:
-  .1rem solid #1e1e1e;
 }
 
 
+/* =========================
+TABLE ROW
+========================= */
+
 .comparison-table tbody tr{
 
-  transition:.3s ease;
+  transition:
+  background .3s ease;
 }
 
 
@@ -105,9 +131,9 @@ HIGHLIGHT CELL
 
 .table-cell-highlight{
 
-  color:#f3ede2;
-
   font-weight:600;
+
+  color:#f3ede2;
 }
 
 
@@ -121,12 +147,13 @@ TABLE TITLE
 
   font-size:3.4rem;
 
-  font-family:
-  'Cinzel', serif;
+  line-height:1.2;
 
   color:#f3ede2;
 
-  line-height:1.2;
+  font-family:
+  'Cinzel',
+  serif;
 }
 
 
@@ -143,29 +170,4 @@ TABLE NOTE
   font-size:1.5rem;
 
   line-height:1.8;
-}
-
-
-/* =========================
-RESPONSIVE
-========================= */
-
-@media(max-width:900px){
-
-  .comparison-table{
-
-    min-width:72rem;
-  }
-
-  .comparison-table th,
-  .comparison-table td{
-
-    padding:2rem;
-  }
-
-  .table-title{
-
-    font-size:2.8rem;
-  }
-
 }
