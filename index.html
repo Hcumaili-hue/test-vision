@@ -400,6 +400,7 @@ RESEARCHER IDENTITY
   </div>
 
 </section>
+  
 <!-- =========================
 FEATURED PUBLICATION
 ========================= -->
@@ -416,8 +417,10 @@ FEATURED PUBLICATION
     <div class="publication-book">
 
       <img
-        src="assets/images/book.jpg"
+        class="publication-book-image"
+        src="./assets/images/book.jpg"
         alt="God or Religion Book Cover"
+        loading="lazy"
       >
 
     </div>
@@ -434,7 +437,7 @@ FEATURED PUBLICATION
       </span>
 
 
-      <h2>
+      <h2 class="section-title">
 
         God or Religion?
         From Moses To The Last Prophet
@@ -450,7 +453,7 @@ FEATURED PUBLICATION
       </h3>
 
 
-      <p>
+      <p class="section-text">
 
         A scholarly study exploring revelation,
         semantic instability, prophetic continuity,
@@ -466,6 +469,7 @@ FEATURED PUBLICATION
         target="_blank"
         rel="noopener noreferrer"
         class="primary-btn"
+        aria-label="View Publication on Amazon"
       >
 
         View Publication
@@ -477,11 +481,15 @@ FEATURED PUBLICATION
   </div>
 
 </section>
+  
 <!-- =========================
 RESEARCH DOMAINS
 ========================= -->
 
-<section class="research-domains-section">
+<section
+  class="research-domains-section"
+  id="research-domains"
+>
 
   <div class="domains-container">
 
@@ -494,14 +502,14 @@ RESEARCH DOMAINS
     </span>
 
 
-    <h2>
+    <h2 class="section-title">
 
       Areas of Scholarly Inquiry
 
     </h2>
 
 
-    <p class="domains-description">
+    <p class="section-text domains-description">
 
       A structured research framework
       exploring divine revelation,
@@ -586,12 +594,15 @@ RESEARCH DOMAINS
   </div>
 
 </section>
-
+  
 <!-- =========================
 RESEARCH JOURNEY LIBRARY
 ========================= -->
 
-<section class="library-gateway-section">
+<section
+  class="library-gateway-section"
+  id="research-library"
+>
 
   <div class="library-gateway-card">
 
@@ -606,7 +617,7 @@ RESEARCH JOURNEY LIBRARY
 
     <!-- TITLE -->
 
-    <h2>
+    <h2 class="section-title">
 
       Research Journey Library
 
@@ -615,7 +626,7 @@ RESEARCH JOURNEY LIBRARY
 
     <!-- TEXT -->
 
-    <p>
+    <p class="section-text">
 
       Enter an expanding research archive
       exploring divine revelation,
@@ -630,7 +641,7 @@ RESEARCH JOURNEY LIBRARY
     </p>
 
 
-    <p>
+    <p class="section-text">
 
       Explore thematic collections,
       textual investigations,
@@ -649,6 +660,7 @@ RESEARCH JOURNEY LIBRARY
     <a
       href="./research-library/index.html"
       class="primary-btn"
+      aria-label="Enter Research Journey Library"
     >
 
       Enter Research Journey Library
@@ -658,17 +670,21 @@ RESEARCH JOURNEY LIBRARY
   </div>
 
 </section>
+  
 <!-- =========================
 ACADEMIC NETWORK DOCK
 ========================= -->
 
-<div class="academic-dock-section">
+<section
+  class="academic-dock-section"
+  id="academic-network"
+>
 
-  <h4>
+  <h2 class="section-title">
 
     Academic Network
 
-  </h4>
+  </h2>
 
   <div class="academic-dock">
 
@@ -811,7 +827,8 @@ ACADEMIC NETWORK DOCK
 
   </div>
 
-</div>
+</section>
+  
 <!-- =========================
 SEARCH OVERLAY
 ========================= -->
@@ -824,8 +841,10 @@ SEARCH OVERLAY
   <!-- CLOSE -->
 
   <button
+    type="button"
     class="search-close"
     id="searchClose"
+    aria-label="Close Search"
   >
 
     ✕
@@ -848,7 +867,11 @@ SEARCH OVERLAY
         placeholder="Search research, themes, studies..."
       >
 
-      <button class="search-button">
+      <button
+        type="button"
+        class="search-button"
+        aria-label="Search"
+      >
 
         ⌕
 
@@ -863,7 +886,6 @@ SEARCH OVERLAY
       id="searchResults"
       class="search-results"
     >
-
     </div>
 
   </div>
@@ -892,8 +914,10 @@ MENU OVERLAY
 
 
       <button
+        type="button"
         class="menu-close-btn"
         id="menuClose"
+        aria-label="Close Menu"
       >
 
         Close
@@ -951,6 +975,7 @@ MENU OVERLAY
   </div>
 
 </div>
+  
 <!-- =========================
 FOOTER
 ========================= -->
@@ -999,23 +1024,38 @@ FOOTER
       </h4>
 
 
-      <a href="./research-library/index.html">
+      <a
+        href="./research-library/index.html"
+      >
 
         Research Library
 
       </a>
 
 
-      <a href="#revelation-project">
+      <a
+        href="#revelation-project"
+      >
 
         Revelation Project
 
       </a>
 
 
-      <a href="#academic-network">
+      <a
+        href="#academic-network"
+      >
 
         Academic Network
+
+      </a>
+
+
+      <a
+        href="#publication"
+      >
+
+        Publication
 
       </a>
 
@@ -1081,7 +1121,9 @@ FOOTER
       </h4>
 
 
-      <a href="mailto:contact@h-cumaili.com">
+      <a
+        href="mailto:contact@h-cumaili.com"
+      >
 
         contact@h-cumaili.com
 
@@ -1104,7 +1146,31 @@ FOOTER
 </footer>
 
 
-<script src="js/main.js"></script>
+<!-- =========================
+JAVASCRIPT SYSTEM
+========================= -->
+
+<script src="./js/navbar.js"></script>
+
+<script src="./js/animations.js"></script>
+
+<script src="./js/footer.js"></script>
+
+<script src="./js/search.js"></script>
+
+<script src="./js/menu.js"></script>
+
+<script src="./js/cards.js"></script>
+
+<script src="./js/tables.js"></script>
+
+<script src="./js/hero.js"></script>
+
+<script src="./js/images.js"></script>
+
+<script src="./js/forms.js"></script>
+
+<script src="./js/sidebar.js"></script>
 
 </body>
 
