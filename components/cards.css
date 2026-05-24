@@ -1,20 +1,25 @@
+/* =========================================
+   Card System
+========================================= */
+
+
 /* =========================
-CARD SYSTEM
+CARD
 ========================= */
 
 .card{
 
-  background:var(--dark-soft);
+  background:#d7e1e7;
 
-  border:.1rem solid var(--gold-soft);
+  border:
+  .1rem solid
+  var(--gold-soft);
 
   border-radius:2.8rem;
 
-  padding:4rem 3.2rem;
-
-  transition:.35s ease;
-
-  box-shadow:var(--shadow);
+  padding:
+  4rem
+  3.2rem;
 
   text-decoration:none;
 
@@ -25,29 +30,50 @@ CARD SYSTEM
   justify-content:flex-start;
 
   min-height:22rem;
+
+  box-shadow:
+  var(--shadow);
+
+  transition:
+  transform .35s ease,
+  border-color .35s ease,
+  box-shadow .35s ease;
 }
+
+
+/* =========================
+CARD HOVER
+========================= */
 
 .card:hover{
 
-  transform:translateY(-.8rem);
+  transform:
+  translateY(-.8rem);
 
-  border-color:var(--gold-light);
+  border-color:
+  var(--gold-light);
 }
 
-/* CARD NUMBER */
+
+/* =========================
+CARD NUMBER
+========================= */
 
 .card-number{
+
+  margin-bottom:1.8rem;
 
   font-size:1.4rem;
 
   letter-spacing:.2rem;
 
   color:#7a5d2a;
-
-  margin-bottom:1.8rem;
 }
 
-/* CARD TITLE */
+
+/* =========================
+CARD TITLE
+========================= */
 
 .card-title{
 
@@ -57,12 +83,15 @@ CARD SYSTEM
 
   line-height:1.4;
 
-  color:#8b6a2d;
-
   font-weight:400;
+
+  color:#8b6a2d;
 }
 
-/* CARD TEXT */
+
+/* =========================
+CARD TEXT
+========================= */
 
 .card-text{
 
@@ -70,31 +99,7 @@ CARD SYSTEM
 
   font-size:1.9rem;
 
-  color:#5c5548;
-
   line-height:1.9;
-}
-.card{
 
-  background:#d7e1e7;
-
-  border:.1rem solid var(--gold-soft);
-
-  border-radius:2.8rem;
-
-  padding:4rem 3.2rem;
-
-  transition:.35s ease;
-
-  box-shadow:var(--shadow);
-
-  text-decoration:none;
-
-  display:flex;
-
-  flex-direction:column;
-
-  justify-content:flex-start;
-
-  min-height:22rem;
+  color:#5c5548;
 }
