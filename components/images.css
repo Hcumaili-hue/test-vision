@@ -1,136 +1,97 @@
+/* =========================================
+   Images System
+========================================= */
+
+
 /* =========================
-IMAGE SYSTEM
+GLOBAL IMAGES
 ========================= */
 
 img{
 
   display:block;
+
+  max-width:100%;
 }
 
 
 /* =========================
-PROFILE IMAGE
+RESEARCHER IMAGE
 ========================= */
 
-.profile-image{
+.researcher-image{
 
   display:flex;
 
-  justify-content:center;
-
   align-items:center;
 
-  margin-bottom:9rem;
+  justify-content:center;
 }
 
 
-/* PROFILE CARD */
+.researcher-profile-image{
 
-.profile-image-card{
+  width:9rem;
 
-  width:16rem;
-
-  height:16rem;
-
-  border-radius:2.4rem;
-
-  overflow:hidden;
-
-  background:#f7f2e8;
-
-  border:.18rem solid var(--gold-soft);
-
-  box-shadow:
-  0 .8rem 2rem rgba(0,0,0,.08);
-
-  display:flex;
-
-  justify-content:center;
-
-  align-items:center;
-}
-
-
-/* PROFILE IMAGE */
-
-.profile-image-card img{
-
-  width:14rem;
-
-  height:14rem;
+  height:9rem;
 
   object-fit:cover;
 
   object-position:center top;
 
-  border-radius:1.8rem;
+  border-radius:1.6rem;
+
+  border:
+  .12rem solid
+  rgba(
+    198,
+    168,
+    106,
+    .20
+  );
+
+  box-shadow:
+  0 .6rem 1.8rem
+  rgba(
+    0,
+    0,
+    0,
+    .08
+  );
 }
 
 
 /* =========================
-BOOK IMAGE
+PUBLICATION BOOK
 ========================= */
 
-.book-icon-section{
+.publication-book{
 
   display:flex;
 
-  justify-content:center;
-
   align-items:center;
 
-  margin-top:9rem;
+  justify-content:center;
 }
 
 
-/* BOOK CARD */
+.publication-book-image{
 
-.book-link{
+  width:9rem;
 
-  width:18rem;
+  height:auto;
 
-  height:18rem;
+  object-fit:contain;
 
-  border-radius:2.4rem;
-
-  overflow:hidden;
-
-  display:flex;
-
-  justify-content:center;
-
-  align-items:center;
-
-  background:#f7f2e8;
-
-  border:.18rem solid var(--gold-soft);
-
-  transition:.35s ease;
-
-  cursor:pointer;
-
-  box-shadow:
-  0 .8rem 2rem rgba(0,0,0,.08);
+  transition:
+  transform .35s ease;
 }
 
-.book-link:hover{
+
+.publication-book-image:hover{
 
   transform:
   translateY(-.3rem);
-
-  border-color:var(--gold);
-}
-
-
-/* BOOK IMAGE */
-
-.book-link img{
-
-  width:14rem;
-
-  height:14rem;
-
-  object-fit:contain;
 }
 
 
@@ -144,13 +105,14 @@ CARD IMAGE
 
   height:18rem;
 
+  margin:
+  auto
+  auto
+  2.4rem;
+
   object-fit:cover;
 
   border-radius:2rem;
-
-  margin:auto;
-
-  margin-bottom:2.4rem;
 }
 
 
@@ -164,57 +126,9 @@ ARTICLE IMAGE
 
   height:22rem;
 
+  margin:4rem auto;
+
   object-fit:cover;
 
   border-radius:2.4rem;
-
-  margin:4rem auto;
-}
-/* =========================
-HOME PAGE IMAGES
-========================= */
-
-/* PROFILE IMAGE */
-
-.researcher-image{
-
-  display:flex;
-
-  justify-content:center;
-
-  align-items:center;
-}
-
-.researcher-image img{
-
-  width:9rem;
-
-  height:9rem;
-
-  object-fit:cover;
-
-  object-position:center top;
-
-  border-radius:1.6rem;
-}
-
-
-/* BOOK IMAGE */
-
-.publication-book{
-
-  display:flex;
-
-  justify-content:center;
-
-  align-items:center;
-}
-
-.publication-book img{
-
-  width:9rem;
-
-  height:auto;
-
-  object-fit:contain;
 }
