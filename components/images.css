@@ -21,25 +21,22 @@ img{
 RESEARCHER
 ========================================= */
 
-
 /* =========================
 RESEARCHER CONTAINER
 ========================= */
+
 .researcher-container{
 
   display:flex;
 
   align-items:flex-start;
 
-  gap:3rem;
-
-  max-width:110rem;
-
-  width:100%;
+  gap:2.4rem;
 }
 
+
 /* =========================
-RESEARCHER IMAGE WRAPPER
+RESEARCHER IMAGE
 ========================= */
 
 .researcher-image{
@@ -49,48 +46,61 @@ RESEARCHER IMAGE WRAPPER
 
 
 /* =========================
-RESEARCHER PROFILE IMAGE
+RESEARCHER CONTENT
+========================= */
+
+.researcher-content{
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:flex-start;
+
+  margin-top:0;
+}
+
+
+/* =========================
+FIX TITLE SPACING
+========================= */
+
+.researcher-content
+.section-mini{
+
+  margin:0 0 .8rem;
+}
+
+
+.researcher-content
+.section-title{
+
+  margin:0 0 1.2rem;
+}
+
+
+.researcher-content
+.section-text{
+
+  margin:0 0 1.6rem;
+}
+
+
+/* =========================
+RESEARCHER IMAGE
 ========================= */
 
 .researcher-profile-image{
 
-  width:14rem;
+  width:15rem;
 
-  height:14rem;
+  height:15rem;
 
   object-fit:cover;
 
   object-position:center top;
 
   border-radius:2rem;
-
-  border:
-  .12rem solid
-  rgba(
-    198,
-    168,
-    106,
-    .20
-  );
-
-  box-shadow:
-  0 .8rem 2rem
-  rgba(
-    0,
-    0,
-    0,
-    .08
-  );
-
-  transition:
-  transform .35s ease;
-}
-
-
-.researcher-profile-image:hover{
-
-  transform:
-  translateY(-.3rem);
 }
 
 /* =========================================
