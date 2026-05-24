@@ -10,5 +10,6 @@ UNIFIED CREAM SYSTEM
 .academic-network-section,
 .library-gateway-section{
 
-  background:#f4efe5;
+  background:
+  var(--cream);
 }
