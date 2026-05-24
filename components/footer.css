@@ -1,3 +1,8 @@
+/* =========================================
+   Footer System
+========================================= */
+
+
 /* =========================
 FOOTER
 ========================= */
@@ -6,10 +11,19 @@ FOOTER
 
   background:#d7e1e7;
 
-  padding:10rem 7% 4rem;
+  padding:
+  10rem
+  7%
+  4rem;
 
   border-top:
-  .1rem solid rgba(198,168,106,.20);
+  .1rem solid
+  rgba(
+    198,
+    168,
+    106,
+    .20
+  );
 }
 
 
@@ -19,14 +33,21 @@ FOOTER CONTAINER
 
 .footer-container{
 
-  width:min(140rem,100%);
+  width:
+  min(
+    140rem,
+    100%
+  );
 
   margin:auto;
 
   display:grid;
 
   grid-template-columns:
-  1.5fr 1fr 1fr 1fr;
+  1.5fr
+  1fr
+  1fr
+  1fr;
 
   gap:5rem;
 }
@@ -42,7 +63,9 @@ BRAND
 }
 
 
-/* HC LOGO */
+/* =========================
+FOOTER LOGO
+========================= */
 
 .footer-logo{
 
@@ -56,57 +79,89 @@ BRAND
 
   justify-content:center;
 
+  margin-bottom:2rem;
+
   border-radius:2rem;
 
-  background:var(--dark);
+  background:
+  var(--dark);
 
-  border:.14rem solid
-  rgba(198,168,106,.50);
+  border:
+  .14rem solid
+  rgba(
+    198,
+    168,
+    106,
+    .50
+  );
 
-  color:var(--gold);
+  color:
+  var(--gold);
 
   font-size:2.2rem;
 
-  font-family:'Cinzel', serif;
+  font-family:
+  'Cinzel',
+  serif;
 
   font-weight:700;
 
-  margin-bottom:2rem;
-
   box-shadow:
   0 .6rem 1.8rem
-  rgba(0,0,0,.08);
+  rgba(
+    0,
+    0,
+    0,
+    .08
+  );
 
-  transition:.35s ease;
+  transition:
+  transform .35s ease,
+  background .35s ease,
+  border-color .35s ease,
+  color .35s ease;
 }
+
+
+/* LOGO HOVER */
 
 .footer-logo:hover{
 
-  transform:translateY(-.2rem);
+  transform:
+  translateY(-.2rem);
 
   background:#612c2c;
 
-  border-color:var(--gold-light);
+  border-color:
+  var(--gold-light);
 
-  color:var(--gold-light);
+  color:
+  var(--gold-light);
 }
 
 
-/* BRAND TITLE */
+/* =========================
+BRAND TITLE
+========================= */
 
 .footer-brand h3{
 
-  font-size:2.6rem;
-
-  color:var(--gold);
-
   margin-bottom:1.2rem;
 
-  font-family:'Cinzel', serif;
+  font-size:2.6rem;
+
+  color:
+  var(--gold);
+
+  font-family:
+  'Cinzel',
+  serif;
 }
 
 
-/* BRAND DESCRIPTION */
+/* =========================
+BRAND TEXT
+========================= */
 
 .footer-brand p{
 
@@ -132,19 +187,20 @@ FOOTER LINKS
 }
 
 
-/* TITLES */
+/* FOOTER TITLES */
 
 .footer-links h4{
 
+  margin-bottom:1.5rem;
+
   font-size:1.8rem;
 
-  color:var(--gold);
-
-  margin-bottom:1.5rem;
+  color:
+  var(--gold);
 }
 
 
-/* LINKS */
+/* FOOTER LINKS */
 
 .footer-links a,
 .footer-links span{
@@ -155,12 +211,18 @@ FOOTER LINKS
 
   font-size:1.55rem;
 
-  transition:.3s ease;
+  transition:
+  color .3s ease,
+  transform .3s ease;
 }
+
+
+/* LINK HOVER */
 
 .footer-links a:hover{
 
-  color:var(--gold);
+  color:
+  var(--gold);
 
   transform:
   translateX(.4rem);
@@ -180,7 +242,13 @@ FOOTER BOTTOM
   text-align:center;
 
   border-top:
-  .1rem solid rgba(0,0,0,.08);
+  .1rem solid
+  rgba(
+    0,
+    0,
+    0,
+    .08
+  );
 
   color:#667079;
 
