@@ -118,7 +118,7 @@ BOOK WRAPPER
 
   width:100%;
 
-  margin:1rem 0 4rem;
+  margin:2rem 0 4rem;
 }
 
 
@@ -128,11 +128,13 @@ BOOK IMAGE
 
 .publication-book-image{
 
-  width:32rem;
+  width:28rem;
 
   height:auto;
 
   object-fit:contain;
+
+  margin:0 auto;
 
   transition:
   transform .35s ease;
@@ -144,28 +146,6 @@ BOOK IMAGE
   transform:
   translateY(-.4rem);
 }
-
-
-/* =========================================
-CARD IMAGE
-========================================= */
-
-.card-image{
-
-  width:100%;
-
-  max-width:26rem;
-
-  height:18rem;
-
-  object-fit:cover;
-
-  border-radius:2rem;
-
-  margin-bottom:2.4rem;
-}
-
-
 /* =========================================
 ARTICLE IMAGE
 ========================================= */
