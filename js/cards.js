@@ -6,7 +6,6 @@
 /* =========================
 ACADEMIC NETWORK EFFECT
 ========================= */
-/* Network Card Base */
 .network-card {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
