@@ -1,3 +1,8 @@
+/* =========================================
+   Menu System
+========================================= */
+
+
 /* =========================
 MENU OVERLAY
 ========================= */
@@ -12,14 +17,21 @@ MENU OVERLAY
 
   display:flex;
 
-  justify-content:center;
-
   align-items:flex-start;
 
-  padding:10rem 6%;
+  justify-content:center;
+
+  padding:
+  10rem
+  6%;
 
   background:
-  rgba(0,0,0,.55);
+  rgba(
+    0,
+    0,
+    0,
+    .55
+  );
 
   backdrop-filter:
   blur(18px);
@@ -28,11 +40,15 @@ MENU OVERLAY
 
   visibility:hidden;
 
-  transition:.35s ease;
+  transition:
+  opacity .35s ease,
+  visibility .35s ease;
 }
 
 
-/* OPEN */
+/* =========================
+MENU OPEN
+========================= */
 
 .menu-overlay.active{
 
@@ -48,26 +64,40 @@ MENU PANEL
 
 .menu-panel{
 
-  width:min(92rem,100%);
+  width:
+  min(
+    92rem,
+    100%
+  );
+
+  padding:4rem;
 
   background:#f4efe5;
 
   border-radius:4rem;
 
-  padding:4rem;
+  border:
+  .1rem solid
+  rgba(
+    198,
+    168,
+    106,
+    .18
+  );
 
   box-shadow:
   0 3rem 8rem
-  rgba(0,0,0,.22);
-
-  border:
-  .1rem solid
-  rgba(198,168,106,.18);
+  rgba(
+    0,
+    0,
+    0,
+    .22
+  );
 }
 
 
 /* =========================
-HEADER
+MENU HEADER
 ========================= */
 
 .menu-header{
@@ -83,27 +113,35 @@ HEADER
 }
 
 
+/* =========================
+MENU LABEL
+========================= */
+
 .menu-label{
 
   font-size:2.6rem;
 
-  font-family:'Cinzel',serif;
+  font-weight:700;
 
   color:#c6a86a;
 
-  font-weight:700;
+  font-family:
+  'Cinzel',
+  serif;
 }
 
 
 /* =========================
-CLOSE BUTTON
+MENU CLOSE BUTTON
 ========================= */
 
 .menu-close-btn{
 
   min-height:5rem;
 
-  padding:0 2rem;
+  padding:
+  0
+  2rem;
 
   border:none;
 
@@ -117,21 +155,23 @@ CLOSE BUTTON
 
   font-size:1.5rem;
 
-  transition:.35s ease;
+  transition:
+  transform .35s ease,
+  background .35s ease;
 }
 
 
 .menu-close-btn:hover{
 
-  background:#7d1f1f;
-
   transform:
-  translateY(-2px);
+  translateY(-.2rem);
+
+  background:#7d1f1f;
 }
 
 
 /* =========================
-MENU LIST
+MENU GRID
 ========================= */
 
 .menu-grid{
@@ -159,65 +199,54 @@ MENU CARD
 
   min-height:8rem;
 
-  padding:0 3rem;
+  padding:
+  0
+  3rem;
 
   border-radius:2rem;
 
   background:
-  rgba(255,255,255,.5);
+  rgba(
+    255,
+    255,
+    255,
+    .5
+  );
 
   border:
   .1rem solid
-  rgba(198,168,106,.15);
+  rgba(
+    198,
+    168,
+    106,
+    .15
+  );
 
   color:#c6a86a;
 
   font-size:2rem;
 
-  font-family:'Cinzel',serif;
+  font-family:
+  'Cinzel',
+  serif;
 
   text-decoration:none;
 
-  transition:.35s ease;
+  transition:
+  transform .35s ease,
+  background .35s ease,
+  color .35s ease;
 }
 
+
+/* MENU CARD HOVER */
 
 .menu-card:hover{
 
   transform:
-  translateX(8px);
+  translateX(.8rem);
 
   background:#111111;
 
   color:#d6b676;
-}
-
-
-/* =========================
-MOBILE
-========================= */
-
-@media(max-width:768px){
-
-  .menu-overlay{
-
-    padding:8rem 5%;
-  }
-
-  .menu-panel{
-
-    padding:3rem 2rem;
-
-    border-radius:3rem;
-  }
-
-  .menu-card{
-
-    min-height:7rem;
-
-    font-size:1.7rem;
-
-    padding:0 2rem;
-  }
-
 }
