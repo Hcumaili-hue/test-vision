@@ -1,7 +1,12 @@
-/* =====================================
+/* =========================================
+   HERO SECTION
+   H. CUMAILI INSTITUTE
+========================================= */
+
+
+/* =========================
 HERO SECTION
-H. CUMAILI LAB
-===================================== */
+========================= */
 
 .hero-section{
 
@@ -17,15 +22,19 @@ H. CUMAILI LAB
 
   justify-content:center;
 
-  padding:14rem 7% 10rem;
+  padding:
+  14rem
+  7%
+  10rem;
 
-  background:var(--cream);
+  background:
+  var(--cream);
 }
 
 
-/* =====================================
+/* =========================
 ACADEMIC BACKGROUND MARK
-===================================== */
+========================= */
 
 .hero-section::before{
 
@@ -37,27 +46,39 @@ ACADEMIC BACKGROUND MARK
 
   left:50%;
 
-  transform:translate(-50%,-50%);
+  transform:
+  translate(
+    -50%,
+    -50%
+  );
 
-  font-size:42rem;
-
-  font-family:'Cinzel',serif;
-
-  font-weight:700;
-
-  color:rgba(0,0,0,.025);
+  z-index:0;
 
   pointer-events:none;
 
   user-select:none;
 
-  z-index:0;
+  font-size:42rem;
+
+  font-family:
+  'Cinzel',
+  serif;
+
+  font-weight:700;
+
+  color:
+  rgba(
+    0,
+    0,
+    0,
+    .025
+  );
 }
 
 
-/* =====================================
-CONTAINER
-===================================== */
+/* =========================
+HERO CONTAINER
+========================= */
 
 .hero-container{
 
@@ -65,7 +86,11 @@ CONTAINER
 
   z-index:2;
 
-  width:min(100rem,100%);
+  width:
+  min(
+    100rem,
+    100%
+  );
 
   margin:auto;
 
@@ -74,40 +99,8 @@ CONTAINER
 
 
 /* =========================
-HERO BANNER
+HERO LABEL
 ========================= */
-
-.hero-banner{
-
-  width:min(110rem,92%);
-
-  margin:4rem auto 0;
-
-  overflow:hidden;
-
-  border-radius:2.8rem;
-
-  border:.14rem solid rgba(198,168,106,.20);
-
-  background:var(--dark);
-
-  box-shadow:
-  0 2rem 5rem rgba(0,0,0,.10);
-}
-
-.hero-banner img{
-
-  width:100%;
-
-  display:block;
-
-  object-fit:cover;
-}
-
-
-/* =====================================
-ACADEMIC LABEL
-===================================== */
 
 .hero-label{
 
@@ -117,95 +110,139 @@ ACADEMIC LABEL
 
   justify-content:center;
 
-  padding:1rem 2rem;
+  margin-bottom:3rem;
+
+  padding:
+  1rem
+  2rem;
 
   border-radius:999rem;
 
-  background:rgba(198,168,106,.08);
+  background:
+  rgba(
+    198,
+    168,
+    106,
+    .08
+  );
 
-  border:.1rem solid rgba(198,168,106,.18);
+  border:
+  .1rem solid
+  rgba(
+    198,
+    168,
+    106,
+    .18
+  );
 
-  color:var(--gold-soft);
+  color:
+  var(--gold-soft);
 
   font-size:1.35rem;
 
   letter-spacing:.16rem;
 
   text-transform:uppercase;
-
-  margin-bottom:3rem;
 }
 
 
-/* =====================================
-MAIN TITLE
-===================================== */
+/* =========================
+HERO TITLE
+========================= */
 
-.hero-section h1{
+.hero-title{
+
+  margin-bottom:2rem;
 
   font-size:8rem;
 
   line-height:1.05;
 
-  color:var(--gold);
+  color:
+  var(--gold);
 
-  margin-bottom:2rem;
-
-  font-family:'Cinzel',serif;
+  font-family:
+  'Cinzel',
+  serif;
 
   font-weight:600;
 }
 
 
-/* =====================================
-SUBTITLE
-===================================== */
+/* =========================
+MAIN HEADING
+========================= */
 
-.hero-heading{
+.hero-main-heading{
+
+  margin-bottom:2rem;
 
   font-size:3rem;
 
   line-height:1.5;
 
-  color:var(--gold);
+  color:
+  var(--gold);
 
   font-weight:500;
-
-  margin-bottom:3rem;
 }
 
 
-/* =====================================
-DESCRIPTION
-===================================== */
+/* =========================
+SUBHEADING
+========================= */
+
+.hero-subheading{
+
+  margin-bottom:3rem;
+
+  font-size:2.4rem;
+
+  line-height:1.5;
+
+  color:
+  var(--gold-soft);
+
+  font-weight:400;
+}
+
+
+/* =========================
+HERO DESCRIPTION
+========================= */
 
 .hero-description{
 
-  width:min(78rem,100%);
+  width:
+  min(
+    78rem,
+    100%
+  );
 
   margin:auto;
+
+  margin-bottom:5rem;
 
   font-size:2rem;
 
   line-height:2;
 
-  color:var(--text-soft-dark);
-
-  margin-bottom:5rem;
+  color:
+  var(--text-soft-dark);
 }
 
 
-/* =====================================
-BUTTONS
-===================================== */
+/* =========================
+HERO BUTTONS
+========================= */
 
 .hero-buttons{
 
   display:flex;
 
-  justify-content:center;
-
   align-items:center;
+
+  justify-content:center;
 
   flex-wrap:wrap;
 
@@ -213,79 +250,54 @@ BUTTONS
 }
 
 
-/* =====================================
-RESPONSIVE
-===================================== */
+/* =========================
+HERO BANNER
+========================= */
 
-@media(max-width:900px){
+.hero-banner{
 
-  .hero-section{
+  width:
+  min(
+    110rem,
+    92%
+  );
 
-    min-height:auto;
+  margin:
+  4rem
+  auto
+  0;
 
-    padding:12rem 6% 8rem;
-  }
+  overflow:hidden;
 
-  .hero-section::before{
+  border-radius:2.8rem;
 
-    font-size:24rem;
-  }
+  background:
+  var(--dark);
 
-  .hero-section h1{
+  border:
+  .14rem solid
+  rgba(
+    198,
+    168,
+    106,
+    .20
+  );
 
-    font-size:5.5rem;
-  }
-
-  .hero-heading{
-
-    font-size:2.2rem;
-  }
-
-  .hero-description{
-
-    font-size:1.8rem;
-
-    line-height:1.9;
-  }
+  box-shadow:
+  0 2rem 5rem
+  rgba(
+    0,
+    0,
+    0,
+    .10
+  );
 }
 
+.hero-banner img{
 
-@media(max-width:600px){
+  width:100%;
 
-  .hero-section{
+  display:block;
 
-    padding:10rem 5% 7rem;
-  }
-
-  .hero-banner{
-
-    border-radius:2rem;
-
-    margin-bottom:4rem;
-  }
-
-  .hero-section::before{
-
-    font-size:18rem;
-  }
-
-  .hero-section h1{
-
-    font-size:4.2rem;
-  }
-
-  .hero-heading{
-
-    font-size:1.9rem;
-  }
-
-  .hero-description{
-
-    font-size:1.7rem;
-  }
-
-  .hero-buttons{
-
-    flex-direction:column;
-  }
+  object-fit:cover;
 }
