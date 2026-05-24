@@ -1,5 +1,5 @@
 /* =========================================
-   Images System
+   IMAGES SYSTEM
 ========================================= */
 
 
@@ -12,6 +12,24 @@ img{
   display:block;
 
   max-width:100%;
+
+  height:auto;
+}
+
+
+/* =========================
+RESEARCHER CONTAINER
+========================= */
+
+.researcher-container{
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:flex-start;
+
+  gap:2.4rem;
 }
 
 
@@ -29,17 +47,21 @@ RESEARCHER IMAGE
 }
 
 
+/* =========================
+RESEARCHER PROFILE IMAGE
+========================= */
+
 .researcher-profile-image{
 
-  width:14rem;
+  width:18rem;
 
-  height:14rem;
+  height:18rem;
 
   object-fit:cover;
 
   object-position:center top;
 
-  border-radius:2rem;
+  border-radius:2.4rem;
 
   border:
   .12rem solid
@@ -58,20 +80,17 @@ RESEARCHER IMAGE
     0,
     .08
   );
+
+  transition:
+  transform .35s ease,
+  box-shadow .35s ease;
 }
-/* =========================
-RESEARCHER CONTAINER
-========================= */
 
-.researcher-container{
 
-  display:flex;
+.researcher-profile-image:hover{
 
-  flex-direction:column;
-
-  align-items:flex-start;
-
-  gap:2rem;
+  transform:
+  translateY(-.3rem);
 }
 
 
@@ -85,13 +104,13 @@ PUBLICATION BOOK
 
   align-items:center;
 
-  justify-content:center;
+  justify-content:flex-start;
 }
 
 
 .publication-book-image{
 
-  width:9rem;
+  width:12rem;
 
   height:auto;
 
@@ -115,14 +134,13 @@ CARD IMAGE
 
 .card-image{
 
-  width:26rem;
+  width:100%;
+
+  max-width:26rem;
 
   height:18rem;
 
-  margin:
-  auto
-  auto
-  2.4rem;
+  margin-bottom:2.4rem;
 
   object-fit:cover;
 
@@ -136,11 +154,13 @@ ARTICLE IMAGE
 
 .article-image{
 
-  width:32rem;
+  width:100%;
+
+  max-width:32rem;
 
   height:22rem;
 
-  margin:4rem auto;
+  margin:4rem 0;
 
   object-fit:cover;
 
