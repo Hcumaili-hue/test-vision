@@ -29,19 +29,7 @@ RESEARCHER CONTAINER
 
   display:flex;
 
-  align-items:flex-start;
-
-  gap:2.4rem;
-}
-
-
-/* =========================
-RESEARCHER IMAGE
-========================= */
-
-.researcher-image{
-
-  flex-shrink:0;
+  justify-content:center;
 }
 
 
@@ -51,38 +39,9 @@ RESEARCHER CONTENT
 
 .researcher-content{
 
-  display:flex;
+  max-width:80rem;
 
-  flex-direction:column;
-
-  justify-content:flex-start;
-
-  margin-top:0;
-}
-
-
-/* =========================
-FIX TITLE SPACING
-========================= */
-
-.researcher-content
-.section-mini{
-
-  margin:0 0 .8rem;
-}
-
-
-.researcher-content
-.section-title{
-
-  margin:0 0 1.2rem;
-}
-
-
-.researcher-content
-.section-text{
-
-  margin:0 0 1.6rem;
+  text-align:left;
 }
 
 
@@ -90,19 +49,70 @@ FIX TITLE SPACING
 RESEARCHER IMAGE
 ========================= */
 
+.researcher-image{
+
+  margin-bottom:2rem;
+}
+
+
+/* =========================
+RESEARCHER PROFILE IMAGE
+========================= */
+
 .researcher-profile-image{
 
-  width:15rem;
+  width:16rem;
 
-  height:15rem;
+  height:16rem;
 
   object-fit:cover;
 
   object-position:center top;
 
   border-radius:2rem;
+
+  border:
+  .12rem solid
+  rgba(
+    198,
+    168,
+    106,
+    .20
+  );
+
+  box-shadow:
+  0 .8rem 2rem
+  rgba(
+    0,
+    0,
+    0,
+    .08
+  );
 }
 
+
+/* =========================
+SPACING FIX
+========================= */
+
+.section-mini{
+
+  display:block;
+
+  margin:0 0 .8rem;
+}
+
+
+.section-title{
+
+  margin:0 0 1.6rem;
+}
+
+
+.section-text{
+
+  margin:0 0 1.8rem;
+}
 /* =========================================
 PUBLICATION BOOK
 ========================================= */
