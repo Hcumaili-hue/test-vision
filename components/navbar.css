@@ -1,3 +1,8 @@
+/* =========================================
+   Navbar System
+========================================= */
+
+
 /* =========================
 NAVBAR
 ========================= */
@@ -13,12 +18,24 @@ NAVBAR
   width:100%;
 
   background:
-  rgba(243,237,226,.92);
+  rgba(
+    243,
+    237,
+    226,
+    .92
+  );
 
-  backdrop-filter:blur(18px);
+  backdrop-filter:
+  blur(18px);
 
   border-bottom:
-  .1rem solid rgba(0,0,0,.06);
+  .1rem solid
+  rgba(
+    0,
+    0,
+    0,
+    .06
+  );
 }
 
 
@@ -28,17 +45,22 @@ HEADER CONTAINER
 
 .header-container{
 
-  width:min(140rem,92%);
-
-  margin:auto;
+  width:
+  min(
+    140rem,
+    92%
+  );
 
   min-height:9rem;
+
+  margin:auto;
 
   display:flex;
 
   align-items:center;
 
-  justify-content:space-between;
+  justify-content:
+  space-between;
 
   gap:3rem;
 }
@@ -70,34 +92,53 @@ HC LOGO
 
   height:6rem;
 
-  border-radius:1.8rem;
-
   display:flex;
 
   align-items:center;
 
   justify-content:center;
 
+  border-radius:1.8rem;
+
   background:#111111;
 
-  color:#c6a86a;
+  border:
+  .14rem solid
+  rgba(
+    198,
+    168,
+    106,
+    .55
+  );
 
-  border:.14rem solid
-  rgba(198,168,106,.55);
+  color:#c6a86a;
 
   font-size:2rem;
 
   font-weight:700;
 
-  font-family:'Cinzel', serif;
-
-  transition:.35s ease;
+  font-family:
+  'Cinzel',
+  serif;
 
   box-shadow:
   0 .6rem 1.8rem
-  rgba(0,0,0,.12);
+  rgba(
+    0,
+    0,
+    0,
+    .12
+  );
+
+  transition:
+  transform .35s ease,
+  background .35s ease,
+  color .35s ease,
+  border-color .35s ease;
 }
 
+
+/* LOGO HOVER */
 
 .logo-wrap:hover .logo-mark{
 
@@ -130,11 +171,11 @@ LOGO TEXT
 
   font-weight:600;
 
-  color:#c6a86a;
-
   line-height:1.1;
 
   letter-spacing:.03rem;
+
+  color:#c6a86a;
 }
 
 
@@ -142,9 +183,9 @@ LOGO TEXT
 
   font-size:1.25rem;
 
-  color:#746b5d;
-
   letter-spacing:.08rem;
+
+  color:#746b5d;
 }
 
 
@@ -159,102 +200,4 @@ HEADER ACTIONS
   align-items:center;
 
   gap:1.4rem;
-}
-
-
-/* =========================
-HEADER BUTTONS
-========================= */
-
-.header-search-btn,
-.header-menu-btn{
-
-  min-height:5rem;
-
-  padding:0 2rem;
-
-  border:none;
-
-  outline:none;
-
-  cursor:pointer;
-
-  border-radius:1.6rem;
-
-  display:inline-flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  text-decoration:none;
-
-  font-size:1.45rem;
-
-  font-weight:600;
-
-  background:#111111;
-
-  color:#d4b26a;
-
-  transition:.35s ease;
-}
-
-.header-search-btn:hover,
-.header-menu-btn:hover{
-
-  transform:translateY(-.2rem);
-
-  background:#7d1f1f;
-
-  color:#d6b676;
-}
-/* =========================
-RESPONSIVE
-========================= */
-
-@media(max-width:900px){
-
-  .header-network-btn{
-
-    display:none;
-  }
-
-  .logo-subtitle{
-
-    display:none;
-  }
-}
-
-
-@media(max-width:768px){
-
-  .header-container{
-
-    min-height:8rem;
-  }
-
-  .logo-mark{
-
-    width:5rem;
-
-    height:5rem;
-
-    font-size:1.8rem;
-  }
-
-  .logo-title{
-
-    font-size:1.7rem;
-  }
-
-  .header-search-btn,
-  .header-menu-btn{
-
-    height:4.6rem;
-
-    padding:0 1.6rem;
-
-    font-size:1.35rem;
-  }
 }
