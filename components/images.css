@@ -17,6 +17,11 @@ img{
 }
 
 
+/* =========================================
+RESEARCHER
+========================================= */
+
+
 /* =========================
 RESEARCHER CONTAINER
 ========================= */
@@ -25,16 +30,14 @@ RESEARCHER CONTAINER
 
   display:flex;
 
-  flex-direction:column;
-
   align-items:flex-start;
 
-  gap:2.4rem;
+  gap:3.2rem;
 }
 
 
 /* =========================
-RESEARCHER IMAGE
+RESEARCHER IMAGE WRAPPER
 ========================= */
 
 .researcher-image{
@@ -44,6 +47,8 @@ RESEARCHER IMAGE
   align-items:flex-start;
 
   justify-content:flex-start;
+
+  flex-shrink:0;
 }
 
 
@@ -53,15 +58,15 @@ RESEARCHER PROFILE IMAGE
 
 .researcher-profile-image{
 
-  width:18rem;
+  width:13rem;
 
-  height:18rem;
+  height:13rem;
 
   object-fit:cover;
 
   object-position:center top;
 
-  border-radius:2.4rem;
+  border-radius:2rem;
 
   border:
   .12rem solid
@@ -94,23 +99,36 @@ RESEARCHER PROFILE IMAGE
 }
 
 
-/* =========================
+/* =========================================
 PUBLICATION BOOK
+========================================= */
+
+
+/* =========================
+BOOK WRAPPER
 ========================= */
 
 .publication-book{
 
   display:flex;
 
+  justify-content:center;
+
   align-items:center;
 
-  justify-content:flex-start;
+  width:100%;
+
+  margin:2rem 0 4rem;
 }
 
 
+/* =========================
+BOOK IMAGE
+========================= */
+
 .publication-book-image{
 
-  width:12rem;
+  width:24rem;
 
   height:auto;
 
@@ -124,13 +142,13 @@ PUBLICATION BOOK
 .publication-book-image:hover{
 
   transform:
-  translateY(-.3rem);
+  translateY(-.4rem);
 }
 
 
-/* =========================
+/* =========================================
 CARD IMAGE
-========================= */
+========================================= */
 
 .card-image{
 
@@ -140,17 +158,17 @@ CARD IMAGE
 
   height:18rem;
 
-  margin-bottom:2.4rem;
-
   object-fit:cover;
 
   border-radius:2rem;
+
+  margin-bottom:2.4rem;
 }
 
 
-/* =========================
+/* =========================================
 ARTICLE IMAGE
-========================= */
+========================================= */
 
 .article-image{
 
@@ -160,9 +178,9 @@ ARTICLE IMAGE
 
   height:22rem;
 
-  margin:4rem 0;
-
   object-fit:cover;
 
   border-radius:2.4rem;
+
+  margin:4rem 0;
 }
