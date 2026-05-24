@@ -14,9 +14,11 @@
 
 .academic-dock {
     display: flex;
-    gap: 1.6rem;
+    flex-wrap: nowrap;
+    gap: 1.8rem;
     justify-content: center;
-    padding: 2.2rem 2.8rem;
+    align-items: center;
+    padding: 2rem 2.5rem;
     background: #d7e1e7;
     border-radius: 9999px;
     border: 0.2rem solid rgba(157, 122, 51, 0.45);
@@ -24,7 +26,6 @@
     width: fit-content;
     margin: 0 auto;
 }
-
 .dock-icon {
     width: 70px;
     height: 70px;
