@@ -1,5 +1,10 @@
+/* =========================================
+   Reset System
+========================================= */
+
+
 /* =========================
-RESET SYSTEM
+GLOBAL RESET
 ========================= */
 
 *,
@@ -20,9 +25,9 @@ DOCUMENT
 
 html{
 
-  scroll-behavior:smooth;
-
   font-size:62.5%;
+
+  scroll-behavior:smooth;
 }
 
 
@@ -35,7 +40,7 @@ body{
 
 
 /* =========================
-MEDIA
+MEDIA ELEMENTS
 ========================= */
 
 img,
@@ -56,9 +61,9 @@ LINKS
 
 a{
 
-  text-decoration:none;
-
   color:inherit;
+
+  text-decoration:none;
 }
 
 
